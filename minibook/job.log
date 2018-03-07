@@ -1,32 +1,24 @@
-Wed Mar  7 09:41:31 EST 2018
+Wed Mar  7 09:52:31 EST 2018
 Doing...
-Updating 38bcfce..3497c8b
+Updating 3497c8b..a49f0b6
 Fast-forward
- main.py                          |  12 +-
- minibook/test/dataIn.zip         | Bin 184158 -> 0 bytes
- minibook/test/intro_python.ipynb | 840 ---------------------------------------
- 3 files changed, 6 insertions(+), 846 deletions(-)
- delete mode 100644 minibook/test/dataIn.zip
- delete mode 100644 minibook/test/intro_python.ipynb
+ main.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
 sending incremental file list
-deleting test/intro_python.ipynb
-deleting test/dataIn.zip
-deleting test/
 deleting amazon/Amazon.csv
-./
 amazon/
 amazon/output.ipynb
 
-sent 12,869 bytes  received 119 bytes  25,976.00 bytes/sec
-total size is 62,997,635  speedup is 4,850.45
+sent 12,866 bytes  received 61 bytes  25,854.00 bytes/sec
+total size is 62,997,635  speedup is 4,873.34
 Amazon.csv
 
 bzip2: (stdin): trailing garbage after EOF ignored
 cat: write error: Broken pipe
-  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:01<00:10,  1.18s/it] 30%|███       | 3/10 [00:15<00:36,  5.19s/it] 50%|█████     | 5/10 [00:18<00:18,  3.62s/it] 80%|████████  | 8/10 [00:18<00:04,  2.28s/it] 90%|█████████ | 9/10 [00:57<00:06,  6.41s/it]100%|██████████| 10/10 [00:57<00:00,  5.77s/it]tar: sc.pkl: Cannot stat: No such file or directory
-tar: hv.pkl: Cannot stat: No such file or directory
-tar: lgs.pkl: Cannot stat: No such file or directory
-tar: Exiting with failure status due to previous errors
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:01<00:10,  1.19s/it] 30%|███       | 3/10 [00:15<00:36,  5.16s/it] 50%|█████     | 5/10 [00:18<00:18,  3.60s/it] 80%|████████  | 8/10 [00:18<00:04,  2.26s/it] 90%|█████████ | 9/10 [00:55<00:06,  6.15s/it]100%|██████████| 10/10 [00:55<00:00,  5.54s/it]tar: Removing leading `../' from member names
+../amazonFirstIter/sc.pkl
+../amazonFirstIter/hv.pkl
+../amazonFirstIter/lgs.pkl
 
 Input Notebook:  _00_split.ipynb
 Output Notebook: output.ipynb
