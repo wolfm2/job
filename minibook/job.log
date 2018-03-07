@@ -1,19 +1,32 @@
-Wed Mar  7 09:32:20 EST 2018
+Wed Mar  7 09:41:31 EST 2018
 Doing...
-Updating 2a420c6..38bcfce
+Updating 38bcfce..3497c8b
 Fast-forward
- minibook/amazon/_00_split.ipynb | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ main.py                          |  12 +-
+ minibook/test/dataIn.zip         | Bin 184158 -> 0 bytes
+ minibook/test/intro_python.ipynb | 840 ---------------------------------------
+ 3 files changed, 6 insertions(+), 846 deletions(-)
+ delete mode 100644 minibook/test/dataIn.zip
+ delete mode 100644 minibook/test/intro_python.ipynb
 sending incremental file list
+deleting test/intro_python.ipynb
+deleting test/dataIn.zip
+deleting test/
+deleting amazon/Amazon.csv
+./
 amazon/
-amazon/_00_split.ipynb
+amazon/output.ipynb
 
-sent 3,644 bytes  received 41 bytes  7,370.00 bytes/sec
-total size is 63,197,271  speedup is 17,149.87
+sent 12,869 bytes  received 119 bytes  25,976.00 bytes/sec
+total size is 62,997,635  speedup is 4,850.45
 Amazon.csv
 
 bzip2: (stdin): trailing garbage after EOF ignored
 cat: write error: Broken pipe
-  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:01<00:10,  1.17s/it] 30%|███       | 3/10 [00:15<00:35,  5.08s/it] 50%|█████     | 5/10 [00:20<00:20,  4.06s/it] 80%|████████  | 8/10 [00:20<00:05,  2.55s/it] 90%|█████████ | 9/10 [01:00<00:06,  6.70s/it]100%|██████████| 10/10 [01:00<00:00,  6.03s/it]
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:01<00:10,  1.18s/it] 30%|███       | 3/10 [00:15<00:36,  5.19s/it] 50%|█████     | 5/10 [00:18<00:18,  3.62s/it] 80%|████████  | 8/10 [00:18<00:04,  2.28s/it] 90%|█████████ | 9/10 [00:57<00:06,  6.41s/it]100%|██████████| 10/10 [00:57<00:00,  5.77s/it]tar: sc.pkl: Cannot stat: No such file or directory
+tar: hv.pkl: Cannot stat: No such file or directory
+tar: lgs.pkl: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+
 Input Notebook:  _00_split.ipynb
 Output Notebook: output.ipynb
