@@ -1,18 +1,18 @@
-Tue Mar  6 19:25:43 EST 2018
+Tue Mar  6 19:32:43 EST 2018
 Doing...
-Updating e0ba0c7..eeda147
+Updating eeda147..4d9c982
 Fast-forward
- main.py | 3 ++-
- 1 file changed, 2 insertions(+), 1 deletion(-)
+ minibook/amazonFirstIter/_03_submission.ipynb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 sending incremental file list
 deleting amazonFirstIter/__pycache__/my_measures.cpython-36.pyc
 deleting amazonFirstIter/__pycache__/
 deleting amazonFirstIter/output.ipynb
-deleting amazonFirstIter/dataOut.zip
 amazonFirstIter/
+amazonFirstIter/_03_submission.ipynb
 
-sent 390 bytes  received 170 bytes  1,120.00 bytes/sec
-total size is 62,915,741  speedup is 112,349.54
-  0%|          | 0/23 [00:00<?, ?it/s]  9%|▊         | 2/23 [00:02<00:21,  1.05s/it] 17%|█▋        | 4/23 [00:04<00:21,  1.12s/it] 26%|██▌       | 6/23 [00:04<00:13,  1.30it/s] 35%|███▍      | 8/23 [00:55<01:44,  6.95s/it] 39%|███▉      | 9/23 [01:03<01:39,  7.11s/it] 48%|████▊     | 11/23 [01:04<01:09,  5.83s/it] 52%|█████▏    | 12/23 [01:04<00:58,  5.36s/it] 61%|██████    | 14/23 [01:19<00:51,  5.70s/it] 70%|██████▉   | 16/23 [01:21<00:35,  5.06s/it] 78%|███████▊  | 18/23 [01:21<00:22,  4.51s/it] 87%|████████▋ | 20/23 [01:21<00:12,  4.10s/it] 96%|█████████▌| 22/23 [01:22<00:03,  3.75s/it]100%|██████████| 23/23 [01:22<00:00,  3.59s/it]
+sent 21,244 bytes  received 162 bytes  42,812.00 bytes/sec
+total size is 62,915,740  speedup is 2,939.16
+  0%|          | 0/23 [00:00<?, ?it/s]  9%|▊         | 2/23 [00:02<00:21,  1.05s/it] 17%|█▋        | 4/23 [00:05<00:24,  1.28s/it] 26%|██▌       | 6/23 [00:05<00:14,  1.14it/s] 35%|███▍      | 8/23 [00:55<01:43,  6.92s/it] 39%|███▉      | 9/23 [01:03<01:38,  7.05s/it] 48%|████▊     | 11/23 [01:03<01:09,  5.78s/it] 52%|█████▏    | 12/23 [01:03<00:58,  5.32s/it] 61%|██████    | 14/23 [01:18<00:50,  5.61s/it] 70%|██████▉   | 16/23 [01:19<00:34,  4.97s/it] 78%|███████▊  | 18/23 [01:19<00:22,  4.43s/it] 87%|████████▋ | 20/23 [01:20<00:12,  4.02s/it] 96%|█████████▌| 22/23 [01:20<00:03,  3.68s/it]100%|██████████| 23/23 [01:21<00:00,  3.52s/it]
 Input Notebook:  _03_submission.ipynb
 Output Notebook: output.ipynb
