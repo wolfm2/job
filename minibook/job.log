@@ -1,24 +1,21 @@
-Wed Mar  7 09:52:31 EST 2018
+Wed Mar  7 10:16:35 EST 2018
 Doing...
-Updating 3497c8b..a49f0b6
+Updating a49f0b6..8eb8795
 Fast-forward
  main.py | 4 ++--
  1 file changed, 2 insertions(+), 2 deletions(-)
 sending incremental file list
+deleting amazon/dataOut.aa
 deleting amazon/Amazon.csv
 amazon/
 amazon/output.ipynb
 
-sent 12,866 bytes  received 61 bytes  25,854.00 bytes/sec
-total size is 62,997,635  speedup is 4,873.34
+sent 12,866 bytes  received 82 bytes  8,632.00 bytes/sec
+total size is 62,997,635  speedup is 4,865.43
 Amazon.csv
 
 bzip2: (stdin): trailing garbage after EOF ignored
 cat: write error: Broken pipe
-  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:01<00:10,  1.19s/it] 30%|███       | 3/10 [00:15<00:36,  5.16s/it] 50%|█████     | 5/10 [00:18<00:18,  3.60s/it] 80%|████████  | 8/10 [00:18<00:04,  2.26s/it] 90%|█████████ | 9/10 [00:55<00:06,  6.15s/it]100%|██████████| 10/10 [00:55<00:00,  5.54s/it]tar: Removing leading `../' from member names
-../amazonFirstIter/sc.pkl
-../amazonFirstIter/hv.pkl
-../amazonFirstIter/lgs.pkl
-
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:01<00:09,  1.10s/it] 30%|███       | 3/10 [00:15<00:35,  5.14s/it] 50%|█████     | 5/10 [00:17<00:17,  3.59s/it] 80%|████████  | 8/10 [00:18<00:04,  2.26s/it] 90%|█████████ | 9/10 [00:56<00:06,  6.24s/it]100%|██████████| 10/10 [00:56<00:00,  5.62s/it]
 Input Notebook:  _00_split.ipynb
 Output Notebook: output.ipynb
