@@ -19,3 +19,37 @@ cat: write error: Broken pipe
   0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:01<00:09,  1.10s/it] 30%|███       | 3/10 [00:15<00:35,  5.14s/it] 50%|█████     | 5/10 [00:17<00:17,  3.59s/it] 80%|████████  | 8/10 [00:18<00:04,  2.26s/it] 90%|█████████ | 9/10 [00:56<00:06,  6.24s/it]100%|██████████| 10/10 [00:56<00:00,  5.62s/it]
 Input Notebook:  _00_split.ipynb
 Output Notebook: output.ipynb
+Pushing...
+To ssh://git@github.com/wolfm2/jobout.git
+   79ae16b..fa92518  master -> master
+.:
+total 4
+drwxrwxr-x 4 eydu eydu 4096 Mar  7 09:41 minibook
+
+./minibook:
+total 12
+drwxrwxr-x 2 eydu eydu 4096 Mar  7 10:16 amazon
+drwxrwxr-x 2 eydu eydu 4096 Mar  6 19:38 amazonFirstIter
+-rw-rw-r-- 1 eydu eydu 1002 Mar  7 10:18 job.log
+
+./minibook/amazon:
+total 242664
+-rw-rw-r-- 1 eydu eydu      2966 Mar  7 09:32 _00_split.ipynb
+-rw-rw-r-- 1 eydu eydu     28729 Mar  6 20:23 _01_train.ipynb
+-rw-rw-r-- 1 eydu eydu     26250 Mar  6 20:23 _02_test.ipynb
+-rw-rw-r-- 1 eydu eydu     20981 Mar  6 20:23 _03_submission.ipynb
+-rw-rw-r-- 1 eydu eydu 248373493 Mar  6 20:06 Amazon.csv
+-rw-rw-r-- 1 eydu eydu      2632 Mar  6 20:23 my_measures.py
+-rw-rw-r-- 1 eydu eydu      5424 Mar  7 10:18 output.ipynb
+-rw-rw-r-- 1 eydu eydu      3534 Mar  6 20:23 README.md
+
+./minibook/amazonFirstIter:
+total 61448
+-rw-rw-r-- 1 eydu eydu    20808 Mar  6 19:38 _03_submission.ipynb
+-rw-rw-r-- 1 eydu eydu      557 Mar  6 16:44 hv.pkl
+-rw-rw-r-- 1 eydu eydu  2098273 Mar  6 16:44 lgs.pkl
+-rw-rw-r-- 1 eydu eydu     2632 Mar  6 16:44 my_measures.py
+-rw-rw-r-- 1 eydu eydu 50282018 Mar  6 16:59 raw_data_test.csv
+-rw-rw-r-- 1 eydu eydu  6292015 Mar  6 16:44 sc.pkl
+-rw-rw-r-- 1 eydu eydu  4194972 Mar  6 16:44 transformer.pkl
+-rw-rw-r-- 1 eydu eydu     8988 Mar  6 16:44 ver.py
