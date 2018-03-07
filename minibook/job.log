@@ -1,0 +1,29 @@
+Wed Mar  7 11:56:02 EST 2018
+Doing...
+Updating 8eb8795..5fd72f4
+Fast-forward
+ minibook/amazon/_00_split.ipynb | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+sending incremental file list
+./
+deleting amazon/output.ipynb
+amazon/
+amazon/README.md
+amazon/_00_split.ipynb
+amazon/_01_train.ipynb
+amazon/_02_test.ipynb
+amazon/_03_submission.ipynb
+amazon/my_measures.py
+amazonFirstIter/
+amazonFirstIter/_03_submission.ipynb
+amazonFirstIter/hv.pkl
+amazonFirstIter/lgs.pkl
+amazonFirstIter/my_measures.py
+amazonFirstIter/raw_data_test.csv
+amazonFirstIter/sc.pkl
+amazonFirstIter/transformer.pkl
+amazonFirstIter/ver.py
+
+sent 63,001,820 bytes  received 324 bytes  126,004,288.00 bytes/sec
+total size is 62,985,365  speedup is 1.00
+/home/wolfm2/job.sh: line 30: /home/eydu/Desktop/anaconda3/bin/python: No such file or directory
