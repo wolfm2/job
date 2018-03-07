@@ -1,19 +1,117 @@
-Tue Mar  6 19:38:38 EST 2018
+Tue Mar  6 20:23:54 EST 2018
 Doing...
-Updating 4d9c982..2358113
+Updating 2358113..7217719
 Fast-forward
- minibook/amazonFirstIter/_03_submission.ipynb | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ main.py                              |   2 +-
+ minibook/amazon/README.md            |  36 +++
+ minibook/amazon/_00_split.ipynb      | 143 +++++++++
+ minibook/amazon/_01_train.ipynb      | 586 +++++++++++++++++++++++++++++++++++
+ minibook/amazon/_02_test.ipynb       | 509 ++++++++++++++++++++++++++++++
+ minibook/amazon/_03_submission.ipynb | 405 ++++++++++++++++++++++++
+ minibook/amazon/dataIn.z01           | Bin 0 -> 52428800 bytes
+ minibook/amazon/dataIn.z02           | Bin 0 -> 52428800 bytes
+ minibook/amazon/dataIn.zip           | Bin 0 -> 1432461 bytes
+ minibook/amazon/my_measures.py       |  34 ++
+ 10 files changed, 1714 insertions(+), 1 deletion(-)
+ create mode 100644 minibook/amazon/README.md
+ create mode 100644 minibook/amazon/_00_split.ipynb
+ create mode 100644 minibook/amazon/_01_train.ipynb
+ create mode 100644 minibook/amazon/_02_test.ipynb
+ create mode 100644 minibook/amazon/_03_submission.ipynb
+ create mode 100644 minibook/amazon/dataIn.z01
+ create mode 100644 minibook/amazon/dataIn.z02
+ create mode 100644 minibook/amazon/dataIn.zip
+ create mode 100644 minibook/amazon/my_measures.py
 sending incremental file list
+./
+deleting amazonFirstIter/__pycache__/my_measures.cpython-36.pyc
+deleting amazonFirstIter/__pycache__/
 deleting amazonFirstIter/output.ipynb
+amazon/
+amazon/README.md
+amazon/_00_split.ipynb
+amazon/_01_train.ipynb
+amazon/_02_test.ipynb
+amazon/_03_submission.ipynb
+amazon/my_measures.py
 amazonFirstIter/
-amazonFirstIter/_03_submission.ipynb
 
-sent 21,245 bytes  received 72 bytes  42,634.00 bytes/sec
-total size is 62,915,741  speedup is 2,951.44
-  0%|          | 0/23 [00:00<?, ?it/s]  9%|▊         | 2/23 [00:02<00:22,  1.06s/it] 17%|█▋        | 4/23 [00:05<00:24,  1.28s/it] 26%|██▌       | 6/23 [00:05<00:14,  1.14it/s] 35%|███▍      | 8/23 [00:58<01:48,  7.26s/it] 39%|███▉      | 9/23 [01:06<01:42,  7.34s/it] 48%|████▊     | 11/23 [01:06<01:12,  6.02s/it] 52%|█████▏    | 12/23 [01:06<01:00,  5.54s/it] 61%|██████    | 14/23 [01:21<00:52,  5.81s/it] 70%|██████▉   | 16/23 [01:22<00:36,  5.15s/it] 78%|███████▊  | 18/23 [01:22<00:22,  4.59s/it] 87%|████████▋ | 20/23 [01:23<00:12,  4.16s/it] 96%|█████████▌| 22/23 [01:23<00:03,  3.81s/it]100%|██████████| 23/23 [01:23<00:00,  3.65s/it]
-Input Notebook:  _03_submission.ipynb
+sent 85,841 bytes  received 268 bytes  172,218.00 bytes/sec
+total size is 63,000,740  speedup is 731.64
+Fix archive (-FF) - salvage what can
+ Found end record (EOCDR) - says expect 3 splits
+Scanning for entries...
+  Found spanning marker - expected as this is split (multi-disk) archive...
+ copying: home/ich/GIT/jobin/minibook/amazon/Amazon.csv  (106289817 bytes)
+	zip warning: entry truncated: home/ich/GIT/jobin/minibook/amazon/Amazon.csv
+	zip warning: expected compressed/stored size 106289817, actual 104857493
+Central Directory found...
+no local entry: home/ich/GIT/jobin/minibook/amazon/Amazon.csv
+EOCDR found ( 3 1432439)...
+	zip warning: zip file empty
+Archive:  ./out.zip
+warning [./out.zip]:  104857596 extra bytes at beginning or within zipfile
+  (attempting to process anyway)
+warning [./out.zip]:  zipfile is empty
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:01<00:10,  1.19s/it]
+Input Notebook:  _00_split.ipynb
 Output Notebook: output.ipynb
-The following paths are ignored by one of your .gitignore files:
-minibook/amazonFirstIter/__pycache__/my_measures.cpython-36.pyc
-Use -f if you really want to add them.
+Traceback (most recent call last):
+  File "/home/eydu/jobin/main.py", line 59, in <module>
+    main()
+  File "/home/eydu/jobin/main.py", line 12, in main
+    'output.ipynb',
+  File "/home/eydu/Desktop/anaconda3/lib/python3.6/site-packages/papermill/execute.py", line 197, in execute_notebook
+    raise_for_execution_errors(nb, output)
+  File "/home/eydu/Desktop/anaconda3/lib/python3.6/site-packages/papermill/execute.py", line 394, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [2]":
+---------------------------------------------------------------------------
+FileNotFoundError                         Traceback (most recent call last)
+<ipython-input-2-c7d479e7f4ea> in <module>()
+----> 1 amazon = pd.read_csv('Amazon.csv')
+      2 print(amazon.shape)
+
+~/Desktop/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py in parser_f(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, escapechar, comment, encoding, dialect, tupleize_cols, error_bad_lines, warn_bad_lines, skipfooter, skip_footer, doublequote, delim_whitespace, as_recarray, compact_ints, use_unsigned, low_memory, buffer_lines, memory_map, float_precision)
+    653                     skip_blank_lines=skip_blank_lines)
+    654 
+--> 655         return _read(filepath_or_buffer, kwds)
+    656 
+    657     parser_f.__name__ = name
+
+~/Desktop/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py in _read(filepath_or_buffer, kwds)
+    403 
+    404     # Create the parser.
+--> 405     parser = TextFileReader(filepath_or_buffer, **kwds)
+    406 
+    407     if chunksize or iterator:
+
+~/Desktop/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py in __init__(self, f, engine, **kwds)
+    762             self.options['has_index_names'] = kwds['has_index_names']
+    763 
+--> 764         self._make_engine(self.engine)
+    765 
+    766     def close(self):
+
+~/Desktop/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py in _make_engine(self, engine)
+    983     def _make_engine(self, engine='c'):
+    984         if engine == 'c':
+--> 985             self._engine = CParserWrapper(self.f, **self.options)
+    986         else:
+    987             if engine == 'python':
+
+~/Desktop/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py in __init__(self, src, **kwds)
+   1603         kwds['allow_leading_cols'] = self.index_col is not False
+   1604 
+-> 1605         self._reader = parsers.TextReader(src, **kwds)
+   1606 
+   1607         # XXX
+
+pandas/_libs/parsers.pyx in pandas._libs.parsers.TextReader.__cinit__ (pandas/_libs/parsers.c:4209)()
+
+pandas/_libs/parsers.pyx in pandas._libs.parsers.TextReader._setup_parser_source (pandas/_libs/parsers.c:8873)()
+
+FileNotFoundError: File b'Amazon.csv' does not exist
+
