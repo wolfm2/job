@@ -1,0 +1,21 @@
+Wed Mar  7 16:40:04 EST 2018
+Doing...
+Updating 5fd72f4..f04f7ee
+Fast-forward
+ minibook/amazon/_00_split.ipynb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+sending incremental file list
+deleting amazon/output.ipynb
+deleting amazon/Amazon.csv
+amazon/
+amazon/_00_split.ipynb
+
+sent 3,513 bytes  received 84 bytes  7,194.00 bytes/sec
+total size is 62,985,366  speedup is 17,510.53
+Amazon.csv
+
+bzip2: (stdin): trailing garbage after EOF ignored
+cat: write error: Broken pipe
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:00<00:01,  5.92it/s] 30%|███       | 3/10 [00:02<00:04,  1.42it/s] 50%|█████     | 5/10 [00:02<00:02,  2.06it/s] 90%|█████████ | 9/10 [00:06<00:00,  1.35it/s]100%|██████████| 10/10 [00:06<00:00,  1.50it/s]
+Input Notebook:  _00_split.ipynb
+Output Notebook: output.ipynb
