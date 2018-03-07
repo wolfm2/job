@@ -1,63 +1,28 @@
-Tue Mar  6 20:23:54 EST 2018
+Wed Mar  7 09:20:21 EST 2018
 Doing...
-Updating 2358113..7217719
+Updating 940cda6..5719100
 Fast-forward
- main.py                              |   2 +-
- minibook/amazon/README.md            |  36 +++
- minibook/amazon/_00_split.ipynb      | 143 +++++++++
- minibook/amazon/_01_train.ipynb      | 586 +++++++++++++++++++++++++++++++++++
- minibook/amazon/_02_test.ipynb       | 509 ++++++++++++++++++++++++++++++
- minibook/amazon/_03_submission.ipynb | 405 ++++++++++++++++++++++++
- minibook/amazon/dataIn.z01           | Bin 0 -> 52428800 bytes
- minibook/amazon/dataIn.z02           | Bin 0 -> 52428800 bytes
- minibook/amazon/dataIn.zip           | Bin 0 -> 1432461 bytes
- minibook/amazon/my_measures.py       |  34 ++
- 10 files changed, 1714 insertions(+), 1 deletion(-)
- create mode 100644 minibook/amazon/README.md
- create mode 100644 minibook/amazon/_00_split.ipynb
- create mode 100644 minibook/amazon/_01_train.ipynb
- create mode 100644 minibook/amazon/_02_test.ipynb
- create mode 100644 minibook/amazon/_03_submission.ipynb
- create mode 100644 minibook/amazon/dataIn.z01
- create mode 100644 minibook/amazon/dataIn.z02
- create mode 100644 minibook/amazon/dataIn.zip
- create mode 100644 minibook/amazon/my_measures.py
+ main.py                   |   2 +-
+ minibook/amazon/dataIn.aa | Bin 50000000 -> 50000000 bytes
+ minibook/amazon/dataIn.ab | Bin 26710182 -> 26708548 bytes
+ 3 files changed, 1 insertion(+), 1 deletion(-)
 sending incremental file list
-./
-deleting amazonFirstIter/__pycache__/my_measures.cpython-36.pyc
-deleting amazonFirstIter/__pycache__/
-deleting amazonFirstIter/output.ipynb
 amazon/
-amazon/README.md
-amazon/_00_split.ipynb
-amazon/_01_train.ipynb
-amazon/_02_test.ipynb
-amazon/_03_submission.ipynb
-amazon/my_measures.py
-amazonFirstIter/
+amazon/dataIn.aa
+amazon/dataIn.ab
+amazon/dataIn.ac
+amazon/output.ipynb
 
-sent 85,841 bytes  received 268 bytes  172,218.00 bytes/sec
-total size is 63,000,740  speedup is 731.64
-Fix archive (-FF) - salvage what can
- Found end record (EOCDR) - says expect 3 splits
-Scanning for entries...
-  Found spanning marker - expected as this is split (multi-disk) archive...
- copying: home/ich/GIT/jobin/minibook/amazon/Amazon.csv  (106289817 bytes)
-	zip warning: entry truncated: home/ich/GIT/jobin/minibook/amazon/Amazon.csv
-	zip warning: expected compressed/stored size 106289817, actual 104857493
-Central Directory found...
-no local entry: home/ich/GIT/jobin/minibook/amazon/Amazon.csv
-EOCDR found ( 3 1432439)...
-	zip warning: zip file empty
-Archive:  ./out.zip
-warning [./out.zip]:  104857596 extra bytes at beginning or within zipfile
-  (attempting to process anyway)
-warning [./out.zip]:  zipfile is empty
-  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:01<00:10,  1.19s/it]
-Input Notebook:  _00_split.ipynb
+sent 83,031,984 bytes  received 98 bytes  55,354,721.33 bytes/sec
+total size is 146,011,616  speedup is 1.76
+Amazon.csv
+
+bzip2: (stdin): trailing garbage after EOF ignored
+cat: write error: Broken pipe
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:01<00:10,  1.18s/it] 30%|███       | 3/10 [00:12<00:28,  4.13s/it] 50%|█████     | 5/10 [00:17<00:17,  3.60s/it] 80%|████████  | 8/10 [00:18<00:04,  2.26s/it]Input Notebook:  _00_split.ipynb
 Output Notebook: output.ipynb
 Traceback (most recent call last):
-  File "/home/eydu/jobin/main.py", line 59, in <module>
+  File "/home/eydu/jobin/main.py", line 67, in <module>
     main()
   File "/home/eydu/jobin/main.py", line 12, in main
     'output.ipynb',
@@ -67,51 +32,35 @@ Traceback (most recent call last):
     raise error
 papermill.exceptions.PapermillExecutionError: 
 ---------------------------------------------------------------------------
-Exception encountered at "In [2]":
+Exception encountered at "In [5]":
 ---------------------------------------------------------------------------
 FileNotFoundError                         Traceback (most recent call last)
-<ipython-input-2-c7d479e7f4ea> in <module>()
-----> 1 amazon = pd.read_csv('Amazon.csv')
-      2 print(amazon.shape)
+<ipython-input-5-bf2cb1d1d43f> in <module>()
+----> 1 raw_data_train.to_csv('/home/eydu/amazon_data/raw_data_train.csv')
+      2 raw_data_test.to_csv('/home/eydu/amazon_data/raw_data_test.csv')
+      3 y_train.to_csv('/home/eydu/amazon_data/y_train.csv')
+      4 y_test.to_csv('/home/eydu/amazon_data/y_test.csv')
 
-~/Desktop/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py in parser_f(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, escapechar, comment, encoding, dialect, tupleize_cols, error_bad_lines, warn_bad_lines, skipfooter, skip_footer, doublequote, delim_whitespace, as_recarray, compact_ints, use_unsigned, low_memory, buffer_lines, memory_map, float_precision)
-    653                     skip_blank_lines=skip_blank_lines)
-    654 
---> 655         return _read(filepath_or_buffer, kwds)
-    656 
-    657     parser_f.__name__ = name
+~/Desktop/anaconda3/lib/python3.6/site-packages/pandas/core/frame.py in to_csv(self, path_or_buf, sep, na_rep, float_format, columns, header, index, index_label, mode, encoding, compression, quoting, quotechar, line_terminator, chunksize, tupleize_cols, date_format, doublequote, escapechar, decimal)
+   1401                                      doublequote=doublequote,
+   1402                                      escapechar=escapechar, decimal=decimal)
+-> 1403         formatter.save()
+   1404 
+   1405         if path_or_buf is None:
 
-~/Desktop/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py in _read(filepath_or_buffer, kwds)
-    403 
-    404     # Create the parser.
---> 405     parser = TextFileReader(filepath_or_buffer, **kwds)
-    406 
-    407     if chunksize or iterator:
+~/Desktop/anaconda3/lib/python3.6/site-packages/pandas/io/formats/format.py in save(self)
+   1575             f, handles = _get_handle(self.path_or_buf, self.mode,
+   1576                                      encoding=self.encoding,
+-> 1577                                      compression=self.compression)
+   1578             close = True
+   1579 
 
-~/Desktop/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py in __init__(self, f, engine, **kwds)
-    762             self.options['has_index_names'] = kwds['has_index_names']
-    763 
---> 764         self._make_engine(self.engine)
-    765 
-    766     def close(self):
+~/Desktop/anaconda3/lib/python3.6/site-packages/pandas/io/common.py in _get_handle(path_or_buf, mode, encoding, compression, memory_map, is_text)
+    383         elif is_text:
+    384             # Python 3 and no explicit encoding
+--> 385             f = open(path_or_buf, mode, errors='replace')
+    386         else:
+    387             # Python 3 and binary mode
 
-~/Desktop/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py in _make_engine(self, engine)
-    983     def _make_engine(self, engine='c'):
-    984         if engine == 'c':
---> 985             self._engine = CParserWrapper(self.f, **self.options)
-    986         else:
-    987             if engine == 'python':
-
-~/Desktop/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py in __init__(self, src, **kwds)
-   1603         kwds['allow_leading_cols'] = self.index_col is not False
-   1604 
--> 1605         self._reader = parsers.TextReader(src, **kwds)
-   1606 
-   1607         # XXX
-
-pandas/_libs/parsers.pyx in pandas._libs.parsers.TextReader.__cinit__ (pandas/_libs/parsers.c:4209)()
-
-pandas/_libs/parsers.pyx in pandas._libs.parsers.TextReader._setup_parser_source (pandas/_libs/parsers.c:8873)()
-
-FileNotFoundError: File b'Amazon.csv' does not exist
+FileNotFoundError: [Errno 2] No such file or directory: '/home/eydu/amazon_data/raw_data_train.csv'
 
