@@ -1,66 +1,19 @@
-Wed Mar  7 09:20:21 EST 2018
+Wed Mar  7 09:32:20 EST 2018
 Doing...
-Updating 940cda6..5719100
+Updating 2a420c6..38bcfce
 Fast-forward
- main.py                   |   2 +-
- minibook/amazon/dataIn.aa | Bin 50000000 -> 50000000 bytes
- minibook/amazon/dataIn.ab | Bin 26710182 -> 26708548 bytes
- 3 files changed, 1 insertion(+), 1 deletion(-)
+ minibook/amazon/_00_split.ipynb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 sending incremental file list
 amazon/
-amazon/dataIn.aa
-amazon/dataIn.ab
-amazon/dataIn.ac
-amazon/output.ipynb
+amazon/_00_split.ipynb
 
-sent 83,031,984 bytes  received 98 bytes  55,354,721.33 bytes/sec
-total size is 146,011,616  speedup is 1.76
+sent 3,644 bytes  received 41 bytes  7,370.00 bytes/sec
+total size is 63,197,271  speedup is 17,149.87
 Amazon.csv
 
 bzip2: (stdin): trailing garbage after EOF ignored
 cat: write error: Broken pipe
-  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:01<00:10,  1.18s/it] 30%|███       | 3/10 [00:12<00:28,  4.13s/it] 50%|█████     | 5/10 [00:17<00:17,  3.60s/it] 80%|████████  | 8/10 [00:18<00:04,  2.26s/it]Input Notebook:  _00_split.ipynb
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:01<00:10,  1.17s/it] 30%|███       | 3/10 [00:15<00:35,  5.08s/it] 50%|█████     | 5/10 [00:20<00:20,  4.06s/it] 80%|████████  | 8/10 [00:20<00:05,  2.55s/it] 90%|█████████ | 9/10 [01:00<00:06,  6.70s/it]100%|██████████| 10/10 [01:00<00:00,  6.03s/it]
+Input Notebook:  _00_split.ipynb
 Output Notebook: output.ipynb
-Traceback (most recent call last):
-  File "/home/eydu/jobin/main.py", line 67, in <module>
-    main()
-  File "/home/eydu/jobin/main.py", line 12, in main
-    'output.ipynb',
-  File "/home/eydu/Desktop/anaconda3/lib/python3.6/site-packages/papermill/execute.py", line 197, in execute_notebook
-    raise_for_execution_errors(nb, output)
-  File "/home/eydu/Desktop/anaconda3/lib/python3.6/site-packages/papermill/execute.py", line 394, in raise_for_execution_errors
-    raise error
-papermill.exceptions.PapermillExecutionError: 
----------------------------------------------------------------------------
-Exception encountered at "In [5]":
----------------------------------------------------------------------------
-FileNotFoundError                         Traceback (most recent call last)
-<ipython-input-5-bf2cb1d1d43f> in <module>()
-----> 1 raw_data_train.to_csv('/home/eydu/amazon_data/raw_data_train.csv')
-      2 raw_data_test.to_csv('/home/eydu/amazon_data/raw_data_test.csv')
-      3 y_train.to_csv('/home/eydu/amazon_data/y_train.csv')
-      4 y_test.to_csv('/home/eydu/amazon_data/y_test.csv')
-
-~/Desktop/anaconda3/lib/python3.6/site-packages/pandas/core/frame.py in to_csv(self, path_or_buf, sep, na_rep, float_format, columns, header, index, index_label, mode, encoding, compression, quoting, quotechar, line_terminator, chunksize, tupleize_cols, date_format, doublequote, escapechar, decimal)
-   1401                                      doublequote=doublequote,
-   1402                                      escapechar=escapechar, decimal=decimal)
--> 1403         formatter.save()
-   1404 
-   1405         if path_or_buf is None:
-
-~/Desktop/anaconda3/lib/python3.6/site-packages/pandas/io/formats/format.py in save(self)
-   1575             f, handles = _get_handle(self.path_or_buf, self.mode,
-   1576                                      encoding=self.encoding,
--> 1577                                      compression=self.compression)
-   1578             close = True
-   1579 
-
-~/Desktop/anaconda3/lib/python3.6/site-packages/pandas/io/common.py in _get_handle(path_or_buf, mode, encoding, compression, memory_map, is_text)
-    383         elif is_text:
-    384             # Python 3 and no explicit encoding
---> 385             f = open(path_or_buf, mode, errors='replace')
-    386         else:
-    387             # Python 3 and binary mode
-
-FileNotFoundError: [Errno 2] No such file or directory: '/home/eydu/amazon_data/raw_data_train.csv'
-
