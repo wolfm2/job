@@ -1,10 +1,12 @@
-Wed Mar  7 22:24:02 EST 2018
+Wed Mar  7 22:28:01 EST 2018
 Doing...
-Updating 744def7..484eda4
+Updating 484eda4..dfc2da8
 Fast-forward
  minibook/amazon/_01_train.ipynb | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 sending incremental file list
+deleting jerb.txt
+./
 deleting amazon/__pycache__/my_measures.cpython-36.pyc
 deleting amazon/__pycache__/
 deleting amazon/transformer.pkl
@@ -21,10 +23,10 @@ deleting amazon/Amazon.csv
 amazon/
 amazon/_01_train.ipynb
 
-sent 29,524 bytes  received 323 bytes  59,694.00 bytes/sec
-total size is 62,985,615  speedup is 2,110.28
+sent 29,532 bytes  received 342 bytes  59,748.00 bytes/sec
+total size is 62,985,616  speedup is 2,108.38
 Amazon.csv
 
 bzip2: (stdin): trailing garbage after EOF ignored
 cat: write error: Broken pipe
-  0%|          | 0/30 [00:00<?, ?it/s]  7%|▋         | 2/30 [00:00<00:03,  7.22it/s]
+  0%|          | 0/30 [00:00<?, ?it/s]  7%|▋         | 2/30 [00:00<00:03,  7.12it/s]
