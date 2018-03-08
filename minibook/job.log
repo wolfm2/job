@@ -1,21 +1,0 @@
-Wed Mar  7 20:05:03 EST 2018
-Doing...
-Updating 0ce8c15..db147c3
-Fast-forward
- minibook/amazon/_01_train.ipynb | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
-sending incremental file list
-deleting amazon/output.ipynb
-deleting amazon/Amazon.csv
-amazon/
-amazon/_01_train.ipynb
-
-sent 29,285 bytes  received 84 bytes  58,738.00 bytes/sec
-total size is 62,985,376  speedup is 2,144.62
-Amazon.csv
-
-bzip2: (stdin): trailing garbage after EOF ignored
-cat: write error: Broken pipe
-  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:00<00:01,  5.97it/s] 30%|███       | 3/10 [00:02<00:04,  1.44it/s] 50%|█████     | 5/10 [00:02<00:02,  2.08it/s] 90%|█████████ | 9/10 [00:06<00:00,  1.31it/s]100%|██████████| 10/10 [00:06<00:00,  1.45it/s]
-Input Notebook:  _00_split.ipynb
-Output Notebook: output.ipynb
