@@ -1,0 +1,37 @@
+Thu Mar  8 10:25:04 EST 2018
+Doing...
+Updating 8106e77..7169371
+Fast-forward
+ minibook/system/runner.ipynb | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+sending incremental file list
+deleting amazon/GridSearch.txt
+deleting system/output.ipynb
+deleting system/out.txt
+amazon/
+system/
+system/runner.ipynb
+
+sent 1,559 bytes  received 110 bytes  3,338.00 bytes/sec
+total size is 62,989,535  speedup is 37,740.88
+  0%|          | 0/1 [00:00<?, ?it/s]
+Input Notebook:  runner.ipynb
+Output Notebook: output.ipynb
+Traceback (most recent call last):
+  File "/home/wolfm2/jobin/main.py", line 68, in <module>
+    main()
+  File "/home/wolfm2/jobin/main.py", line 13, in main
+    'output.ipynb',
+  File "/home/wolfm2/anaconda3/lib/python3.6/site-packages/papermill/execute.py", line 197, in execute_notebook
+    raise_for_execution_errors(nb, output)
+  File "/home/wolfm2/anaconda3/lib/python3.6/site-packages/papermill/execute.py", line 394, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [1]":
+  File "<ipython-input-1-809d87168712>", line 2
+    os.system('killall -s SIGKILL -u wolfm2')
+    ^
+IndentationError: unexpected indent
+
+
