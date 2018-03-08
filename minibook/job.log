@@ -1,3 +1,41 @@
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
+.:
+total 4
+drwxrwxr-x 4 wolfm2 wolfm2 4096 Mar  7 11:47 minibook
+
+./minibook:
+total 12
+drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar  7 21:56 amazon
+drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  7 11:47 amazonFirstIter
+-rw-rw-r-- 1 wolfm2 wolfm2  159 Mar  7 21:58 job.log
+
+./minibook/amazon:
+total 262752
+-rw-rw-r-- 1 wolfm2 wolfm2      2977 Mar  7 16:49 _00_split.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     28993 Mar  7 21:56 _01_train.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     26250 Mar  7 11:47 _02_test.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     20981 Mar  7 11:47 _03_submission.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2 248373493 Mar  6 20:06 Amazon.csv
+-rw-rw-r-- 1 wolfm2 wolfm2       498 Mar  7 21:56 hv.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2   8989765 Mar  7 21:56 job.log
+-rwx------ 1 wolfm2 wolfm2      1437 Mar  7 21:56 job.sh
+-rw-rw-r-- 1 wolfm2 wolfm2   1049694 Mar  7 21:56 lgs.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2      2632 Mar  7 11:47 my_measures.py
+-rw-rw-r-- 1 wolfm2 wolfm2   4195074 Mar  7 21:56 nbs.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2     22543 Mar  7 21:56 output.ipynb
+drwxrwxr-x 2 wolfm2 wolfm2      4096 Mar  7 21:56 __pycache__
+-rw-rw-r-- 1 wolfm2 wolfm2      3534 Mar  7 11:47 README.md
+-rw-rw-r-- 1 wolfm2 wolfm2   3146287 Mar  7 21:56 sc.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2   1049708 Mar  7 21:56 svm.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2  87%|████████▋ | 26/30 [02:31<00:23,  5.82s/it] 90%|█████████ | 27/30 [02:31<00:16,  5.63s/it] 97%|█████████▋| 29/30 [02:32<00:05,  5.24s/it]100%|██████████| 30/30 [02:32<00:00,  5.07s/it]
+Input Notebook:  _01_train.ipynb
+Output Notebook: output.ipynb
+The following paths are ignored by one of your .gitignore files:
+minibook/amazon/__pycache__/my_measures.cpython-36.pyc
+Use -f if you really want to add them.
+_data_test.csv
+-rw-rw-r-- 1 wolfm2 wolfm2  6292015 Mar  7 11:47 sc.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2  4194972 Mar  7 11:47 transformer.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2     8988 Mar  7 11:47 ver.py
