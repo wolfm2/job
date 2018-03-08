@@ -1,42 +1,3 @@
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
-.:
-total 4
-drwxrwxr-x 4 wolfm2 wolfm2 4096 Mar  7 11:47 minibook
-
-./minibook:
-total 12
-drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar  7 20:09 amazon
-drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  7 11:47 amazonFirstIter
--rw-rw-r-- 1 wolfm2 wolfm2  159 Mar  7 20:11 job.log
-
-./minibook/amazon:
-total 253968
--rw-rw-r-- 1 wolfm2 wolfm2      2977 Mar  7 16:49 _00_split.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2     28739 Mar  7 20:05 _01_train.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2     26250 Mar  7 11:47 _02_test.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2     20981 Mar  7 11:47 _03_submission.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 248373493 Mar  6 20:06 Amazon.csv
--rw-rw-r-- 1 wolfm2 wolfm2       498 Mar  7 20:09 hv.pkl
--rw-rw-r-- 1 wolfm2 wolfm2   1049694 Mar  7 20:09 lgs.pkl
--rw-rw-r-- 1 wolfm2 wolfm2      2632 Mar  7 11:47 my_measures.py
--rw-rw-r-- 1 wolfm2 wolfm2   4195074 Mar  7 20:09 nbs.pkl
--rw-rw-r-- 1 wolfm2 wolfm2     21909 M 86%|████████▌ | 25/29 [02:29<00:23,  6.00s/it] 90%|████████▉ | 26/29 [02:30<00:17,  5.78s/it]100%|██████████| 29/29 [02:30<00:00,  5.19s/it]
-Input Notebook:  _01_train.ipynb
-Output Notebook: output.ipynb
-The following paths are ignored by one of your .gitignore files:
-minibook/amazon/__pycache__/my_measures.cpython-36.pyc
-Use -f if you really want to add them.
-s.cpython-36.pyc
-
-./minibook/amazonFirstIter:
-total 61448
--rw-rw-r-- 1 wolfm2 wolfm2    20808 Mar  7 11:47 _03_submission.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2      557 Mar  7 11:47 hv.pkl
--rw-rw-r-- 1 wolfm2 wolfm2  2098273 Mar  7 11:47 lgs.pkl
--rw-rw-r-- 1 wolfm2 wolfm2     2632 Mar  7 11:47 my_measures.py
--rw-rw-r-- 1 wolfm2 wolfm2 50282018 Mar  7 11:47 raw_data_test.csv
--rw-rw-r-- 1 wolfm2 wolfm2  6292015 Mar  7 11:47 sc.pkl
--rw-rw-r-- 1 wolfm2 wolfm2  4194972 Mar  7 11:47 transformer.pkl
--rw-rw-r-- 1 wolfm2 wolfm2     8988 Mar  7 11:47 ver.py
