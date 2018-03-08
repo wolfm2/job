@@ -1,0 +1,16 @@
+Thu Mar  8 09:19:03 EST 2018
+Doing...
+Updating 46ea227..3721f99
+Fast-forward
+ minibook/system/runner.ipynb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+sending incremental file list
+deleting system/output.ipynb
+system/
+system/runner.ipynb
+
+sent 1,447 bytes  received 64 bytes  3,022.00 bytes/sec
+total size is 62,989,428  speedup is 41,687.25
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 40.60it/s]
+Input Notebook:  runner.ipynb
+Output Notebook: output.ipynb
