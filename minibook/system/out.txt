@@ -1,5 +1,5 @@
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root         1  0.0  0.0 185300  4136 ?        Ss   Mar02   0:03 /sbin/init splash
+root         1  0.0  0.0 185300  4152 ?        Ss   Mar02   0:03 /sbin/init splash
 root         2  0.0  0.0      0     0 ?        S    Mar02   0:00 [kthreadd]
 root         4  0.0  0.0      0     0 ?        S<   Mar02   0:00 [kworker/0:0H]
 root         6  0.0  0.0      0     0 ?        S<   Mar02   0:00 [mm_percpu_wq]
@@ -105,7 +105,7 @@ root       260  0.0  0.0      0     0 ?        S<   Mar02   0:00 [kworker/0:1H]
 root       285  0.0  0.0      0     0 ?        S<   Mar02   0:00 [kworker/4:1H]
 root       287  0.0  0.0      0     0 ?        D    Mar02   0:01 [jbd2/nvme0n1p1-]
 root       288  0.0  0.0      0     0 ?        S<   Mar02   0:00 [ext4-rsv-conver]
-root       319  0.0  0.0  43588  6684 ?        Ss   Mar02   0:02 /lib/systemd/systemd-journald
+root       319  0.0  0.0  43588  6972 ?        Ss   Mar02   0:03 /lib/systemd/systemd-journald
 root       324  0.0  0.0      0     0 ?        S<   Mar02   0:00 [kworker/2:1H]
 root       339  0.0  0.0  45816    40 ?        Ss   Mar02   0:00 /lib/systemd/systemd-udevd
 root       340  0.0  0.0      0     0 ?        S<   Mar02   0:00 [cfg80211]
@@ -120,18 +120,18 @@ root       854  0.0  0.0      0     0 ?        S<   Mar02   0:00 [kworker/u25:1]
 avahi      881  0.0  0.0  45096   280 ?        Ss   Mar02   0:11 avahi-daemon: running [d12ml.local]
 root       887  0.0  0.0   4396     0 ?        Ss   Mar02   0:00 /usr/sbin/acpid
 root       897  0.0  0.0 166432   864 ?        Ssl  Mar02   0:41 /usr/sbin/thermald --no-daemon --dbus-enable
-root       899  0.0  0.0  28632  1992 ?        Ss   Mar02   0:00 /lib/systemd/systemd-logind
+root       899  0.0  0.0  28632  2064 ?        Ss   Mar02   0:00 /lib/systemd/systemd-logind
 root       907  0.0  0.0  29008   796 ?        Ss   Mar02   0:00 /usr/sbin/cron -f
 root       911  0.0  0.0  31956     0 ?        Ss   Mar02   0:00 /usr/lib/bluetooth/bluetoothd
 message+   913  0.0  0.0  44412  3104 ?        Ss   Mar02   0:02 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
 avahi      918  0.0  0.0  44784     4 ?        S    Mar02   0:00 avahi-daemon: chroot helper
 root       938  0.0  0.0 451384  4804 ?        Ssl  Mar02   0:01 /usr/sbin/NetworkManager --no-daemon
 syslog     939  0.0  0.0 256396   352 ?        Ssl  Mar02   0:00 /usr/sbin/rsyslogd -n
-root       944  0.0  0.0 286948  2476 ?        Ssl  Mar02   0:06 /usr/lib/accountsservice/accounts-daemon
+root       944  0.0  0.0 286948  2500 ?        Ssl  Mar02   0:06 /usr/lib/accountsservice/accounts-daemon
 root       946  0.0  0.0 767648  4644 ?        Ssl  Mar02   0:47 /usr/lib/snapd/snapd
 root       947  0.0  0.0 413648  1972 ?        Ssl  Mar02   0:00 /usr/sbin/ModemManager
 root       992  0.0  0.0      0     0 ?        S<   Mar02   0:00 [kworker/3:1H]
-root       993  0.0  0.0 292904  5292 ?        Ssl  Mar02   0:01 /usr/lib/policykit-1/polkitd --no-debug
+root       993  0.0  0.0 292904  5296 ?        Ssl  Mar02   0:01 /usr/lib/policykit-1/polkitd --no-debug
 root       994  0.0  0.0  19584   160 ?        Ss   Mar02   1:41 /usr/sbin/irqbalance --pid=/var/run/irqbalance.pid
 root      1000  0.0  0.0 287744  2368 ?        SLsl Mar02   0:00 /usr/sbin/lightdm
 root      1036  0.0  0.0  65508   772 ?        Ss   Mar02   0:00 /usr/sbin/sshd -D
@@ -170,7 +170,7 @@ akkaa949 11505  0.0  0.0  86344     4 ?        Ss   Mar05   0:00 /usr/lib/x86_64
 akkaa949 11557  0.0  0.0 521836     0 ?        Ssl  Mar05   0:00 /usr/lib/x86_64-linux-gnu/bamf/bamfdaemon
 akkaa949 11564  0.0  0.0  32792   720 ?        S    Mar05   0:01 upstart-dbus-bridge --daemon --session --user --bus-name session
 akkaa949 11566  0.0  0.0  41416     0 ?        S    Mar05   0:00 upstart-file-bridge --daemon --user
-akkaa949 11568  0.0  0.0  32792   140 ?        S    Mar05   0:00 upstart-dbus-bridge --daemon --system --user --bus-name system
+akkaa949 11568  0.0  0.0  32792  1160 ?        S    Mar05   0:00 upstart-dbus-bridge --daemon --system --user --bus-name system
 akkaa949 11570  0.0  0.0 356060     4 ?        Ssl  Mar05   0:00 /usr/bin/ibus-daemon --daemonize --xim --address unix:tmpdir=/tmp/ibus
 akkaa949 11579  0.0  0.0 274416     4 ?        Sl   Mar05   0:00 /usr/lib/gvfs/gvfsd
 akkaa949 11586  0.0  0.0 417800     0 ?        Sl   Mar05   0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1004/gvfs -f -o big_writes
@@ -180,11 +180,11 @@ akkaa949 11599  0.0  0.0 427624     0 ?        Sl   Mar05   0:00 /usr/lib/ibus/i
 akkaa949 11611  0.0  0.0 199456     0 ?        Sl   Mar05   0:00 /usr/lib/ibus/ibus-engine-simple
 akkaa949 11624  0.0  0.0 166536  1700 ?        Ss   Mar05   0:05 gpg-agent --homedir /home/akkaa949/.gnupg --use-standard-socket --daemon
 akkaa949 11634  0.0  0.0 656728     0 ?        Ssl  Mar05   0:00 /usr/lib/x86_64-linux-gnu/hud/hud-service
-akkaa949 11636  0.0  0.0 927888  5840 ?        Ssl  Mar05   0:03 /usr/lib/unity-settings-daemon/unity-settings-daemon
+akkaa949 11636  0.0  0.0 927888  5884 ?        Ssl  Mar05   0:03 /usr/lib/unity-settings-daemon/unity-settings-daemon
 akkaa949 11644  0.0  0.0 346960     0 ?        Ssl  Mar05   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately
 akkaa949 11646  0.0  0.0 632008  3416 ?        Ssl  Mar05   0:00 /usr/lib/gnome-session/gnome-session-binary --session=ubuntu
 akkaa949 11656  0.0  0.0  42892     4 ?        S    Mar05   0:00 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
-akkaa949 11658  0.0  0.0 563276  8960 ?        Ssl  Mar05   0:09 /usr/lib/x86_64-linux-gnu/unity/unity-panel-service
+akkaa949 11658  0.0  0.0 563276  8972 ?        Ssl  Mar05   0:09 /usr/lib/x86_64-linux-gnu/unity/unity-panel-service
 akkaa949 11665  0.0  0.0 206964     0 ?        Sl   Mar05   0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
 akkaa949 11684  0.0  0.0 363380  3812 ?        Ssl  Mar05   0:00 /usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
 akkaa949 11685  0.0  0.0 342344     0 ?        Ssl  Mar05   0:00 /usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
@@ -199,8 +199,8 @@ akkaa949 11734  0.0  0.0 1177344    0 ?        Sl   Mar05   0:00 /usr/lib/evolut
 akkaa949 11755  0.0  0.0 508888  1072 ?        S<l  Mar05   0:00 /usr/bin/pulseaudio --start --log-target=syslog
 akkaa949 11767  0.0  0.0 178660     4 ?        Sl   Mar05   0:00 /usr/lib/dconf/dconf-service
 akkaa949 11788  0.0  0.0 862960     4 ?        Sl   Mar05   0:00 /usr/lib/evolution/evolution-calendar-factory
-akkaa949 11800  0.4  0.1 1475560 43448 ?       Ssl  Mar05  18:15 compiz
-akkaa949 11813  0.0  0.0 881520  1768 ?        Sl   Mar05   0:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory contacts --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx11788x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/11788/2
+akkaa949 11800  0.4  0.1 1475560 43624 ?       Ssl  Mar05  18:15 compiz
+akkaa949 11813  0.0  0.0 881520  1896 ?        Sl   Mar05   0:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory contacts --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx11788x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/11788/2
 akkaa949 11823  0.0  0.0 690588     4 ?        Sl   Mar05   0:00 /usr/lib/evolution/evolution-addressbook-factory
 akkaa949 11825  0.0  0.0 865768  2228 ?        Sl   Mar05   0:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory local --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx11788x3 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/11788/3
 akkaa949 11832  0.0  0.0 905320  2192 ?        Sl   Mar05   0:00 /usr/lib/evolution/evolution-addressbook-factory-subprocess --factory local --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx11823x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/11823/2
@@ -211,9 +211,9 @@ akkaa949 11878  0.0  0.0 259636     0 ?        Sl   Mar05   0:00 /usr/lib/gvfs/g
 akkaa949 11883  0.0  0.0 257528     0 ?        Sl   Mar05   0:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
 akkaa949 11893  0.0  0.0 746740     4 ?        Sl   Mar05   0:00 /usr/bin/nautilus --gapplication-service
 akkaa949 11899  0.0  0.0 361484  1920 ?        Sl   Mar05   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.5 /org/gtk/gvfs/exec_spaw/0
-akkaa949 11931  0.0  0.0 429324  2124 ?        Sl   Mar05   0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+akkaa949 11931  0.0  0.0 429324  2588 ?        Sl   Mar05   0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 akkaa949 11934  0.0  0.0 589412  4348 ?        Sl   Mar05   0:00 nm-applet
-akkaa949 11935  0.0  0.0 1366860 1840 ?        SLl  Mar05   0:05 /usr/bin/gnome-software --gapplication-service
+akkaa949 11935  0.0  0.0 1366860 3536 ?        SLl  Mar05   0:05 /usr/bin/gnome-software --gapplication-service
 akkaa949 11940  0.0  0.0 576840     0 ?        Sl   Mar05   0:00 /usr/lib/unity-settings-daemon/unity-fallback-mount-helper
 akkaa949 12004  0.0  0.0 644716     0 ?        Sl   Mar05   0:00 /usr/lib/x86_64-linux-gnu/unity-scope-home/unity-scope-home
 akkaa949 12015  0.0  0.0 649036    28 ?        Sl   Mar05   0:03 /usr/bin/unity-scope-loader applications/applications.scope applications/scopes.scope commands.scope
@@ -225,7 +225,7 @@ akkaa949 12046  0.0  0.0 512208    68 ?        Sl   Mar05   0:02 zeitgeist-datah
 akkaa949 12159  0.0  0.0 449064    68 ?        Sl   Mar05   0:02 update-notifier
 akkaa949 12219  0.0  0.0 441168  1788 ?        Sl   Mar05   0:00 /usr/lib/x86_64-linux-gnu/deja-dup/deja-dup-monitor
 root     12294  0.0  0.0      0     0 ?        S    Mar05   0:00 [kworker/0:1]
-akkaa949 12305  0.0  0.0 549828  7844 ?        Ssl  Mar05   0:07 /usr/lib/x86_64-linux-gnu/unity/unity-panel-service --lockscreen-mode
+akkaa949 12305  0.0  0.0 549828  8796 ?        Ssl  Mar05   0:07 /usr/lib/x86_64-linux-gnu/unity/unity-panel-service --lockscreen-mode
 root     12987  0.0  0.0      0     0 ?        S    Mar07   0:00 [kworker/0:0]
 root     16524  0.0  0.0      0     0 ?        S    Mar07   0:00 [kworker/4:2]
 root     20597  0.0  0.0      0     0 ?        S    06:44   0:00 [kworker/3:1]
@@ -254,17 +254,27 @@ root     29083  0.0  0.0  52312  2880 ?        S    09:23   0:00 /usr/sbin/CRON 
 wolfm2   29084  0.0  0.0   4504   784 ?        Ss   09:23   0:00 /bin/sh -c /home/wolfm2/job.sh
 wolfm2   29085  0.0  0.0  12536  2936 ?        S    09:23   0:00 /bin/bash /home/wolfm2/job.sh
 wolfm2   29110  0.1  0.3 715352 107756 ?       Sl   09:23   0:01 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2   29132  100 21.3 8432676 7018400 ?     Rsl  09:23  13:56 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpjbefi7dc.json
-root     29678  0.0  0.0  94924  6912 ?        Ss   09:34   0:00 sshd: pschmitt [priv]
-pschmitt 29680  0.0  0.0  45276  4524 ?        Ss   09:34   0:00 /lib/systemd/systemd --user
-pschmitt 29681  0.0  0.0 210844  1708 ?        S    09:34   0:00 (sd-pam)
-pschmitt 29729  0.0  0.0  94924  3380 ?        S    09:34   0:00 sshd: pschmitt@pts/2
-pschmitt 29730  0.0  0.0  22648  5140 pts/2    Ss+  09:34   0:00 -bash
+wolfm2   29132  100 21.2 8386348 6972200 ?     Rsl  09:23  18:01 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpjbefi7dc.json
 root     29796  0.0  0.0      0     0 ?        S    09:35   0:00 [kworker/u24:1]
-root     29845  0.0  0.0  52312  2880 ?        S    09:37   0:00 /usr/sbin/CRON -f
-wolfm2   29846  0.0  0.0   4504   740 ?        Ss   09:37   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2   29847  0.0  0.0  12536  2920 ?        S    09:37   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2   29872 82.0  0.3 714820 106992 ?       Sl   09:37   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2   29887 51.0  0.1 660428 55616 ?        Ssl  09:37   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp4r10ba75.json
-wolfm2   29905  0.0  0.0   4504   752 ?        S    09:37   0:00 sh -c ps aux > out.txt
-wolfm2   29906  0.0  0.0  37364  3256 ?        R    09:37   0:00 ps aux
+root     30082  0.0  0.0      0     0 ?        S    09:38   0:00 [kworker/8:2]
+root     30084  0.0  0.0      0     0 ?        S    09:38   0:00 [kworker/11:1]
+root     30086  0.0  0.0      0     0 ?        S    09:38   0:00 [kworker/9:0]
+root     30087  0.0  0.0      0     0 ?        S    09:38   0:00 [kworker/4:1]
+root     30088  0.0  0.0      0     0 ?        S    09:38   0:00 [kworker/2:0]
+pschmitt 30141  0.0  0.0  45276  4616 ?        Ss   09:39   0:00 /lib/systemd/systemd --user
+pschmitt 30142  0.0  0.0 210844  1720 ?        S    09:39   0:00 (sd-pam)
+root     30170  0.0  0.0  94924  6928 ?        Ss   09:39   0:00 sshd: pschmitt [priv]
+pschmitt 30195  0.0  0.0  94924  3308 ?        S    09:39   0:00 sshd: pschmitt@pts/2
+pschmitt 30196  0.0  0.0  22720  5352 pts/2    Ss+  09:39   0:00 -bash
+root     30257  0.0  0.0      0     0 ?        S    09:40   0:00 [kworker/7:0]
+root     30258  0.0  0.0      0     0 ?        S    09:40   0:00 [kworker/10:0]
+root     30259  0.0  0.0  94924  6768 ?        Ss   09:40   0:00 sshd: pschmitt [priv]
+pschmitt 30284  3.7  0.0  94924  4156 ?        S    09:40   0:00 sshd: pschmitt@notty
+pschmitt 30285  2.4  0.0  12868  1828 ?        Ss   09:40   0:00 scp -r -t /home/pschmitt/Downloads
+root     30287  0.0  0.0  52312  2880 ?        S    09:41   0:00 /usr/sbin/CRON -f
+wolfm2   30288  0.0  0.0   4504   780 ?        Ss   09:41   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2   30289  0.0  0.0  12536  2928 ?        S    09:41   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2   30314 42.0  0.3 714824 107252 ?       Sl   09:41   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2   30329 53.0  0.1 660428 55552 ?        Ssl  09:41   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpt0fdpclk.json
+wolfm2   30347  0.0  0.0   4504   788 ?        S    09:41   0:00 sh -c ps aux > out.txt
+wolfm2   30348  0.0  0.0  37364  3300 ?        R    09:41   0:00 ps aux
