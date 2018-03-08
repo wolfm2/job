@@ -1,3 +1,25 @@
-The following paths are ignored by one of your .gitignore files:
-minibook/amazon/__pycache__/my_measures.cpython-36.pyc
-Use -f if you really want to add them.
+Thu Mar  8 09:37:02 EST 2018
+Doing...
+Updating acb06f1..7756074
+Fast-forward
+ main.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+sending incremental file list
+deleting amazon/__pycache__/my_measures.cpython-36.pyc
+deleting amazon/__pycache__/
+deleting amazon/transformer.pkl
+deleting amazon/svm.pkl
+deleting amazon/sc.pkl
+deleting amazon/output.ipynb
+deleting amazon/nbs.pkl
+deleting amazon/lgs.pkl
+deleting amazon/job.sh
+deleting amazon/hv.pkl
+deleting amazon/Amazon.csv
+amazon/
+
+sent 561 bytes  received 265 bytes  1,652.00 bytes/sec
+total size is 62,989,428  speedup is 76,258.39
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 44.81it/s]
+Input Notebook:  runner.ipynb
+Output Notebook: output.ipynb
