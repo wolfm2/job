@@ -1,3 +1,42 @@
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
+.:
+total 4
+drwxrwxr-x 4 wolfm2 wolfm2 4096 Mar  7 11:47 minibook
+
+./minibook:
+total 12
+drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar  7 21:53 amazon
+drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  7 11:47 amazonFirstIter
+-rw-rw-r-- 1 wolfm2 wolfm2  159 Mar  7 21:55 job.log
+
+./minibook/amazon:
+total 253972
+-rw-rw-r-- 1 wolfm2 wolfm2      2977 Mar  7 16:49 _00_split.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     29005 Mar  7 21:53 _01_train.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     26250 Mar  7 11:47 _02_test.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     20981 Mar  7 11:47 _03_submission.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2 248373493 Mar  6 20:06 Amazon.csv
+-rw-rw-r-- 1 wolfm2 wolfm2       498 Mar  7 21:53 hv.pkl
+-rwx------ 1 wolfm2 wolfm2      1437 Mar  7 21:53 job.sh
+-rw-rw-r-- 1 wolfm2 wolfm2   1049694 Mar  7 21:53 lgs.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2      2632 Mar  7 11:47 my_measures.py
+-rw-rw-r-- 1 wolfm2 wolfm2   4195074 Mar  7 21:53 nbs.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2     22559 Mar  7 21:53 output.ipynb
+drwxrwxr-x 2 wolfm2 wolfm2      4096 Mar  7 21:53 __pycache__
+-rw-rw-r-- 1 wolfm2 wolfm2      3534 Mar  7 11:47 README.md
+-rw-rw-r-- 1 wolfm2 wolfm2   3146287 Mar  7 21:53 sc.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2   1049708 Mar  7 21:53 svm.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2   2097820 Mar  7 21:53 transformer.pkl
+
+./minibook/amazon/__pycache__:
+total 4
+-rw-rw-r-- 1 wolfm2 wolfm2 2043 Mar  7 21:53 my_measu 87%|████████▋ | 26/30 [02:32<00:23,  5.87s/it] 90%|█████████ | 27/30 [02:33<00:17,  5.67s/it] 97%|█████████▋| 29/30 [02:33<00:05,  5.28s/it]100%|██████████| 30/30 [02:33<00:00,  5.10s/it]
+Input Notebook:  _01_train.ipynb
+Output Notebook: output.ipynb
+The following paths are ignored by one of your .gitignore files:
+minibook/amazon/__pycache__/my_measures.cpython-36.pyc
+Use -f if you really want to add them.
+pkl
+-rw-rw-r-- 1 wolfm2 wolfm2     8988 Mar  7 11:47 ver.py
