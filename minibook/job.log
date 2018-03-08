@@ -1,3 +1,53 @@
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
+.:
+total 4
+drwxrwxr-x 5 wolfm2 wolfm2 4096 Mar  8 08:59 minibook
+
+./minibook:
+total 16
+drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar  8 11:19 amazon
+drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  7 11:47 amazonFirstIter
+-rw-rw-r-- 1 wolfm2 wolfm2  159 Mar  8 15:54 job.log
+drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  8 10:34 system
+
+./minibook/amazon:
+total 295980
+-rw-rw-r-- 1 wolfm2 wolfm2      2977 Mar  7 16:49 _00_split.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     31579 Mar  8 11:04 _01_train.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     26250 Mar  7 11:47 _02_test.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     20981 Mar  7 11:47 _03_submission.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2 248373493 Mar  6 20:06 Amazon.csv
+-rw-rw-r-- 1 wolfm2 wolfm2      9417 Mar  8 12:43 GridSearch.txt
+-rw-rw-r-- 1 wolfm2 wolfm2       518 Mar  8 11:04 hv.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2       510 Mar  8 10:39 job.log
+-rw-rw-r-- 1 wolfm2 wolfm2   4195422 Mar  8 11:05 lgs.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2      2632 Mar  7 11:47 my_measures.py
+-rw-rw-r-- 1 wolfm2 wolfm2  16777986 Mar  8 11:05 nbs.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2     26471 Mar  8 11:19 output.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2   4195441 Mar  8 11:19 prc.pkl
+drwxrwxr-x 2 wolfm2 wolf 94%|█████████▎| 29/31 [4:49:49<19:59, 599.64s/it]100%|██████████| 31/31 [4:49:49<00:00, 560.95s/it]
+Input Notebook:  _01_train.ipynb
+Output Notebook: output.ipynb
+The following paths are ignored by one of your .gitignore files:
+minibook/amazon/__pycache__/my_measures.cpython-36.pyc
+Use -f if you really want to add them.
+__:
+total 4
+-rw-rw-r-- 1 wolfm2 wolfm2 2043 Mar  8 11:05 my_measures.cpython-36.pyc
+
+./minibook/amazonFirstIter:
+total 61448
+-rw-rw-r-- 1 wolfm2 wolfm2    20808 Mar  7 11:47 _03_submission.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2      557 Mar  7 11:47 hv.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2  2098273 Mar  7 11:47 lgs.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2     2632 Mar  7 11:47 my_measures.py
+-rw-rw-r-- 1 wolfm2 wolfm2 50282018 Mar  7 11:47 raw_data_test.csv
+-rw-rw-r-- 1 wolfm2 wolfm2  6292015 Mar  7 11:47 sc.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2  4194972 Mar  7 11:47 transformer.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2     8988 Mar  7 11:47 ver.py
+
+./minibook/system:
+total 4
+-rw-rw-r-- 1 wolfm2 wolfm2 945 Mar  8 10:34 runner.ipynb
