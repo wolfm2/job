@@ -275,3 +275,6 @@ root     31960  0.0  0.0 274812  8988 ?        Ssl  07:35   0:00 /usr/sbin/cups-
 lp       31964  0.0  0.0  81244  5680 ?        S    07:35   0:00 /usr/lib/cups/notifier/dbus dbus://
 root     31966  0.0  0.0      0     0 ?        S    07:35   0:00 [kworker/1:0]
 root     32338  0.0  0.0      0     0 ?        S    07:40   0:00 [kworker/0:0]
+Pushing...
+To ssh://git@github.com/wolfm2/jobout.git
+   ab8fcc6..1d91864  master -> master
