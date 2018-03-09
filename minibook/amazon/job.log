@@ -1,23 +1,27 @@
 
-Fri Mar  9 17:20:04 EST 2018
+Fri Mar  9 17:55:02 EST 2018
 Doing...
-Updating dc14e7c..98c7d88
+Updating 98c7d88..e951774
 Fast-forward
- minibook/amazon/_01_train.ipynb | 30 +++++++++++++-----------------
- 1 file changed, 13 insertions(+), 17 deletions(-)
+ minibook/amazon/_01_train.ipynb | 37 +++++++++++++++++++++++--------------
+ 1 file changed, 23 insertions(+), 14 deletions(-)
 sending incremental file list
+deleting __pycache__/my_measures.cpython-36.pyc
+deleting __pycache__/
 deleting transformer.pkl
+deleting sc.pkl
 deleting output.ipynb
 deleting job.log
 deleting hv.pkl
+deleting GridSearch.txt
 deleting Amazon.csv
 ./
 _01_train.ipynb
 
-sent 33,515 bytes  received 108 bytes  67,246.00 bytes/sec
-total size is 121,213  speedup is 3.61
+sent 32,411 bytes  received 194 bytes  65,210.00 bytes/sec
+total size is 120,115  speedup is 3.68
 Amazon.csv
 
 bzip2: (stdin): trailing garbage after EOF ignored
 cat: write error: Broken pipe
-  0%|          | 0/31 [00:00<?, ?it/s]  6%|▋         | 2/31 [00:00<00:04,  7.02it/s] 16%|█▌        | 5/31 [00:01<00:09,  2.67it/s] 29%|██▉       | 9/31 [00:02<00:05,  4.30it/s] 32%|███▏      | 10/31 [04:46<10:02, 28.70s/it] 39%|███▊      | 12/31 [05:13<08:17, 26.16s/it] 48%|████▊     | 15/31 [05:14<05:34, 20.94s/it] 55%|█████▍    | 17/31 [05:41<04:41, 20.11s/it] 61%|██████▏   | 19/31 [05:46<03:38, 18.21s/it] 90%|█████████ | 28/31 [05:46<00:37, 12.36s/it] 90%|█████████ | 28/31 [06:00<00:38, 12.87s/it]
+  0%|          | 0/31 [00:00<?, ?it/s]  6%|▋         | 2/31 [00:00<00:06,  4.66it/s]
