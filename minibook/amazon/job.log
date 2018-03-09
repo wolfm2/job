@@ -312,3 +312,4 @@ Fri Mar  9 16:33:58 EST 2018
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
+Pushing...
