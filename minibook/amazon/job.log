@@ -1,16 +1,21 @@
-Thu Mar  8 10:39:03 EST 2018
-Doing...
-Updating e80b5d6..a626aed
-Fast-forward
- main.py | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
-sending incremental file list
 
-sent 558 bytes  received 15 bytes  1,146.00 bytes/sec
-total size is 62,989,534  speedup is 109,929.38
+Fri Mar  9 14:23:02 EST 2018
+Doing...
+Updating 5f31be0..10e4449
+Fast-forward
+ main.py                           |   5 +-
+ minibook/amazon/_01_train.0.ipynb | 662 ++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 665 insertions(+), 2 deletions(-)
+ create mode 100644 minibook/amazon/_01_train.0.ipynb
+sending incremental file list
+deleting job.log
+./
+_01_train.0.ipynb
+
+sent 31,954 bytes  received 49 bytes  64,006.00 bytes/sec
+total size is 119,601  speedup is 3.74
 Amazon.csv
 
 bzip2: (stdin): trailing garbage after EOF ignored
 cat: write error: Broken pipe
-  0%|          | 0/33 [00:00<?, ?it/s]  6%|▌         | 2/33 [00:00<00:04,  6.76it/s]test
- 15%|█▌        | 5/33 [00:01<00:11,  2.51it/s]
+  0%|          | 0/31 [00:00<?, ?it/s]  6%|▋         | 2/31 [00:00<00:04,  6.96it/s] 16%|█▌        | 5/31 [00:01<00:09,  2.61it/s] 32%|███▏      | 10/31 [00:34<01:12,  3.46s/it] 39%|███▊      | 12/31 [00:44<01:09,  3.68s/it] 48%|████▊     | 15/31 [00:44<00:47,  2.95s/it]
