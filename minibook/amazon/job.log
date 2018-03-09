@@ -354,3 +354,6 @@ lp       31964  0.0  0.0  81244  5680 ?        S    07:35   0:00 /usr/lib/cups/n
 root     31966  0.0  0.0      0     0 ?        S    07:35   0:00 [kworker/1:0]
 root     32338  0.0  0.0      0     0 ?        S    07:40   0:01 [kworker/0:0]
 Fri Mar  9 16:42:27 EST 2018
+Pushing...
+To ssh://git@github.com/wolfm2/jobout.git
+   0958b4b..222e4f4  master -> master
