@@ -156,7 +156,7 @@ root      2015  0.0  0.0 377848  9560 ?        Ssl  Mar08   0:00 /usr/lib/udisks
 root      2154  0.0  0.1 506976 34900 ?        Ssl  Mar08   0:00 /usr/lib/x86_64-linux-gnu/fwupd/fwupd
 root      2604  0.0  0.0 166536   652 ?        Ss   Mar08   0:02 gpg-agent --homedir /var/lib/fwupd/gnupg --use-standard-socket --daemon
 root      3514  0.0  0.1 257592 47488 tty7     Ssl+ Mar08   0:01 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
-root      3516  0.5  0.0      0     0 ?        S    Mar08   9:25 [irq/152-nvidia]
+root      3516  0.5  0.0      0     0 ?        S    Mar08   9:27 [irq/152-nvidia]
 root      3517  0.0  0.0      0     0 ?        S    Mar08   0:00 [nvidia]
 nvidia-+  3520  0.0  0.0  17140  1584 ?        Ss   Mar08   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
 root      3521  0.0  0.0      0     0 ?        S    Mar08   0:00 [kworker/10:0]
@@ -194,7 +194,7 @@ root      3972  0.0  0.0      0     0 ?        S    Mar08   0:00 [kworker/2:0]
 root      7631  0.0  0.0      0     0 ?        S    10:13   0:00 [kworker/8:1]
 root      9515  0.0  0.0  94900  6840 ?        Ss   10:52   0:00 sshd: wolfm2 [priv]
 wolfm2    9562  0.0  0.0  94900  3324 ?        S    10:52   0:00 sshd: wolfm2@pts/8
-wolfm2    9563  0.0  0.0  22672  5472 pts/8    Ss   10:52   0:00 -bash
+wolfm2    9563  0.0  0.0  22692  5492 pts/8    Ss   10:52   0:00 -bash
 root     10229  0.0  0.0      0     0 ?        S    Mar08   0:00 [kworker/5:0]
 root     10582  0.0  0.0      0     0 ?        S    11:12   0:00 [kworker/1:2]
 root     10583  0.0  0.0      0     0 ?        S    11:12   0:00 [kworker/10:2]
@@ -202,17 +202,25 @@ root     10928  0.0  0.0      0     0 ?        S    11:19   0:00 [kworker/11:1]
 root     17648  0.0  0.0      0     0 ?        S    13:36   0:00 [kworker/u24:1]
 root     18223  0.0  0.0      0     0 ?        S    13:45   0:00 [kworker/6:1]
 root     18225  0.0  0.0      0     0 ?        S    13:45   0:00 [kworker/9:0]
-root     18412  0.0  0.0      0     0 ?        S    13:50   0:00 [kworker/u24:0]
-wolfm2   18524  0.0  0.0  14172  2896 pts/8    S+   13:53   0:00 watch ps -aux | grep wolfm2
-root     18535  0.0  0.0  52312  2968 ?        S    13:54   0:00 /usr/sbin/CRON -f
-wolfm2   18536  0.0  0.0   4504   744 ?        Ss   13:54   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2   18537  0.0  0.0  12544  2972 ?        S    13:54   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2   18570  0.6  0.3 714828 106944 ?       Sl   13:54   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2   18587  0.4  0.1 660424 55536 ?        Ssl  13:54   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmphm3zhpu6.json
-wolfm2   18991  0.0  0.0   4504   744 ?        S    13:56   0:00 sh -c ps aux > out.txt
-wolfm2   18992  0.0  0.0  37364  3296 ?        R    13:56   0:00 ps aux
 root     19510  0.0  0.0      0     0 ?        S    Mar08   0:00 [kworker/3:1]
 root     19519  0.0  0.0      0     0 ?        S    Mar08   0:00 [kworker/9:1]
+root     19606  0.0  0.0  94900  6992 ?        Ss   14:06   0:00 sshd: wolfm2 [priv]
+wolfm2   19654  0.0  0.0  94900  4036 ?        S    14:06   0:00 sshd: wolfm2@notty
+wolfm2   19657  0.0  0.0  12880  1928 ?        Ss   14:06   0:00 /usr/lib/openssh/sftp-server
+root     19658  0.0  0.0  94900  6980 ?        Ss   14:06   0:00 sshd: wolfm2 [priv]
+wolfm2   19684  0.0  0.0  94900  3288 ?        S    14:06   0:00 sshd: wolfm2@notty
+wolfm2   19687  0.0  0.0  12880  1876 ?        Ss   14:06   0:00 /usr/lib/openssh/sftp-server
+root     19727  0.0  0.0      0     0 ?        S    14:07   0:00 [kworker/u24:2]
+root     20212  0.0  0.0  52312  2968 ?        S    14:16   0:00 /usr/sbin/CRON -f
+wolfm2   20213  0.0  0.0   4504   776 ?        Ss   14:16   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2   20214  0.0  0.0  12544  3024 ?        S    14:16   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2   20238 37.0  0.3 714824 107388 ?       Sl   14:16   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2   20259 49.0  0.1 660432 55848 ?        Ssl  14:16   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpk9mop3e9.json
+wolfm2   20263  0.0  0.0  20308  3508 pts/8    S+   14:16   0:00 git pull
+wolfm2   20264  0.0  0.0  20316  3404 pts/8    S+   14:16   0:00 git fetch --update-head-ok
+wolfm2   20265  2.0  0.0 192284 27500 pts/8    S+   14:16   0:00 git-remote-https origin https://github.com/wolfm2/jobin.git
+wolfm2   20281  0.0  0.0   4504   744 ?        S    14:16   0:00 sh -c ps aux > tst.txt
+wolfm2   20282  0.0  0.0  37364  3308 ?        R    14:16   0:00 ps aux
 root     23040  0.0  0.0      0     0 ?        S    Mar08   0:01 [kworker/0:1]
 root     23995  0.0  0.0      0     0 ?        S    Mar08   0:00 [kworker/2:2]
 root     23996  0.0  0.0      0     0 ?        S    Mar08   0:00 [kworker/4:1]
