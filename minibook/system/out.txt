@@ -1,59 +1,3 @@
-
-Fri Mar  9 13:54:03 EST 2018
-Doing...
-Updating 5b5a568..10548c7
-Fast-forward
- minibook/system/runner.ipynb | 2 ++
- 1 file changed, 2 insertions(+)
-sending incremental file list
-./
-deleting system/output.ipynb
-deleting system/out.txt
-system/
-system/runner.ipynb
-
-sent 1,608 bytes  received 89 bytes  3,394.00 bytes/sec
-total size is 62,989,209  speedup is 37,117.98
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [02:00<00:00, 120.14s/it]
-Input Notebook:  runner.ipynb
-Output Notebook: output.ipynb
-.:
-total 4
-drwxrwxr-x 5 wolfm2 wolfm2 4096 Mar  9 13:54 minibook
-
-./minibook:
-total 12
-drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  9 13:31 amazon
-drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  7 11:47 amazonFirstIter
-drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  9 13:56 system
-
-./minibook/amazon:
-total 100
--rw-rw-r-- 1 wolfm2 wolfm2  2978 Mar  9 13:31 _00_split.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 31579 Mar  8 11:04 _01_train.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 26250 Mar  7 11:47 _02_test.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 20981 Mar  7 11:47 _03_submission.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2   510 Mar  8 10:39 job.log
--rw-rw-r-- 1 wolfm2 wolfm2  2632 Mar  7 11:47 my_measures.py
--rw-rw-r-- 1 wolfm2 wolfm2  3534 Mar  7 11:47 README.md
-
-./minibook/amazonFirstIter:
-total 61448
--rw-rw-r-- 1 wolfm2 wolfm2    20808 Mar  7 11:47 _03_submission.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2      557 Mar  7 11:47 hv.pkl
--rw-rw-r-- 1 wolfm2 wolfm2  2098273 Mar  7 11:47 lgs.pkl
--rw-rw-r-- 1 wolfm2 wolfm2     2632 Mar  7 11:47 my_measures.py
--rw-rw-r-- 1 wolfm2 wolfm2 50282018 Mar  7 11:47 raw_data_test.csv
--rw-rw-r-- 1 wolfm2 wolfm2  6292015 Mar  7 11:47 sc.pkl
--rw-rw-r-- 1 wolfm2 wolfm2  4194972 Mar  7 11:47 transformer.pkl
--rw-rw-r-- 1 wolfm2 wolfm2     8988 Mar  7 11:47 ver.py
-
-./minibook/system:
-total 32
--rw-rw-r-- 1 wolfm2 wolfm2   532 Mar  9 13:56 job.log
--rw-rw-r-- 1 wolfm2 wolfm2  1489 Mar  9 13:56 output.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 20129 Mar  9 13:56 out.txt
--rw-rw-r-- 1 wolfm2 wolfm2   992 Mar  9 13:54 runner.ipynb
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root         1  0.0  0.0 185324  5876 ?        Ss   Mar08   0:01 /sbin/init splash
 root         2  0.0  0.0      0     0 ?        S    Mar08   0:00 [kthreadd]
@@ -263,7 +207,10 @@ wolfm2   18524  0.0  0.0  14172  2896 pts/8    S+   13:53   0:00 watch ps -aux |
 root     18535  0.0  0.0  52312  2968 ?        S    13:54   0:00 /usr/sbin/CRON -f
 wolfm2   18536  0.0  0.0   4504   744 ?        Ss   13:54   0:00 /bin/sh -c /home/wolfm2/job.sh
 wolfm2   18537  0.0  0.0  12544  2972 ?        S    13:54   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2   18998  0.0  0.0  37364  3356 ?        R    13:56   0:00 ps aux
+wolfm2   18570  0.6  0.3 714828 106944 ?       Sl   13:54   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2   18587  0.4  0.1 660424 55536 ?        Ssl  13:54   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmphm3zhpu6.json
+wolfm2   18991  0.0  0.0   4504   744 ?        S    13:56   0:00 sh -c ps aux > out.txt
+wolfm2   18992  0.0  0.0  37364  3296 ?        R    13:56   0:00 ps aux
 root     19510  0.0  0.0      0     0 ?        S    Mar08   0:00 [kworker/3:1]
 root     19519  0.0  0.0      0     0 ?        S    Mar08   0:00 [kworker/9:1]
 root     23040  0.0  0.0      0     0 ?        S    Mar08   0:01 [kworker/0:1]
