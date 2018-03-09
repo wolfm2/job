@@ -1,31 +1,29 @@
 
-Fri Mar  9 13:40:03 EST 2018
+Fri Mar  9 13:44:03 EST 2018
 Doing...
-Updating f017238..6daaab8
+Updating 6daaab8..5b5a568
 Fast-forward
- minibook/system/runner.ipynb | 2 +-
+ main.py | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 sending incremental file list
 deleting system/output.ipynb
 deleting system/out.txt
 system/
-system/runner.ipynb
 
-sent 1,555 bytes  received 82 bytes  3,274.00 bytes/sec
-total size is 62,989,163  speedup is 38,478.41
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 42.94it/s]
+sent 562 bytes  received 59 bytes  1,242.00 bytes/sec
+total size is 62,989,163  speedup is 101,431.82
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 25.00it/s]
 Input Notebook:  runner.ipynb
 Output Notebook: output.ipynb
 .:
 total 4
-drwxrwxr-x 5 wolfm2 wolfm2 4096 Mar  8 08:59 minibook
+drwxrwxr-x 5 wolfm2 wolfm2 4096 Mar  9 13:44 minibook
 
 ./minibook:
-total 16
+total 12
 drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  9 13:31 amazon
 drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  7 11:47 amazonFirstIter
--rw-rw-r-- 1 wolfm2 wolfm2  542 Mar  9 13:40 job.log
-drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  9 13:40 system
+drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  9 13:44 system
 
 ./minibook/amazon:
 total 100
@@ -49,9 +47,10 @@ total 61448
 -rw-rw-r-- 1 wolfm2 wolfm2     8988 Mar  7 11:47 ver.py
 
 ./minibook/system:
-total 28
--rw-rw-r-- 1 wolfm2 wolfm2  1439 Mar  9 13:40 output.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 20117 Mar  9 13:40 out.txt
+total 32
+-rw-rw-r-- 1 wolfm2 wolfm2   500 Mar  9 13:44 job.log
+-rw-rw-r-- 1 wolfm2 wolfm2  1439 Mar  9 13:44 output.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2 20117 Mar  9 13:44 out.txt
 -rw-rw-r-- 1 wolfm2 wolfm2   946 Mar  9 13:40 runner.ipynb
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root         1  0.0  0.0 185324  5876 ?        Ss   Mar08   0:01 /sbin/init splash
@@ -211,7 +210,7 @@ root      2015  0.0  0.0 377848  9560 ?        Ssl  Mar08   0:00 /usr/lib/udisks
 root      2154  0.0  0.1 506976 34900 ?        Ssl  Mar08   0:00 /usr/lib/x86_64-linux-gnu/fwupd/fwupd
 root      2604  0.0  0.0 166536   652 ?        Ss   Mar08   0:02 gpg-agent --homedir /var/lib/fwupd/gnupg --use-standard-socket --daemon
 root      3514  0.0  0.1 257592 47488 tty7     Ssl+ Mar08   0:01 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
-root      3516  0.5  0.0      0     0 ?        S    Mar08   9:23 [irq/152-nvidia]
+root      3516  0.5  0.0      0     0 ?        S    Mar08   9:24 [irq/152-nvidia]
 root      3517  0.0  0.0      0     0 ?        S    Mar08   0:00 [nvidia]
 nvidia-+  3520  0.0  0.0  17140  1584 ?        Ss   Mar08   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
 root      3521  0.0  0.0      0     0 ?        S    Mar08   0:00 [kworker/10:0]
@@ -259,10 +258,10 @@ root     10928  0.0  0.0      0     0 ?        S    11:19   0:00 [kworker/11:1]
 root     16274  0.0  0.0      0     0 ?        S    13:10   0:00 [kworker/u24:2]
 root     17102  0.0  0.0      0     0 ?        S    13:26   0:00 [kworker/u24:0]
 root     17648  0.0  0.0      0     0 ?        S    13:36   0:00 [kworker/u24:1]
-root     17824  0.0  0.0  52312  2968 ?        S    13:40   0:00 /usr/sbin/CRON -f
-wolfm2   17825  0.0  0.0   4504   744 ?        Ss   13:40   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2   17826  0.0  0.0  12544  2968 ?        S    13:40   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2   17887  0.0  0.0  37364  3288 ?        R    13:40   0:00 ps aux
+root     18039  0.0  0.0  52312  2968 ?        S    13:44   0:00 /usr/sbin/CRON -f
+wolfm2   18040  0.0  0.0   4504   744 ?        Ss   13:44   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2   18041  0.0  0.0  12544  3008 ?        S    13:44   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2   18106  0.0  0.0  37364  3332 ?        R    13:44   0:00 ps aux
 root     19510  0.0  0.0      0     0 ?        S    Mar08   0:00 [kworker/3:1]
 root     19519  0.0  0.0      0     0 ?        S    Mar08   0:00 [kworker/9:1]
 root     23040  0.0  0.0      0     0 ?        S    Mar08   0:01 [kworker/0:1]
@@ -275,6 +274,3 @@ root     31960  0.0  0.0 274812  8988 ?        Ssl  07:35   0:00 /usr/sbin/cups-
 lp       31964  0.0  0.0  81244  5680 ?        S    07:35   0:00 /usr/lib/cups/notifier/dbus dbus://
 root     31966  0.0  0.0      0     0 ?        S    07:35   0:00 [kworker/1:0]
 root     32338  0.0  0.0      0     0 ?        S    07:40   0:00 [kworker/0:0]
-Pushing...
-To ssh://git@github.com/wolfm2/jobout.git
-   ab8fcc6..1d91864  master -> master

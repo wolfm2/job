@@ -156,7 +156,7 @@ root      2015  0.0  0.0 377848  9560 ?        Ssl  Mar08   0:00 /usr/lib/udisks
 root      2154  0.0  0.1 506976 34900 ?        Ssl  Mar08   0:00 /usr/lib/x86_64-linux-gnu/fwupd/fwupd
 root      2604  0.0  0.0 166536   652 ?        Ss   Mar08   0:02 gpg-agent --homedir /var/lib/fwupd/gnupg --use-standard-socket --daemon
 root      3514  0.0  0.1 257592 47488 tty7     Ssl+ Mar08   0:01 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
-root      3516  0.5  0.0      0     0 ?        S    Mar08   9:23 [irq/152-nvidia]
+root      3516  0.5  0.0      0     0 ?        S    Mar08   9:24 [irq/152-nvidia]
 root      3517  0.0  0.0      0     0 ?        S    Mar08   0:00 [nvidia]
 nvidia-+  3520  0.0  0.0  17140  1584 ?        Ss   Mar08   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
 root      3521  0.0  0.0      0     0 ?        S    Mar08   0:00 [kworker/10:0]
@@ -204,13 +204,13 @@ root     10928  0.0  0.0      0     0 ?        S    11:19   0:00 [kworker/11:1]
 root     16274  0.0  0.0      0     0 ?        S    13:10   0:00 [kworker/u24:2]
 root     17102  0.0  0.0      0     0 ?        S    13:26   0:00 [kworker/u24:0]
 root     17648  0.0  0.0      0     0 ?        S    13:36   0:00 [kworker/u24:1]
-root     17824  0.0  0.0  52312  2968 ?        S    13:40   0:00 /usr/sbin/CRON -f
-wolfm2   17825  0.0  0.0   4504   744 ?        Ss   13:40   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2   17826  0.0  0.0  12544  2968 ?        S    13:40   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2   17851 38.5  0.3 714708 107348 ?       Sl   13:40   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2   17866 48.0  0.1 660424 55788 ?        Ssl  13:40   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpix1xt772.json
-wolfm2   17884  0.0  0.0   4504   792 ?        S    13:40   0:00 sh -c ps aux > out.txt
-wolfm2   17885  0.0  0.0  37364  3336 ?        R    13:40   0:00 ps aux
+root     18039  0.0  0.0  52312  2968 ?        S    13:44   0:00 /usr/sbin/CRON -f
+wolfm2   18040  0.0  0.0   4504   744 ?        Ss   13:44   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2   18041  0.0  0.0  12544  3008 ?        S    13:44   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2   18066 37.5  0.3 714828 107400 ?       Sl   13:44   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2   18083 49.0  0.1 660424 55556 ?        Ssl  13:44   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpjv9m7d4e.json
+wolfm2   18103  0.0  0.0   4504   736 ?        S    13:44   0:00 sh -c ps aux > out.txt
+wolfm2   18104  0.0  0.0  37364  3296 ?        R    13:44   0:00 ps aux
 root     19510  0.0  0.0      0     0 ?        S    Mar08   0:00 [kworker/3:1]
 root     19519  0.0  0.0      0     0 ?        S    Mar08   0:00 [kworker/9:1]
 root     23040  0.0  0.0      0     0 ?        S    Mar08   0:01 [kworker/0:1]
