@@ -1,40 +1,28 @@
 
-Sun Mar 11 18:22:03 EDT 2018
+Sun Mar 11 18:35:03 EDT 2018
 Doing...
-Updating 215b3ba..c43d12a
+Updating c43d12a..71a9786
 Fast-forward
- minibook/amazon/_01_train.ipynb | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ minibook/amazon/_01_train.ipynb | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
 sending incremental file list
-deleting __pycache__/my_measures.cpython-36.pyc
-deleting __pycache__/
-deleting transformer.pkl
-deleting sc.pkl
 deleting output.ipynb
 deleting job.log
-deleting hv1.pkl
-deleting hv0.pkl
-deleting GridSearch.txt
 deleting Amazon.csv
 ./
 _01_train.ipynb
 
-sent 60,374 bytes  received 206 bytes  121,160.00 bytes/sec
-total size is 148,074  speedup is 2.44
+sent 60,380 bytes  received 79 bytes  120,918.00 bytes/sec
+total size is 148,078  speedup is 2.45
 Amazon.csv
 
 bzip2: (stdin): trailing garbage after EOF ignored
 cat: write error: Broken pipe
-  0%|          | 0/33 [00:00<?, ?it/s]  6%|▌         | 2/33 [00:00<00:04,  6.51it/s]wolfm2    8998  0.0  0.0   4504   776 ?        Ss   16:15   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2    8999  0.0  0.0  12544  3024 ?        S    16:15   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2    9023  0.0  0.3 715352 107852 ?       Sl   16:15   0:02 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2    9049 11.0 32.3 12478540 10617600 ?   Ssl  16:15  14:04 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpljy1d87u.json
-wolfm2   12438 99.0 32.1 12145444 10569756 ?   Sl   17:14  66:45 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpljy1d87u.json
-wolfm2   12439  100 41.6 15274544 13698980 ?   Rl   17:14  67:35 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpljy1d87u.json
-wolfm2   16270  0.0  0.0   4504   836 ?        Ss   18:22   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2   16271  0.0  0.0  12544  2968 ?        S    18:22   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2   16293  8.3  0.3 715080 107608 ?       Sl   18:22   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2   16321 80.0  0.3 980972 116432 ?       Ssl  18:22   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpe3qcg0cm.json
-wolfm2   16348  0.0  0.0   4504   708 ?        S    18:22   0:00 sh -c ps aux | grep wolfm2
-wolfm2   16349  0.0  0.0  37364  3244 ?        R    18:22   0:00 ps aux
-wolfm2   16350  0.0  0.0  14224  1088 ?        S    18:22   0:00 grep wolfm2
+  0%|          | 0/33 [00:00<?, ?it/s]  6%|▌         | 2/33 [00:00<00:04,  6.95it/s]wolfm2   16963  0.0  0.0   4504   788 ?        Ss   18:35   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2   16964  0.0  0.0  12544  2912 ?        S    18:35   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2   16986  8.6  0.3 715084 107936 ?       Sl   18:35   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2   17014 74.0  0.3 980972 116472 ?       Ssl  18:35   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpk0cv5ka4.json
+wolfm2   17041  0.0  0.0   4504   700 ?        S    18:35   0:00 sh -c ps aux | grep wolfm2
+wolfm2   17042  0.0  0.0  37364  3308 ?        R    18:35   0:00 ps aux
+wolfm2   17043  0.0  0.0  14224  1028 ?        S    18:35   0:00 grep wolfm2
+ 15%|█▌        | 5/33 [00:01<00:10,  2.56it/s] 27%|██▋       | 9/33 [00:02<00:05,  4.12it/s]
