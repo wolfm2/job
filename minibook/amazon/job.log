@@ -1,7 +1,7 @@
 
-Sun Mar 11 18:43:02 EDT 2018
+Sun Mar 11 18:56:02 EDT 2018
 Doing...
-Updating 497d3d2..f2ed71a
+Updating f2ed71a..22db2c3
 Fast-forward
  minibook/amazon/_01_train.ipynb | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
@@ -12,16 +12,17 @@ deleting Amazon.csv
 ./
 _01_train.ipynb
 
-sent 60,382 bytes  received 79 bytes  120,922.00 bytes/sec
-total size is 148,080  speedup is 2.45
+sent 60,383 bytes  received 79 bytes  120,924.00 bytes/sec
+total size is 148,081  speedup is 2.45
 Amazon.csv
 
 bzip2: (stdin): trailing garbage after EOF ignored
 cat: write error: Broken pipe
-  0%|          | 0/33 [00:00<?, ?it/s]  6%|▌         | 2/33 [00:00<00:04,  7.17it/s]wolfm2   17439  0.0  0.0   4504   748 ?        Ss   18:43   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2   17440  0.0  0.0  12544  3024 ?        S    18:43   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2   17462  8.6  0.3 715108 107924 ?       Sl   18:43   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2   17488 75.0  0.3 980964 116320 ?       Ssl  18:43   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmprizhdg6d.json
-wolfm2   17517  0.0  0.0   4504   748 ?        S    18:43   0:00 sh -c ps aux | grep wolfm2
-wolfm2   17518  0.0  0.0  37364  3324 ?        R    18:43   0:00 ps aux
-wolfm2   17519  0.0  0.0  14224  1012 ?        S    18:43   0:00 grep wolfm2
+  0%|          | 0/33 [00:00<?, ?it/s]  6%|▌         | 2/33 [00:00<00:04,  7.08it/s]wolfm2   18143  0.0  0.0   4504   844 ?        Ss   18:56   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2   18144  0.0  0.0  12544  3068 ?        S    18:56   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2   18166  8.6  0.3 715080 107492 ?       Sl   18:56   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2   18192 75.0  0.3 980964 116196 ?       Ssl  18:56   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpyiq6nv3h.json
+wolfm2   18219  0.0  0.0   4504   704 ?        S    18:56   0:00 sh -c ps aux | grep wolfm2
+wolfm2   18220  0.0  0.0  37364  3324 ?        R    18:56   0:00 ps aux
+wolfm2   18221  0.0  0.0  14224  1084 ?        S    18:56   0:00 grep wolfm2
+ 15%|█▌        | 5/33 [00:01<00:10,  2.64it/s] 27%|██▋       | 9/33 [00:02<00:05,  4.24it/s]
