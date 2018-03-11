@@ -304,3 +304,6 @@ Sat Mar 10 19:34:50 EST 2018
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
+Pushing...
+To ssh://git@github.com/wolfm2/jobout.git
+   49574cf..8f04bc8  master -> master
