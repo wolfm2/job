@@ -58,4 +58,375 @@ wolfm2   27970 79.3  0.3 980968 116264 ?       Ssl  17:51   0:02 /home/wolfm2/an
 wolfm2   27997  0.0  0.0   4504   704 ?        S    17:51   0:00 sh -c ps aux | grep wolfm2
 wolfm2   27998  0.0  0.0  37364  3308 ?        R    17:51   0:00 ps aux
 wolfm2   27999  0.0  0.0  14224  1004 ?        S    17:51   0:00 grep wolfm2
- 12%|█▏        | 4/34 [00:01<00:10,  2.83it/s] 15%|█▍        | 5/34 [00:08<00:47,  1.62s/it] 24%|██▎       | 8/34 [00:08<00:26,  1.03s/it] 24%|██▎       | 8/34 [00:20<01:05,  2.50s/it] 29%|██▉       | 10/34 [13:48<33:08, 82.85s/it]
+ 12%|█▏        | 4/34 [00:01<00:10,  2.83it/s] 15%|█▍        | 5/34 [00:08<00:47,  1.62s/it] 24%|██▎       | 8/34 [00:08<00:26,  1.03s/it] 24%|██▎       | 8/34 [00:20<01:05,  2.50s/it] 29%|██▉       | 10/34 [13:48<33:08, 82.85s/it] 38%|███▊      | 13/34 [16:12<26:11, 74.84s/it] 47%|████▋     | 16/34 [16:14<18:16, 60.91s/it]Input Notebook:  _01_train.ipynb
+Output Notebook: output.ipynb
+Traceback (most recent call last):
+  File "/home/wolfm2/jobin/main.py", line 79, in <module>
+    main()
+  File "/home/wolfm2/jobin/main.py", line 19, in main
+    'output.ipynb',
+  File "/home/wolfm2/anaconda3/lib/python3.6/site-packages/papermill/execute.py", line 197, in execute_notebook
+    raise_for_execution_errors(nb, output)
+  File "/home/wolfm2/anaconda3/lib/python3.6/site-packages/papermill/execute.py", line 394, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [13]":
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-13-a42850f8d296> in <module>()
+      1 from scipy.sparse import csr_matrix, hstack
+      2 X_quant_features_csr = csr_matrix(X_quant_features)
+----> 3 X_combined = hstack([X_tfidf, X_quant_features_csr, hv2])  # we dont want to penalize hv2 w tfidf MW
+      4 X_matrix = csr_matrix(X_combined) # convert to sparse matrix
+      5 print(X_matrix.shape)
+
+~/anaconda3/lib/python3.6/site-packages/scipy/sparse/construct.py in hstack(blocks, format, dtype)
+    456 
+    457     """
+--> 458     return bmat([blocks], format=format, dtype=dtype)
+    459 
+    460 
+
+~/anaconda3/lib/python3.6/site-packages/scipy/sparse/construct.py in bmat(blocks, format, dtype)
+    577                                                     exp=brow_lengths[i],
+    578                                                     got=A.shape[0]))
+--> 579                     raise ValueError(msg)
+    580 
+    581                 if bcol_lengths[j] == 0:
+
+ValueError: blocks[0,:] has incompatible row dimensions. Got blocks[0,2].shape[0] == 1, expected 364000.
+
+.:
+total 4
+drwxrwxr-x 7 wolfm2 wolfm2 4096 Mar 24 17:50 minibook
+
+./minibook:
+total 20
+drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 19 22:07 amazon
+drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar 24 18:07 amazon.0
+drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  7 11:47 amazonFirstIter
+drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 14 22:15 amazonIter
+drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar 24 16:22 system
+
+./minibook/amazon:
+total 273496
+-rw-rw-r-- 1 wolfm2 wolfm2      2978 Mar  9 13:31 _00_split.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     31638 Mar  9 16:12 _01_train.0.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     61559 Mar 19 22:01 _01_train.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     26250 Mar  7 11:47 _02_test.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     20981 Mar  7 11:47 _03_submission.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2 248373493 Mar  6 20:06 Amazon.csv
+-rw-rw-r-- 1 wolfm2 wolfm2         0 Mar 19 22:07 GridSearch.txt
+-rw-rw-r-- 1 wolfm2 wolfm2       642 Mar 19 22:06 hv0.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2       648 Mar 19 22:06 hv1.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2      1956 Mar 19 22:07 job.log
+-rw-rw-r-- 1 wolfm2 wolfm2      2632 Mar  7 11:47 my_measures.py
+-rw-rw-r-- 1 wolfm2 wolfm2     29218 Mar 19 22:07 output.ipynb
+drwxrwxr-x 2 wolfm2 wolfm2      4096 Mar 19 22:07 __pycache__
+-rw-rw-r-- 1 wolfm2 wolfm2      3534 Mar  7 11:47 README.md
+-rw-rw-r-- 1 wolfm2 wolfm2  18874951 Mar 19 22:07 sc.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2  12583580 Mar 19 22:07 transformer.pkl
+
+./minibook/amazon/__pycache__:
+total 4
+-rw-rw-r-- 1 wolfm2 wolfm2 2043 Mar 19 22:07 my_measures.cpython-36.pyc
+
+./minibook/amazon.0:
+total 255076
+-rw-rw-r-- 1 wolfm2 wolfm2      2978 Mar 24 17:50 _00_split.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     31638 Mar 24 17:50 _01_train.0.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     48360 Mar 24 17:50 _01_train.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     26250 Mar 24 17:50 _02_test.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2     20981 Mar 24 17:50 _03_submission.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2 248373493 Mar  6 20:06 Amazon.csv
+-rw-rw-r-- 1 wolfm2 wolfm2       642 Mar 24 18:05 hv0.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2       648 Mar 24 18:05 hv1.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2       515 Mar 24 18:05 hv2.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2      5693 Mar 24 18:07 job.log
+-rw-rw-r-- 1 wolfm2 wolfm2      2632 Mar 24 17:50 my_measures.py
+-rw-rw-r-- 1 wolfm2 wolfm2     34323 Mar 24 18:07 output.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2      3534 Mar 24 17:50 README.md
+-rw-rw-r-- 1 wolfm2 wolfm2  12583580 Mar 24 18:07 transformer.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2     21412 Mar 24 17:50 x_review_week05.ipynb
+
+./minibook/amazonFirstIter:
+total 61448
+-rw-rw-r-- 1 wolfm2 wolfm2    20808 Mar  7 11:47 _03_submission.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2      557 Mar  7 11:47 hv.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2  2098273 Mar  7 11:47 lgs.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2     2632 Mar  7 11:47 my_measures.py
+-rw-rw-r-- 1 wolfm2 wolfm2 50282018 Mar  7 11:47 raw_data_test.csv
+-rw-rw-r-- 1 wolfm2 wolfm2  6292015 Mar  7 11:47 sc.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2  4194972 Mar  7 11:47 transformer.pkl
+-rw-rw-r-- 1 wolfm2 wolfm2     8988 Mar  7 11:47 ver.py
+
+./minibook/amazonIter:
+total 49204
+-rw-rw-r-- 1 wolfm2 wolfm2    22513 Mar 12 08:18 _03_submission.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2    24197 Mar 14 22:16 job.log
+-rw-rw-r-- 1 wolfm2 wolfm2     2632 Mar 10 19:49 my_measures.py
+-rw-rw-r-- 1 wolfm2 wolfm2    28710 Mar 14 22:16 output.ipynb
+drwxrwxr-x 2 wolfm2 wolfm2     4096 Mar 14 22:15 __pycache__
+-rw-rw-r-- 1 wolfm2 wolfm2 50282018 Mar 10 19:49 raw_data_test.csv
+-rw-rw-r-- 1 wolfm2 wolfm2     8988 Mar 10 19:49 ver.py
+
+./minibook/amazonIter/__pycache__:
+total 4
+-rw-rw-r-- 1 wolfm2 wolfm2 2047 Mar 14 22:15 my_measures.cpython-36.pyc
+
+./minibook/system:
+total 60
+-rw-rw-r-- 1 wolfm2 wolfm2 26435 Mar 24 16:22 job.log
+-rw-rw-r-- 1 wolfm2 wolfm2  1486 Mar 24 16:22 output.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2   993 Mar  9 14:12 runner.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2 23029 Mar 24 16:22 tst.txt
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0 185192  3844 ?        Ss   Mar18   0:04 /sbin/init splash
+root         2  0.0  0.0      0     0 ?        S    Mar18   0:00 [kthreadd]
+root         4  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/0:0H]
+root         6  0.0  0.0      0     0 ?        S<   Mar18   0:00 [mm_percpu_wq]
+root         7  0.0  0.0      0     0 ?        S    Mar18   0:02 [ksoftirqd/0]
+root         8  0.0  0.0      0     0 ?        S    Mar18   2:44 [rcu_sched]
+root         9  0.0  0.0      0     0 ?        S    Mar18   0:00 [rcu_bh]
+root        10  0.0  0.0      0     0 ?        S    Mar18   0:07 [migration/0]
+root        11  0.0  0.0      0     0 ?        S    Mar18   0:01 [watchdog/0]
+root        12  0.0  0.0      0     0 ?        S    Mar18   0:00 [cpuhp/0]
+root        13  0.0  0.0      0     0 ?        S    Mar18   0:00 [cpuhp/1]
+root        14  0.0  0.0      0     0 ?        S    Mar18   0:01 [watchdog/1]
+root        15  0.0  0.0      0     0 ?        S    Mar18   0:06 [migration/1]
+root        16  0.0  0.0      0     0 ?        S    Mar18   0:01 [ksoftirqd/1]
+root        18  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/1:0H]
+root        19  0.0  0.0      0     0 ?        S    Mar18   0:00 [cpuhp/2]
+root        20  0.0  0.0      0     0 ?        S    Mar18   0:01 [watchdog/2]
+root        21  0.0  0.0      0     0 ?        S    Mar18   0:07 [migration/2]
+root        22  0.0  0.0      0     0 ?        S    Mar18   0:01 [ksoftirqd/2]
+root        24  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/2:0H]
+root        25  0.0  0.0      0     0 ?        S    Mar18   0:00 [cpuhp/3]
+root        26  0.0  0.0      0     0 ?        S    Mar18   0:01 [watchdog/3]
+root        27  0.0  0.0      0     0 ?        S    Mar18   0:07 [migration/3]
+root        28  0.0  0.0      0     0 ?        S    Mar18   0:01 [ksoftirqd/3]
+root        30  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/3:0H]
+root        31  0.0  0.0      0     0 ?        S    Mar18   0:00 [cpuhp/4]
+root        32  0.0  0.0      0     0 ?        S    Mar18   0:01 [watchdog/4]
+root        33  0.0  0.0      0     0 ?        S    Mar18   0:06 [migration/4]
+root        34  0.0  0.0      0     0 ?        S    Mar18   0:01 [ksoftirqd/4]
+root        36  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/4:0H]
+root        37  0.0  0.0      0     0 ?        S    Mar18   0:00 [cpuhp/5]
+root        38  0.0  0.0      0     0 ?        S    Mar18   0:01 [watchdog/5]
+root        39  0.0  0.0      0     0 ?        S    Mar18   0:07 [migration/5]
+root        40  0.0  0.0      0     0 ?        S    Mar18   0:01 [ksoftirqd/5]
+root        42  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/5:0H]
+root        43  0.0  0.0      0     0 ?        S    Mar18   0:00 [cpuhp/6]
+root        44  0.0  0.0      0     0 ?        S    Mar18   0:01 [watchdog/6]
+root        45  0.0  0.0      0     0 ?        S    Mar18   0:06 [migration/6]
+root        46  0.0  0.0      0     0 ?        S    Mar18   0:01 [ksoftirqd/6]
+root        48  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/6:0H]
+root        49  0.0  0.0      0     0 ?        S    Mar18   0:00 [cpuhp/7]
+root        50  0.0  0.0      0     0 ?        S    Mar18   0:01 [watchdog/7]
+root        51  0.0  0.0      0     0 ?        S    Mar18   0:06 [migration/7]
+root        52  0.0  0.0      0     0 ?        S    Mar18   0:02 [ksoftirqd/7]
+root        54  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/7:0H]
+root        55  0.0  0.0      0     0 ?        S    Mar18   0:00 [cpuhp/8]
+root        56  0.0  0.0      0     0 ?        S    Mar18   0:01 [watchdog/8]
+root        57  0.0  0.0      0     0 ?        S    Mar18   0:07 [migration/8]
+root        58  0.0  0.0      0     0 ?        S    Mar18   0:00 [ksoftirqd/8]
+root        60  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/8:0H]
+root        61  0.0  0.0      0     0 ?        S    Mar18   0:00 [cpuhp/9]
+root        62  0.0  0.0      0     0 ?        S    Mar18   0:01 [watchdog/9]
+root        63  0.0  0.0      0     0 ?        S    Mar18   0:07 [migration/9]
+root        64  0.0  0.0      0     0 ?        S    Mar18   0:00 [ksoftirqd/9]
+root        66  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/9:0H]
+root        67  0.0  0.0      0     0 ?        S    Mar18   0:00 [cpuhp/10]
+root        68  0.0  0.0      0     0 ?        S    Mar18   0:01 [watchdog/10]
+root        69  0.0  0.0      0     0 ?        S    Mar18   0:06 [migration/10]
+root        70  0.0  0.0      0     0 ?        S    Mar18   0:00 [ksoftirqd/10]
+root        72  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/10:0H]
+root        73  0.0  0.0      0     0 ?        S    Mar18   0:00 [cpuhp/11]
+root        74  0.0  0.0      0     0 ?        S    Mar18   0:01 [watchdog/11]
+root        75  0.0  0.0      0     0 ?        S    Mar18   0:07 [migration/11]
+root        76  0.0  0.0      0     0 ?        S    Mar18   0:01 [ksoftirqd/11]
+root        78  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/11:0H]
+root        79  0.0  0.0      0     0 ?        S    Mar18   0:00 [kdevtmpfs]
+root        80  0.0  0.0      0     0 ?        S<   Mar18   0:00 [netns]
+root        83  0.0  0.0      0     0 ?        S    Mar18   0:00 [khungtaskd]
+root        84  0.0  0.0      0     0 ?        S    Mar18   0:01 [oom_reaper]
+root        85  0.0  0.0      0     0 ?        S<   Mar18   0:00 [writeback]
+root        86  0.0  0.0      0     0 ?        S    Mar18   0:00 [kcompactd0]
+root        87  0.0  0.0      0     0 ?        SN   Mar18   0:00 [ksmd]
+root        88  0.0  0.0      0     0 ?        SN   Mar18   0:00 [khugepaged]
+root        89  0.0  0.0      0     0 ?        S<   Mar18   0:00 [crypto]
+root        90  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kintegrityd]
+root        91  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kblockd]
+root       102  0.0  0.0      0     0 ?        S<   Mar18   0:00 [ata_sff]
+root       103  0.0  0.0      0     0 ?        S<   Mar18   0:00 [md]
+root       104  0.0  0.0      0     0 ?        S<   Mar18   0:00 [edac-poller]
+root       105  0.0  0.0      0     0 ?        S<   Mar18   0:00 [devfreq_wq]
+root       106  0.0  0.0      0     0 ?        S<   Mar18   0:00 [watchdogd]
+root       109  0.0  0.0      0     0 ?        S    Mar18   0:00 [kauditd]
+root       110  0.0  0.0      0     0 ?        S    Mar18   2:36 [kswapd0]
+root       111  0.0  0.0      0     0 ?        S    Mar18   0:00 [ecryptfs-kthrea]
+root       153  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kthrotld]
+root       154  0.0  0.0      0     0 ?        S<   Mar18   0:00 [acpi_thermal_pm]
+root       159  0.0  0.0      0     0 ?        S<   Mar18   0:00 [ipv6_addrconf]
+root       184  0.0  0.0      0     0 ?        S<   Mar18   0:00 [charger_manager]
+root       236  0.0  0.0      0     0 ?        S<   Mar18   0:00 [nvme-wq]
+root       239  0.0  0.0      0     0 ?        S    Mar18   0:00 [nvidia-modeset]
+root       240  0.0  0.0      0     0 ?        S    Mar18   0:00 [scsi_eh_0]
+root       241  0.0  0.0      0     0 ?        S<   Mar18   0:00 [scsi_tmf_0]
+root       242  0.0  0.0      0     0 ?        S    Mar18   0:00 [scsi_eh_1]
+root       243  0.0  0.0      0     0 ?        S<   Mar18   0:00 [scsi_tmf_1]
+root       244  0.0  0.0      0     0 ?        S    Mar18   0:00 [scsi_eh_2]
+root       245  0.0  0.0      0     0 ?        S<   Mar18   0:00 [scsi_tmf_2]
+root       246  0.0  0.0      0     0 ?        S    Mar18   0:00 [scsi_eh_3]
+root       247  0.0  0.0      0     0 ?        S<   Mar18   0:00 [scsi_tmf_3]
+root       248  0.0  0.0      0     0 ?        S    Mar18   0:00 [scsi_eh_4]
+root       249  0.0  0.0      0     0 ?        S<   Mar18   0:00 [scsi_tmf_4]
+root       250  0.0  0.0      0     0 ?        S    Mar18   0:00 [scsi_eh_5]
+root       251  0.0  0.0      0     0 ?        S<   Mar18   0:00 [scsi_tmf_5]
+root       259  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/0:1H]
+root       285  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/10:1H]
+root       289  0.0  0.0      0     0 ?        S    Mar18   0:05 [jbd2/nvme0n1p1-]
+root       290  0.0  0.0      0     0 ?        S<   Mar18   0:00 [ext4-rsv-conver]
+root       324  0.0  0.0  59972 27188 ?        Ss   Mar18   0:26 /lib/systemd/systemd-journald
+root       325  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/2:1H]
+root       341  0.0  0.0  46204    48 ?        Ss   Mar18   0:00 /lib/systemd/systemd-udevd
+root       342  0.0  0.0      0     0 ?        S<   Mar18   0:00 [cfg80211]
+root       369  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/1:1H]
+systemd+   465  0.0  0.0 102384   240 ?        Ssl  Mar18   0:00 /lib/systemd/systemd-timesyncd
+root       564  0.0  0.0      0     0 ?        S    Mar18   0:00 [UVM global queu]
+root       565  0.0  0.0      0     0 ?        S    Mar18   0:00 [UVM Tools Event]
+root       583  0.4  0.0      0     0 ?        S    Mar18  40:55 [irq/151-nvidia]
+root       584  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/u25:0]
+root       586  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/u25:2]
+root       593  0.0  0.0      0     0 ?        S    Mar18   0:00 [nvidia]
+root       595  0.0  0.0      0     0 ?        S    Mar18   0:00 [irq/152-mei_me]
+root       802  0.0  0.0  52312    16 ?        S    Mar19   0:00 /usr/sbin/CRON -f
+wolfm2     804  0.0  0.0   4504     0 ?        Ss   Mar19   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2     806  0.0  0.0  12544     8 ?        S    Mar19   0:00 /bin/bash /home/wolfm2/job.sh
+root       821  0.0  0.0      0     0 ?        S<   Mar18   0:00 [led_workqueue]
+wolfm2     848  0.0  0.0 715336  1252 ?        Sl   Mar19   2:50 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2     874  0.2  0.0 9553324 5720 ?        Ssl  Mar19  18:52 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
+root       875  0.0  0.0  29008   908 ?        Ss   Mar18   0:06 /usr/sbin/cron -f
+root       882  0.0  0.0   4396     0 ?        Ss   Mar18   0:00 /usr/sbin/acpid
+avahi      887  0.0  0.0  45048  1348 ?        Ss   Mar18   0:05 avahi-daemon: running [d12ml.local]
+nvidia-+   888  0.0  0.0  17140     0 ?        Ss   Mar18   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
+root       895  0.0  0.0 413608     0 ?        Ssl  Mar18   0:00 /usr/sbin/ModemManager
+root       897  0.0  0.0  31956     0 ?        Ss   Mar18   0:00 /usr/lib/bluetooth/bluetoothd
+root       899  0.0  0.0  28628  1012 ?        Ss   Mar18   0:00 /lib/systemd/systemd-logind
+root       901  0.0  0.0 166432   628 ?        Ssl  Mar18   0:54 /usr/sbin/thermald --no-daemon --dbus-enable
+root       902  0.0  0.0 287200   116 ?        Ssl  Mar18   0:15 /usr/lib/accountsservice/accounts-daemon
+root       907  0.0  0.0 767648  6964 ?        Ssl  Mar18   0:42 /usr/lib/snapd/snapd
+syslog     914  0.0  0.0 256396   956 ?        Ssl  Mar18   0:07 /usr/sbin/rsyslogd -n
+message+   916  0.0  0.0  44068  2380 ?        Ss   Mar18   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+avahi      921  0.0  0.0  44784     4 ?        S    Mar18   0:00 avahi-daemon: chroot helper
+root       939  0.0  0.0 451300  6264 ?        Ssl  Mar18   0:00 /usr/sbin/NetworkManager --no-daemon
+root       965  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/4:1H]
+root       967  0.0  0.0 289688  2624 ?        Ssl  Mar18   0:01 /usr/lib/policykit-1/polkitd --no-debug
+root       969  0.0  0.0  19584   160 ?        Ss   Mar18   0:42 /usr/sbin/irqbalance --pid=/var/run/irqbalance.pid
+root       986  0.0  0.0  65508     8 ?        Ss   Mar18   0:00 /usr/sbin/sshd -D
+root      1025  0.0  0.0 287712     0 ?        Ssl  Mar18   0:00 /usr/sbin/lightdm
+root      1033  0.0  0.0 226640 12668 tty7     Ssl+ Mar18   0:04 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root      1068  0.0  0.0 226180     0 ?        Sl   Mar18   0:00 lightdm --session-child 16 19
+lightdm   1071  0.0  0.0  45276     0 ?        Ss   Mar18   0:00 /lib/systemd/systemd --user
+lightdm   1072  0.0  0.0  63244     4 ?        S    Mar18   0:00 (sd-pam)
+root      1079  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/5:1H]
+lightdm   1080  0.0  0.0   4504     0 ?        Ss   Mar18   0:00 /bin/sh /usr/lib/lightdm/lightdm-greeter-session /usr/sbin/unity-greeter
+lightdm   1085  0.0  0.0  42988   288 ?        Ss   Mar18   0:01 /usr/bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+lightdm   1086  0.0  0.0 919236 13000 ?        Sl   Mar18   0:15 /usr/sbin/unity-greeter
+lightdm   1088  0.0  0.0 346956     0 ?        Sl   Mar18   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately
+lightdm   1093  0.0  0.0  42764     0 ?        S    Mar18   0:00 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+lightdm   1095  0.0  0.0 206864     0 ?        Sl   Mar18   0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+lightdm   1101  0.0  0.0 274416     4 ?        Sl   Mar18   0:00 /usr/lib/gvfs/gvfsd
+lightdm   1106  0.0  0.0 352264     0 ?        Sl   Mar18   0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/108/gvfs -f -o big_writes
+lightdm   1115  0.0  0.0 178532     0 ?        Sl   Mar18   0:00 /usr/lib/dconf/dconf-service
+root      1119  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/6:1H]
+root      1120  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/8:1H]
+root      1121  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/3:1H]
+root      1122  0.0  0.0  82708     8 ?        S    Mar18   0:00 lightdm --session-child 12 19
+lightdm   1126  0.0  0.0  45956  2468 ?        S    Mar18   0:00 upstart --user --startup-event indicator-services-start
+lightdm   1128  0.0  0.0 659472  4940 ?        Sl   Mar18   0:00 nm-applet
+lightdm   1130  0.0  0.0 618940  1192 ?        Sl   Mar18   0:04 /usr/lib/unity-settings-daemon/unity-settings-daemon
+lightdm   1132  0.0  0.0 363364     0 ?        Ssl  Mar18   0:00 /usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
+lightdm   1133  0.0  0.0 342332     0 ?        Ssl  Mar18   0:00 /usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+lightdm   1134  0.0  0.0 426524     0 ?        Ssl  Mar18   0:00 /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
+lightdm   1135  0.0  0.0 457892  3968 ?        Ssl  Mar18   0:06 /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
+lightdm   1136  0.0  0.0 563912     4 ?        Ssl  Mar18   0:01 /usr/lib/x86_64-linux-gnu/indicator-keyboard/indicator-keyboard-service --use-gtk
+lightdm   1137  0.0  0.0 669160     4 ?        Ssl  Mar18   0:00 /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service
+lightdm   1138  0.0  0.0 830756     0 ?        Ssl  Mar18   0:00 /usr/lib/x86_64-linux-gnu/indicator-session/indicator-session-service
+lightdm   1140  0.0  0.0 403148     0 ?        Ssl  Mar18   0:00 /usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service
+lightdm   1187  0.0  0.0 490132     4 ?        S<l  Mar18   0:00 /usr/bin/pulseaudio --start --log-target=syslog
+rtkit     1189  0.0  0.0 183544     0 ?        SNsl Mar18   0:06 /usr/lib/rtkit/rtkit-daemon
+root      1201  0.0  0.0 347260     0 ?        Ssl  Mar18   0:00 /usr/lib/upower/upowerd
+colord    1228  0.0  0.0 309136     4 ?        Ssl  Mar18   0:00 /usr/lib/colord/colord
+root      1262  0.0  0.0  16124  2140 ?        S    Mar18   0:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /var/run/dhclient-enp0s31f6.pid -lf /var/lib/NetworkManager/dhclient-45d90ee1-f2f7-475d-94b8-7fa88540ba33-enp0s31f6.lease -cf /var/lib/NetworkManager/dhclient-enp0s31f6.conf enp0s31f6
+root      1272  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/9:1H]
+nobody    1273  0.0  0.0  52864   156 ?        S    Mar18   0:03 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/var/run/NetworkManager/dnsmasq.pid --listen-address=127.0.1.1 --cache-size=0 --conf-file=/dev/null --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d
+lightdm   1318  0.0  0.0 481996     0 ?        Sl   Mar18   0:00 /usr/lib/x86_64-linux-gnu/notify-osd
+root      1432  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/11:1H]
+whoopsie  1459  0.0  0.0 374012    24 ?        Ssl  Mar18   0:00 /usr/bin/whoopsie -f
+wolfm2    1460 60.6  0.0 9472448  704 ?        Sl   Mar19 4223:40 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
+root      1464  0.0  0.0  15936     0 tty1     Ss+  Mar18   0:00 /sbin/agetty --noclear tty1 linux
+root      1734  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/7:1H]
+root      2511  0.0  0.0      0     0 ?        S    Mar21   0:01 [kworker/5:1]
+wolfm2    5947  0.0  0.0 9553324 8096 ?        S    Mar22   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
+root      7061  0.0  0.0      0     0 ?        S    Mar23   0:00 [kworker/8:0]
+root      7603  0.0  0.0      0     0 ?        S    Mar20   0:02 [kworker/1:1]
+root      8615  0.0  0.0  52312    16 ?        S    Mar21   0:00 /usr/sbin/CRON -f
+pschmitt  8617  0.0  0.0   4504     0 ?        Ss   Mar21   0:00 /bin/sh -c /home/pschmitt/job.sh
+pschmitt  8618  0.0  0.0  12552     8 ?        S    Mar21   0:00 /bin/bash /home/pschmitt/job.sh
+pschmitt  8689  0.0  0.0 1055812 1644 ?        Sl   Mar21   2:06 /home/pschmitt/anaconda3/bin/python /home/pschmitt/jobin/main.py
+pschmitt  8712  0.3 12.0 12411368 3953776 ?    Ssl  Mar21  15:30 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoebbwt8s.json
+pschmitt  8817 80.3  5.6 10225316 1861580 ?    Rl   Mar21 3731:42 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoebbwt8s.json
+pschmitt  8818 80.5  5.3 10159532 1764004 ?    Rl   Mar21 3744:20 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoebbwt8s.json
+pschmitt  8819 80.3  5.6 10212516 1866332 ?    Rl   Mar21 3731:48 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoebbwt8s.json
+pschmitt  8820 80.1  5.5 10200740 1837524 ?    Rl   Mar21 3725:04 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoebbwt8s.json
+pschmitt  8821 80.0  5.7 10255268 1891368 ?    Rl   Mar21 3721:36 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoebbwt8s.json
+pschmitt  8822 80.2  5.7 10249380 1886632 ?    Rl   Mar21 3730:41 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoebbwt8s.json
+pschmitt  8823 80.1  5.7 10243492 1879484 ?    Rl   Mar21 3723:29 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoebbwt8s.json
+pschmitt  8824 80.0  5.6 10206372 1843616 ?    Rl   Mar21 3718:17 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoebbwt8s.json
+pschmitt  8825 80.0  5.5 10194340 1831252 ?    Rl   Mar21 3718:47 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoebbwt8s.json
+pschmitt  8826 80.0  5.6 10213284 1850480 ?    Rl   Mar21 3717:14 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoebbwt8s.json
+pschmitt  8827 80.2  5.6 10218660 1872596 ?    Rl   Mar21 3728:37 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoebbwt8s.json
+pschmitt  8828 80.1  5.6 10212260 1861976 ?    Rl   Mar21 3725:00 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoebbwt8s.json
+root      9240  0.0  0.0      0     0 ?        S    13:34   0:00 [kworker/11:2]
+root     10213  0.0  0.0      0     0 ?        S    06:27   0:00 [kworker/3:2]
+root     10729  0.0  0.0      0     0 ?        S    Mar20   0:03 [kworker/2:0]
+root     13567  0.0  0.0      0     0 ?        S    14:34   0:00 [kworker/u24:0]
+root     13898  0.0  0.0      0     0 ?        S    Mar22   0:01 [kworker/4:0]
+root     15198  0.0  0.0  93276  7564 ?        Ss   07:35   0:00 /usr/sbin/cupsd -l
+root     15199  0.0  0.0 274816  9772 ?        Ssl  07:35   0:00 /usr/sbin/cups-browsed
+root     15483  0.0  0.0      0     0 ?        S    Mar22   0:01 [kworker/7:2]
+root     15611  0.0  0.0      0     0 ?        S    Mar19   0:00 [kworker/10:1]
+root     18804  0.0  0.0      0     0 ?        S    Mar21   0:00 [kworker/9:2]
+root     19001  0.0  0.0      0     0 ?        S    Mar21   0:01 [kworker/3:0]
+root     22069  0.0  0.0      0     0 ?        S    16:30   0:00 [kworker/u24:2]
+root     22624  0.0  0.0      0     0 ?        S    Mar23   0:00 [kworker/8:1]
+root     23613  0.0  0.0      0     0 ?        S    Mar20   0:00 [kworker/1:0]
+root     23980  0.0  0.0      0     0 ?        S    09:34   0:00 [kworker/11:1]
+root     23981  0.0  0.0      0     0 ?        S    09:34   0:00 [kworker/7:0]
+root     24176  0.0  0.0      0     0 ?        S    Mar22   0:01 [kworker/10:2]
+root     25196  0.0  0.0      0     0 ?        S    02:31   0:00 [kworker/4:1]
+root     26911  0.0  0.0  52312    16 ?        S    Mar21   0:00 /usr/sbin/CRON -f
+pschmitt 26913  0.0  0.0   4504     0 ?        Ss   Mar21   0:00 /bin/sh -c /home/pschmitt/job.sh
+pschmitt 26914  0.0  0.0  12552     8 ?        S    Mar21   0:00 /bin/bash /home/pschmitt/job.sh
+root     26923  0.0  0.0      0     0 ?        S    Mar22   0:00 [kworker/0:1]
+pschmitt 26985  0.0  0.0 1121356 1072 ?        Sl   Mar21   2:07 /home/pschmitt/anaconda3/bin/python /home/pschmitt/jobin/main.py
+pschmitt 27008  105  5.9 8944792 1944740 ?     Rsl  Mar21 4640:40 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpo58vozcw.json
+root     27187  0.0  0.0      0     0 ?        S    Mar20   0:03 [kworker/9:1]
+root     27813  0.0  0.0  52312  2908 ?        S    17:50   0:00 /usr/sbin/CRON -f
+wolfm2   27814  0.0  0.0   4504   784 ?        Ss   17:50   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2   27817  0.0  0.0  12544  2900 ?        S    17:50   0:00 /bin/bash /home/wolfm2/job.sh
+root     28568  0.0  0.0      0     0 ?        S    10:37   0:01 [kworker/6:2]
+wolfm2   29330  0.0  0.0  37364  3332 ?        R    18:07   0:00 ps aux
+root     29644  0.0  0.0      0     0 ?        S    Mar22   0:08 [kworker/6:0]
+root     29939  0.0  0.0      0     0 ?        S    Mar22   0:14 [kworker/0:2]
+root     29947  0.0  0.0      0     0 ?        S    Mar22   0:01 [kworker/5:2]
+root     31545  0.0  0.0      0     0 ?        S    11:18   0:00 [kworker/2:1]
+Sat Mar 24 18:07:55 EDT 2018
+The following paths are ignored by one of your .gitignore files:
+minibook/amazonIter/__pycache__/my_measures.cpython-36.pyc
+Use -f if you really want to add them.
+The following paths are ignored by one of your .gitignore files:
+minibook/amazon/__pycache__/my_measures.cpython-36.pyc
+Use -f if you really want to add them.
