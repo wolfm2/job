@@ -1,0 +1,44 @@
+
+Sat Mar 24 17:50:04 EDT 2018
+Doing...
+Updating 1b64007..7491d30
+Fast-forward
+ main.py                                 |   3 +-
+ minibook/amazon.0/README.md             |  36 ++
+ minibook/amazon.0/_00_split.ipynb       | 146 +++++
+ minibook/amazon.0/_01_train.0.ipynb     | 662 ++++++++++++++++++++++
+ minibook/amazon.0/_01_train.ipynb       | 936 ++++++++++++++++++++++++++++++++
+ minibook/amazon.0/_02_test.ipynb        | 509 +++++++++++++++++
+ minibook/amazon.0/_03_submission.ipynb  | 405 ++++++++++++++
+ minibook/amazon.0/dataIn.aa             | Bin 0 -> 50000000 bytes
+ minibook/amazon.0/dataIn.ab             | Bin 0 -> 26708548 bytes
+ minibook/amazon.0/dataIn.ac             | Bin 0 -> 6290048 bytes
+ minibook/amazon.0/my_measures.py        |  34 ++
+ minibook/amazon.0/x_review_week05.ipynb | 765 ++++++++++++++++++++++++++
+ 12 files changed, 3495 insertions(+), 1 deletion(-)
+ create mode 100644 minibook/amazon.0/README.md
+ create mode 100644 minibook/amazon.0/_00_split.ipynb
+ create mode 100644 minibook/amazon.0/_01_train.0.ipynb
+ create mode 100644 minibook/amazon.0/_01_train.ipynb
+ create mode 100644 minibook/amazon.0/_02_test.ipynb
+ create mode 100644 minibook/amazon.0/_03_submission.ipynb
+ create mode 100644 minibook/amazon.0/dataIn.aa
+ create mode 100644 minibook/amazon.0/dataIn.ab
+ create mode 100644 minibook/amazon.0/dataIn.ac
+ create mode 100644 minibook/amazon.0/my_measures.py
+ create mode 100644 minibook/amazon.0/x_review_week05.ipynb
+sending incremental file list
+created directory /home/wolfm2/jobout/minibook/amazon.0
+./
+README.md
+_00_split.ipynb
+_01_train.0.ipynb
+_01_train.ipynb
+_02_test.ipynb
+_03_submission.ipynb
+my_measures.py
+x_review_week05.ipynb
+
+sent 158,431 bytes  received 231 bytes  317,324.00 bytes/sec
+total size is 157,785  speedup is 0.99
+Amazon.csv
