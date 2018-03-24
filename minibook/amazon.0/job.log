@@ -42,3 +42,20 @@ x_review_week05.ipynb
 sent 158,431 bytes  received 231 bytes  317,324.00 bytes/sec
 total size is 157,785  speedup is 0.99
 Amazon.csv
+
+bzip2: (stdin): trailing garbage after EOF ignored
+cat: write error: Broken pipe
+  0%|          | 0/34 [00:00<?, ?it/s]  6%|▌         | 2/34 [00:01<00:20,  1.54it/s]wolfm2     804  0.0  0.0   4504     0 ?        Ss   Mar19   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2     806  0.0  0.0  12544     8 ?        S    Mar19   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2     848  0.0  0.0 715336  1252 ?        Sl   Mar19   2:50 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2     874  0.2  0.0 9553324 5720 ?        Ssl  Mar19  18:50 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
+wolfm2    1460 60.8  0.0 9472448  704 ?        Sl   Mar19 4223:40 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
+wolfm2    5947  0.0  0.0 9553324 8096 ?        S    Mar22   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
+wolfm2   27814  0.0  0.0   4504   784 ?        Ss   17:50   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2   27817  0.0  0.0  12544  2900 ?        S    17:50   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2   27858  2.9  0.3 780624 107464 ?       Sl   17:50   0:02 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2   27970 79.3  0.3 980968 116264 ?       Ssl  17:51   0:02 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmppttl83su.json
+wolfm2   27997  0.0  0.0   4504   704 ?        S    17:51   0:00 sh -c ps aux | grep wolfm2
+wolfm2   27998  0.0  0.0  37364  3308 ?        R    17:51   0:00 ps aux
+wolfm2   27999  0.0  0.0  14224  1004 ?        S    17:51   0:00 grep wolfm2
+ 12%|█▏        | 4/34 [00:01<00:10,  2.83it/s] 15%|█▍        | 5/34 [00:08<00:47,  1.62s/it] 24%|██▎       | 8/34 [00:08<00:26,  1.03s/it] 24%|██▎       | 8/34 [00:20<01:05,  2.50s/it]
