@@ -389,3 +389,7 @@ Use -f if you really want to add them.
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
+Pushing...
+To ssh://git@github.com/wolfm2/jobout.git
+ ! [remote rejected] master -> master (cannot lock ref 'refs/heads/master': is at 4ab170caa86442237dcc4c9909e908b97907f54b but expected 4a1289beb5422dd347efd324ca4945b2c21abffe)
+error: failed to push some refs to 'ssh://git@github.com/wolfm2/jobout.git'

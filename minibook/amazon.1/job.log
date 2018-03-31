@@ -403,3 +403,5 @@ minibook/amazon/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
 Pushing...
 [IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+To ssh://git@github.com/wolfm2/jobout.git
+   4a1289b..4ab170c  master -> master
