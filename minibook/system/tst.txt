@@ -103,7 +103,7 @@ root       250  0.0  0.0      0     0 ?        S    Mar18   0:00 [scsi_eh_5]
 root       251  0.0  0.0      0     0 ?        S<   Mar18   0:00 [scsi_tmf_5]
 root       259  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/0:1H]
 root       285  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/10:1H]
-root       289  0.0  0.0      0     0 ?        D    Mar18   0:11 [jbd2/nvme0n1p1-]
+root       289  0.0  0.0      0     0 ?        S    Mar18   0:11 [jbd2/nvme0n1p1-]
 root       290  0.0  0.0      0     0 ?        S<   Mar18   0:00 [ext4-rsv-conver]
 root       324  0.0  0.0  43588 15400 ?        Ss   Mar18   0:46 /lib/systemd/systemd-journald
 root       325  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/2:1H]
@@ -204,18 +204,18 @@ root      4074  0.0  0.0      0     0 ?        S    10:58   0:00 [kworker/8:2]
 root      4275  0.0  0.0      0     0 ?        S    21:45   0:00 [kworker/10:1]
 root      4276  0.0  0.0      0     0 ?        S    21:45   0:00 [kworker/11:1]
 root      4953  0.0  0.0      0     0 ?        S    21:52   0:00 [kworker/u24:0]
-mlclass   5160  9.3  0.6 1669136 199972 ?      Ssl  21:53   1:09 /home/mlclass/anaconda3/bin/python -m ipykernel_launcher -f /run/user/1001/jupyter/kernel-5accc7dc-50e2-4de1-a50c-6d76b9972112.json
+mlclass   5160 10.2  0.6 1672968 203616 ?      Ssl  21:53   1:22 /home/mlclass/anaconda3/bin/python -m ipykernel_launcher -f /run/user/1001/jupyter/kernel-5accc7dc-50e2-4de1-a50c-6d76b9972112.json
 wolfm2    5947  0.0  0.0 9553324 1856 ?        S    Mar22   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
 root      6281  0.0  0.0      0     0 ?        S    22:03   0:00 [kworker/u24:2]
 root      6466  0.0  0.0      0     0 ?        S    11:22   0:00 [kworker/0:1]
 root      6467  0.0  0.0      0     0 ?        S    11:22   0:00 [kworker/5:1]
-root      6505  0.0  0.0  52312  2940 ?        S    22:06   0:00 /usr/sbin/CRON -f
-wolfm2    6507  0.0  0.0   4504   708 ?        Ss   22:06   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2    6509  0.0  0.0  12544  3116 ?        S    22:06   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2    6536 37.0  0.3 714824 107364 ?       Sl   22:06   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2    6571 49.0  0.1 660428 55756 ?        Ssl  22:06   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpt9oqpl82.json
-wolfm2    6591  0.0  0.0   4504   700 ?        S    22:06   0:00 sh -c ps aux > tst.txt
-wolfm2    6592  0.0  0.0  37364  3324 ?        R    22:06   0:00 ps aux
+root      6680  0.0  0.0  52312  2940 ?        S    22:07   0:00 /usr/sbin/CRON -f
+wolfm2    6682  0.0  0.0   4504   748 ?        Ss   22:07   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2    6684  0.0  0.0  12544  2976 ?        S    22:07   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2    6725 37.5  0.3 714828 107212 ?       Sl   22:07   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2    6746 48.0  0.1 660428 55760 ?        Ssl  22:07   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpyz0n9x4u.json
+wolfm2    6766  0.0  0.0   4504   692 ?        S    22:07   0:00 sh -c ps aux > tst.txt
+wolfm2    6767  0.0  0.0  37364  3316 ?        R    22:07   0:00 ps aux
 root      8694  0.0  0.0      0     0 ?        S    Mar29   0:05 [kworker/0:2]
 root     14756  0.0  0.0      0     0 ?        S    12:50   0:00 [kworker/1:0]
 root     14762  0.0  0.0      0     0 ?        S    12:50   0:00 [kworker/2:2]

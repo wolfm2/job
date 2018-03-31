@@ -1,7 +1,7 @@
 
-Fri Mar 30 22:06:03 EDT 2018
+Fri Mar 30 22:07:03 EDT 2018
 Doing...
-Updating 9c190f7..3d40096
+Updating 3d40096..6d5dbde
 Fast-forward
  minibook/system/runner.ipynb | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
@@ -12,8 +12,8 @@ deleting job.log
 ./
 runner.ipynb
 
-sent 1,160 bytes  received 76 bytes  2,472.00 bytes/sec
-total size is 1,029  speedup is 0.83
+sent 1,173 bytes  received 76 bytes  2,498.00 bytes/sec
+total size is 1,040  speedup is 0.83
   0%|          | 0/1 [00:00<?, ?it/s]Usage: killall [-Z CONTEXT] [-u USER] [ -eIgiqrvw ] [ -SIGNAL ] NAME...
        killall -l, --list
        killall -V, --version
@@ -35,12 +35,12 @@ total size is 1,029  speedup is 0.83
   -Z,--context REGEXP kill only process(es) having context
                       (must precede other arguments)
 
-100%|██████████| 1/1 [00:00<00:00, 35.05it/s]
+100%|██████████| 1/1 [00:00<00:00, 20.58it/s]
 Input Notebook:  runner.ipynb
 Output Notebook: output.ipynb
 .:
 total 4
-drwxrwxr-x 8 wolfm2 wolfm2 4096 Mar 30 22:06 minibook
+drwxrwxr-x 8 wolfm2 wolfm2 4096 Mar 30 22:07 minibook
 
 ./minibook:
 total 24
@@ -49,7 +49,7 @@ drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 26 05:41 amazon.0
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 30 21:24 amazon.1
 drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  7 11:47 amazonFirstIter
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 14 22:15 amazonIter
-drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar 30 22:06 system
+drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar 30 22:07 system
 
 ./minibook/amazon:
 total 273496
@@ -154,10 +154,10 @@ total 4
 
 ./minibook/system:
 total 40
--rw-rw-r-- 1 wolfm2 wolfm2  5653 Mar 30 22:06 job.log
--rw-rw-r-- 1 wolfm2 wolfm2  1522 Mar 30 22:06 output.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2  1029 Mar 30 22:06 runner.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 21536 Mar 30 22:06 tst.txt
+-rw-rw-r-- 1 wolfm2 wolfm2  5653 Mar 30 22:07 job.log
+-rw-rw-r-- 1 wolfm2 wolfm2  1532 Mar 30 22:07 output.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2  1040 Mar 30 22:07 runner.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2 21536 Mar 30 22:07 tst.txt
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root         1  0.0  0.0 185260  4320 ?        Ss   Mar18   0:07 /sbin/init splash
 root         2  0.0  0.0      0     0 ?        S    Mar18   0:00 [kthreadd]
@@ -364,15 +364,15 @@ root      4074  0.0  0.0      0     0 ?        S    10:58   0:00 [kworker/8:2]
 root      4275  0.0  0.0      0     0 ?        S    21:45   0:00 [kworker/10:1]
 root      4276  0.0  0.0      0     0 ?        S    21:45   0:00 [kworker/11:1]
 root      4953  0.0  0.0      0     0 ?        S    21:52   0:00 [kworker/u24:0]
-mlclass   5160  9.3  0.6 1669136 199972 ?      Ssl  21:53   1:09 /home/mlclass/anaconda3/bin/python -m ipykernel_launcher -f /run/user/1001/jupyter/kernel-5accc7dc-50e2-4de1-a50c-6d76b9972112.json
+mlclass   5160 10.2  0.6 1672968 203616 ?      Ssl  21:53   1:22 /home/mlclass/anaconda3/bin/python -m ipykernel_launcher -f /run/user/1001/jupyter/kernel-5accc7dc-50e2-4de1-a50c-6d76b9972112.json
 wolfm2    5947  0.0  0.0 9553324 1856 ?        S    Mar22   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
 root      6281  0.0  0.0      0     0 ?        S    22:03   0:00 [kworker/u24:2]
 root      6466  0.0  0.0      0     0 ?        S    11:22   0:00 [kworker/0:1]
 root      6467  0.0  0.0      0     0 ?        S    11:22   0:00 [kworker/5:1]
-root      6505  0.0  0.0  52312  2940 ?        S    22:06   0:00 /usr/sbin/CRON -f
-wolfm2    6507  0.0  0.0   4504   708 ?        Ss   22:06   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2    6509  0.0  0.0  12544  3116 ?        S    22:06   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2    6594  0.0  0.0  37364  3248 ?        R    22:06   0:00 ps aux
+root      6680  0.0  0.0  52312  2940 ?        S    22:07   0:00 /usr/sbin/CRON -f
+wolfm2    6682  0.0  0.0   4504   748 ?        Ss   22:07   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2    6684  0.0  0.0  12544  2976 ?        S    22:07   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2    6769  0.0  0.0  37364  3284 ?        R    22:07   0:00 ps aux
 root      8694  0.0  0.0      0     0 ?        S    Mar29   0:05 [kworker/0:2]
 root     14756  0.0  0.0      0     0 ?        S    12:50   0:00 [kworker/1:0]
 root     14762  0.0  0.0      0     0 ?        S    12:50   0:00 [kworker/2:2]
@@ -390,7 +390,7 @@ root     23323  0.0  0.0      0     0 ?        S    04:15   0:00 [kworker/4:0]
 root     24828  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/9:1]
 root     24923  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/9:2]
 root     31457  0.0  0.0      0     0 ?        S    10:08   0:00 [kworker/3:1]
-Fri Mar 30 22:06:06 EDT 2018
+Fri Mar 30 22:07:07 EDT 2018
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon.1/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
