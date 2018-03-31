@@ -1,10 +1,10 @@
 
-Fri Mar 30 21:34:02 EDT 2018
+Fri Mar 30 21:37:03 EDT 2018
 Doing...
-Updating d23459c..77fcbeb
+Updating 77fcbeb..9e92481
 Fast-forward
- minibook/system/runner.ipynb | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ minibook/system/runner.ipynb | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
 sending incremental file list
 deleting tst.txt
 deleting output.ipynb
@@ -12,16 +12,37 @@ deleting job.log
 ./
 runner.ipynb
 
-sent 1,173 bytes  received 76 bytes  2,498.00 bytes/sec
-total size is 1,040  speedup is 0.83
-  0%|          | 0/1 [00:00<?, ?it/s]sh: 1: kill: No such process
-
-100%|██████████| 1/1 [00:00<00:00, 40.97it/s]
+sent 1,177 bytes  received 76 bytes  2,506.00 bytes/sec
+total size is 1,044  speedup is 0.83
+  0%|          | 0/1 [00:00<?, ?it/s]
 Input Notebook:  runner.ipynb
 Output Notebook: output.ipynb
+Traceback (most recent call last):
+  File "/home/wolfm2/jobin/main.py", line 79, in <module>
+    main()
+  File "/home/wolfm2/jobin/main.py", line 19, in main
+    'output.ipynb',
+  File "/home/wolfm2/anaconda3/lib/python3.6/site-packages/papermill/execute.py", line 197, in execute_notebook
+    raise_for_execution_errors(nb, output)
+  File "/home/wolfm2/anaconda3/lib/python3.6/site-packages/papermill/execute.py", line 394, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [1]":
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-1-b09baa2ae746> in <module>()
+      5 import time
+      6 #time.sleep(120)
+----> 7 wolf
+      8 os.system('kill -9  27376')
+      9 os.system('ps aux > tst.txt')
+
+NameError: name 'wolf' is not defined
+
 .:
 total 4
-drwxrwxr-x 8 wolfm2 wolfm2 4096 Mar 30 21:34 minibook
+drwxrwxr-x 8 wolfm2 wolfm2 4096 Mar 30 21:37 minibook
 
 ./minibook:
 total 24
@@ -30,7 +51,7 @@ drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 26 05:41 amazon.0
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 30 21:24 amazon.1
 drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  7 11:47 amazonFirstIter
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 14 22:15 amazonIter
-drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar 30 21:34 system
+drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar 30 21:37 system
 
 ./minibook/amazon:
 total 273496
@@ -134,11 +155,10 @@ total 4
 -rw-rw-r-- 1 wolfm2 wolfm2 2047 Mar 14 22:15 my_measures.cpython-36.pyc
 
 ./minibook/system:
-total 40
--rw-rw-r-- 1 wolfm2 wolfm2  4649 Mar 30 21:34 job.log
--rw-rw-r-- 1 wolfm2 wolfm2  1533 Mar 30 21:34 output.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2  1040 Mar 30 21:34 runner.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 21917 Mar 30 21:34 tst.txt
+total 16
+-rw-rw-r-- 1 wolfm2 wolfm2 5555 Mar 30 21:37 job.log
+-rw-rw-r-- 1 wolfm2 wolfm2 2877 Mar 30 21:37 output.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2 1044 Mar 30 21:37 runner.ipynb
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root         1  0.0  0.0 185260  4320 ?        Ss   Mar18   0:07 /sbin/init splash
 root         2  0.0  0.0      0     0 ?        S    Mar18   0:00 [kthreadd]
@@ -321,8 +341,8 @@ colord    1228  0.0  0.0 309136     4 ?        Ssl  Mar18   0:00 /usr/lib/colord
 root      1262  0.0  0.0  16124  2140 ?        S    Mar18   0:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /var/run/dhclient-enp0s31f6.pid -lf /var/lib/NetworkManager/dhclient-45d90ee1-f2f7-475d-94b8-7fa88540ba33-enp0s31f6.lease -cf /var/lib/NetworkManager/dhclient-enp0s31f6.conf enp0s31f6
 root      1272  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/9:1H]
 nobody    1273  0.0  0.0  52864   328 ?        S    Mar18   0:06 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/var/run/NetworkManager/dnsmasq.pid --listen-address=127.0.1.1 --cache-size=0 --conf-file=/dev/null --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d
-wolfm2    1300  101 28.4 10994736 9361048 ?    Rl   21:24   9:55 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoi2r6z58.json
-wolfm2    1301  100 28.4 10994728 9361064 ?    Rl   21:24   9:50 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoi2r6z58.json
+wolfm2    1300  101 28.4 10994732 9361116 ?    Rl   21:24  12:57 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoi2r6z58.json
+wolfm2    1301  100 28.4 10994736 9360980 ?    Rl   21:24  12:52 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoi2r6z58.json
 lightdm   1318  0.0  0.0 481996  1876 ?        Sl   Mar18   0:00 /usr/lib/x86_64-linux-gnu/notify-osd
 root      1386  0.0  0.0      0     0 ?        S    10:31   0:00 [kworker/8:1]
 root      1432  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/11:1H]
@@ -335,14 +355,14 @@ mlclass   2129  0.0  0.0  45276  4612 ?        Ss   21:31   0:00 /lib/systemd/sy
 mlclass   2130  0.0  0.0 210804  1724 ?        S    21:31   0:00 (sd-pam)
 mlclass   2179  0.0  0.0  94924  3524 ?        S    21:31   0:00 sshd: mlclass@pts/9
 mlclass   2180  0.0  0.0  22664  5148 pts/9    Ss   21:31   0:00 -bash
-mlclass   2215  0.5  0.2 223096 68268 pts/9    S+   21:31   0:00 /home/mlclass/anaconda3/bin/python /home/mlclass/anaconda3/bin/jupyter-notebook --ip=149.31.182.149 --port 8085
-root      2449  0.0  0.0  52312  2840 ?        S    21:34   0:00 /usr/sbin/CRON -f
-wolfm2    2450  0.0  0.0   4504   708 ?        Ss   21:34   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2    2453  0.0  0.0  12544  2964 ?        S    21:34   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2    2537  0.0  0.0  37364  3284 ?        R    21:34   0:00 ps aux
+mlclass   2215  0.2  0.2 223096 68268 pts/9    S+   21:31   0:00 /home/mlclass/anaconda3/bin/python /home/mlclass/anaconda3/bin/jupyter-notebook --ip=149.31.182.149 --port 8085
 root      2667  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/4:2]
 root      2673  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/3:0]
+root      2854  0.0  0.0  52312  2912 ?        S    21:37   0:00 /usr/sbin/CRON -f
+wolfm2    2856  0.0  0.0   4504   684 ?        Ss   21:37   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2    2858  0.0  0.0  12544  3036 ?        S    21:37   0:00 /bin/bash /home/wolfm2/job.sh
 root      2887  0.0  0.0      0     0 ?        S    16:16   0:00 [kworker/7:0]
+wolfm2    2940  0.0  0.0  37364  3280 ?        R    21:37   0:00 ps aux
 root      3309  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/1:1]
 root      3783  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/11:0]
 root      4074  0.0  0.0      0     0 ?        S    10:58   0:00 [kworker/8:2]
@@ -358,7 +378,7 @@ root     15079  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/6:2]
 pschmitt 15347  0.0  0.0  45276  4644 ?        Ss   12:56   0:00 /lib/systemd/systemd --user
 pschmitt 15348  0.0  0.0 210804  1724 ?        S    12:56   0:00 (sd-pam)
 pschmitt 15437  0.0  0.2 391216 83352 ?        Sl   12:56   0:23 /home/pschmitt/anaconda3/bin/python /home/pschmitt/anaconda3/bin/jupyter-notebook --ip=149.31.182.149 --port=8005
-pschmitt 15443 24.4  4.7 3523732 1546916 ?     Ssl  12:56 126:39 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /run/user/1002/jupyter/kernel-cec2032f-b943-4ddf-8205-5a115a9ab507.json
+pschmitt 15443 24.3  4.7 3523732 1546916 ?     Ssl  12:56 126:39 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /run/user/1002/jupyter/kernel-cec2032f-b943-4ddf-8205-5a115a9ab507.json
 root     15918  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/5:0]
 root     16894  0.0  0.0  93276  7552 ?        Ss   07:35   0:00 /usr/sbin/cupsd -l
 root     16895  0.0  0.0 274816  9468 ?        Ssl  07:35   0:00 /usr/sbin/cups-browsed
@@ -371,10 +391,10 @@ root     24828  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/9:1]
 root     24923  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/9:2]
 root     26544  0.0  0.0      0     0 ?        S    20:22   0:00 [kworker/u24:2]
 wolfm2   27351  0.0  0.0  12544  3112 ?        S    20:30   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2   27376  0.0  0.3 715328 107996 ?       Sl   20:30   0:01 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2   27413 23.5 21.4 8794328 7056784 ?     Ssl  20:30  15:03 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoi2r6z58.json
+wolfm2   27376  0.0  0.3 715328 107996 ?       Sl   20:30   0:02 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2   27413 22.5 21.4 8794328 7056784 ?     Ssl  20:30  15:05 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoi2r6z58.json
 root     31457  0.0  0.0      0     0 ?        S    10:08   0:00 [kworker/3:1]
-Fri Mar 30 21:34:06 EDT 2018
+Fri Mar 30 21:37:06 EDT 2018
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon.1/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
@@ -387,6 +407,3 @@ Use -f if you really want to add them.
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
-Pushing...
-To ssh://git@github.com/wolfm2/jobout.git
-   13e3d14..9baf126  master -> master
