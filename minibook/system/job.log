@@ -1,19 +1,18 @@
 
-Fri Mar 30 21:37:03 EDT 2018
+Fri Mar 30 21:38:01 EDT 2018
 Doing...
-Updating 77fcbeb..9e92481
+Updating 9e92481..73bfbc4
 Fast-forward
- minibook/system/runner.ipynb | 4 ++--
- 1 file changed, 2 insertions(+), 2 deletions(-)
+ minibook/system/runner.ipynb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 sending incremental file list
-deleting tst.txt
 deleting output.ipynb
 deleting job.log
 ./
 runner.ipynb
 
-sent 1,177 bytes  received 76 bytes  2,506.00 bytes/sec
-total size is 1,044  speedup is 0.83
+sent 1,178 bytes  received 65 bytes  2,486.00 bytes/sec
+total size is 1,045  speedup is 0.84
   0%|          | 0/1 [00:00<?, ?it/s]
 Input Notebook:  runner.ipynb
 Output Notebook: output.ipynb
@@ -31,18 +30,18 @@ papermill.exceptions.PapermillExecutionError:
 Exception encountered at "In [1]":
 ---------------------------------------------------------------------------
 NameError                                 Traceback (most recent call last)
-<ipython-input-1-b09baa2ae746> in <module>()
+<ipython-input-1-6cd6b5ee2705> in <module>()
       5 import time
       6 #time.sleep(120)
 ----> 7 wolf
-      8 os.system('kill -9  27376')
+      8 #os.system('kill -9  27376')
       9 os.system('ps aux > tst.txt')
 
 NameError: name 'wolf' is not defined
 
 .:
 total 4
-drwxrwxr-x 8 wolfm2 wolfm2 4096 Mar 30 21:37 minibook
+drwxrwxr-x 8 wolfm2 wolfm2 4096 Mar 30 21:38 minibook
 
 ./minibook:
 total 24
@@ -51,7 +50,7 @@ drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 26 05:41 amazon.0
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 30 21:24 amazon.1
 drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  7 11:47 amazonFirstIter
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 14 22:15 amazonIter
-drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar 30 21:37 system
+drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar 30 21:38 system
 
 ./minibook/amazon:
 total 273496
@@ -156,9 +155,9 @@ total 4
 
 ./minibook/system:
 total 16
--rw-rw-r-- 1 wolfm2 wolfm2 5555 Mar 30 21:37 job.log
--rw-rw-r-- 1 wolfm2 wolfm2 2877 Mar 30 21:37 output.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 1044 Mar 30 21:37 runner.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2 5535 Mar 30 21:38 job.log
+-rw-rw-r-- 1 wolfm2 wolfm2 2800 Mar 30 21:38 output.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2 1045 Mar 30 21:38 runner.ipynb
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root         1  0.0  0.0 185260  4320 ?        Ss   Mar18   0:07 /sbin/init splash
 root         2  0.0  0.0      0     0 ?        S    Mar18   0:00 [kthreadd]
@@ -293,7 +292,7 @@ nvidia-+   888  0.0  0.0  17140   108 ?        Ss   Mar18   0:00 /usr/bin/nvidia
 root       895  0.0  0.0 413608  1056 ?        Ssl  Mar18   0:00 /usr/sbin/ModemManager
 root       897  0.0  0.0  31956     0 ?        Ss   Mar18   0:00 /usr/lib/bluetooth/bluetoothd
 root       899  0.0  0.0  28628  1920 ?        Ss   Mar18   0:01 /lib/systemd/systemd-logind
-root       901  0.0  0.0 166432   196 ?        Ssl  Mar18   1:52 /usr/sbin/thermald --no-daemon --dbus-enable
+root       901  0.0  0.0 166432   196 ?        Ssl  Mar18   1:53 /usr/sbin/thermald --no-daemon --dbus-enable
 root       902  0.0  0.0 287200  2640 ?        Ssl  Mar18   0:27 /usr/lib/accountsservice/accounts-daemon
 root       907  0.0  0.0 767648  5404 ?        Ssl  Mar18   1:36 /usr/lib/snapd/snapd
 syslog     914  0.0  0.0 256396   940 ?        Ssl  Mar18   0:15 /usr/sbin/rsyslogd -n
@@ -341,8 +340,8 @@ colord    1228  0.0  0.0 309136     4 ?        Ssl  Mar18   0:00 /usr/lib/colord
 root      1262  0.0  0.0  16124  2140 ?        S    Mar18   0:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /var/run/dhclient-enp0s31f6.pid -lf /var/lib/NetworkManager/dhclient-45d90ee1-f2f7-475d-94b8-7fa88540ba33-enp0s31f6.lease -cf /var/lib/NetworkManager/dhclient-enp0s31f6.conf enp0s31f6
 root      1272  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/9:1H]
 nobody    1273  0.0  0.0  52864   328 ?        S    Mar18   0:06 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/var/run/NetworkManager/dnsmasq.pid --listen-address=127.0.1.1 --cache-size=0 --conf-file=/dev/null --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d
-wolfm2    1300  101 28.4 10994732 9361116 ?    Rl   21:24  12:57 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoi2r6z58.json
-wolfm2    1301  100 28.4 10994736 9360980 ?    Rl   21:24  12:52 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoi2r6z58.json
+wolfm2    1300  101 28.4 10994728 9361132 ?    Rl   21:24  13:58 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoi2r6z58.json
+wolfm2    1301  100 28.4 10994732 9361048 ?    Rl   21:24  13:52 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoi2r6z58.json
 lightdm   1318  0.0  0.0 481996  1876 ?        Sl   Mar18   0:00 /usr/lib/x86_64-linux-gnu/notify-osd
 root      1386  0.0  0.0      0     0 ?        S    10:31   0:00 [kworker/8:1]
 root      1432  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/11:1H]
@@ -358,11 +357,11 @@ mlclass   2180  0.0  0.0  22664  5148 pts/9    Ss   21:31   0:00 -bash
 mlclass   2215  0.2  0.2 223096 68268 pts/9    S+   21:31   0:00 /home/mlclass/anaconda3/bin/python /home/mlclass/anaconda3/bin/jupyter-notebook --ip=149.31.182.149 --port 8085
 root      2667  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/4:2]
 root      2673  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/3:0]
-root      2854  0.0  0.0  52312  2912 ?        S    21:37   0:00 /usr/sbin/CRON -f
-wolfm2    2856  0.0  0.0   4504   684 ?        Ss   21:37   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2    2858  0.0  0.0  12544  3036 ?        S    21:37   0:00 /bin/bash /home/wolfm2/job.sh
 root      2887  0.0  0.0      0     0 ?        S    16:16   0:00 [kworker/7:0]
-wolfm2    2940  0.0  0.0  37364  3280 ?        R    21:37   0:00 ps aux
+root      3029  0.0  0.0  52312  2912 ?        S    21:38   0:00 /usr/sbin/CRON -f
+wolfm2    3030  0.0  0.0   4504   700 ?        Ss   21:38   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2    3032  0.0  0.0  12544  2920 ?        S    21:38   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2    3114  0.0  0.0  37364  3340 ?        R    21:38   0:00 ps aux
 root      3309  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/1:1]
 root      3783  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/11:0]
 root      4074  0.0  0.0      0     0 ?        S    10:58   0:00 [kworker/8:2]
@@ -392,9 +391,9 @@ root     24923  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/9:2]
 root     26544  0.0  0.0      0     0 ?        S    20:22   0:00 [kworker/u24:2]
 wolfm2   27351  0.0  0.0  12544  3112 ?        S    20:30   0:00 /bin/bash /home/wolfm2/job.sh
 wolfm2   27376  0.0  0.3 715328 107996 ?       Sl   20:30   0:02 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2   27413 22.5 21.4 8794328 7056784 ?     Ssl  20:30  15:05 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoi2r6z58.json
+wolfm2   27413 22.2 21.4 8794328 7056784 ?     Ssl  20:30  15:08 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoi2r6z58.json
 root     31457  0.0  0.0      0     0 ?        S    10:08   0:00 [kworker/3:1]
-Fri Mar 30 21:37:06 EDT 2018
+Fri Mar 30 21:38:05 EDT 2018
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon.1/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
