@@ -1,24 +1,46 @@
 
-Fri Mar 30 21:40:03 EDT 2018
+Fri Mar 30 22:06:03 EDT 2018
 Doing...
-Updating 73bfbc4..9c190f7
+Updating 9c190f7..3d40096
 Fast-forward
- minibook/system/runner.ipynb | 3 +--
- 1 file changed, 1 insertion(+), 2 deletions(-)
+ minibook/system/runner.ipynb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 sending incremental file list
+deleting tst.txt
 deleting output.ipynb
 deleting job.log
 ./
 runner.ipynb
 
-sent 1,161 bytes  received 65 bytes  2,452.00 bytes/sec
-total size is 1,030  speedup is 0.84
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 35.58it/s]
+sent 1,160 bytes  received 76 bytes  2,472.00 bytes/sec
+total size is 1,029  speedup is 0.83
+  0%|          | 0/1 [00:00<?, ?it/s]Usage: killall [-Z CONTEXT] [-u USER] [ -eIgiqrvw ] [ -SIGNAL ] NAME...
+       killall -l, --list
+       killall -V, --version
+
+  -e,--exact          require exact match for very long names
+  -I,--ignore-case    case insensitive process name match
+  -g,--process-group  kill process group instead of process
+  -y,--younger-than   kill processes younger than TIME
+  -o,--older-than     kill processes older than TIME
+  -i,--interactive    ask for confirmation before killing
+  -l,--list           list all known signal names
+  -q,--quiet          don't print complaints
+  -r,--regexp         interpret NAME as an extended regular expression
+  -s,--signal SIGNAL  send this signal instead of SIGTERM
+  -u,--user USER      kill only process(es) running as USER
+  -v,--verbose        report if the signal was successfully sent
+  -V,--version        display version information
+  -w,--wait           wait for processes to die
+  -Z,--context REGEXP kill only process(es) having context
+                      (must precede other arguments)
+
+100%|██████████| 1/1 [00:00<00:00, 35.05it/s]
 Input Notebook:  runner.ipynb
 Output Notebook: output.ipynb
 .:
 total 4
-drwxrwxr-x 8 wolfm2 wolfm2 4096 Mar 30 21:40 minibook
+drwxrwxr-x 8 wolfm2 wolfm2 4096 Mar 30 22:06 minibook
 
 ./minibook:
 total 24
@@ -27,7 +49,7 @@ drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 26 05:41 amazon.0
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 30 21:24 amazon.1
 drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  7 11:47 amazonFirstIter
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 14 22:15 amazonIter
-drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar 30 21:40 system
+drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar 30 22:06 system
 
 ./minibook/amazon:
 total 273496
@@ -93,7 +115,7 @@ total 34004
 -rw-rw-r-- 1 wolfm2 wolfm2     4868 Mar 30 21:20 GridSearch.txt
 -rw-rw-r-- 1 wolfm2 wolfm2      498 Mar 30 20:30 hv0.pkl
 -rw-rw-r-- 1 wolfm2 wolfm2      515 Mar 30 20:30 hv2.pkl
--rw-rw-r-- 1 wolfm2 wolfm2    31016 Mar 30 21:40 job.log
+-rw-rw-r-- 1 wolfm2 wolfm2    31096 Mar 30 21:40 job.log
 -rw-rw-r-- 1 wolfm2 wolfm2     2632 Mar 30 20:08 my_measures.py
 -rw-rw-r-- 1 wolfm2 wolfm2    29953 Mar 30 20:31 output.ipynb
 drwxrwxr-x 2 wolfm2 wolfm2     4096 Mar 30 20:31 __pycache__
@@ -132,17 +154,17 @@ total 4
 
 ./minibook/system:
 total 40
--rw-rw-r-- 1 wolfm2 wolfm2  4604 Mar 30 21:40 job.log
--rw-rw-r-- 1 wolfm2 wolfm2  1523 Mar 30 21:40 output.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2  1030 Mar 30 21:40 runner.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 22219 Mar 30 21:40 tst.txt
+-rw-rw-r-- 1 wolfm2 wolfm2  5653 Mar 30 22:06 job.log
+-rw-rw-r-- 1 wolfm2 wolfm2  1522 Mar 30 22:06 output.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2  1029 Mar 30 22:06 runner.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2 21536 Mar 30 22:06 tst.txt
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root         1  0.0  0.0 185260  4320 ?        Ss   Mar18   0:07 /sbin/init splash
 root         2  0.0  0.0      0     0 ?        S    Mar18   0:00 [kthreadd]
 root         4  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/0:0H]
 root         6  0.0  0.0      0     0 ?        S<   Mar18   0:00 [mm_percpu_wq]
 root         7  0.0  0.0      0     0 ?        S    Mar18   0:03 [ksoftirqd/0]
-root         8  0.0  0.0      0     0 ?        S    Mar18   4:11 [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    Mar18   4:12 [rcu_sched]
 root         9  0.0  0.0      0     0 ?        S    Mar18   0:00 [rcu_bh]
 root        10  0.0  0.0      0     0 ?        S    Mar18   0:11 [migration/0]
 root        11  0.0  0.0      0     0 ?        S    Mar18   0:02 [watchdog/0]
@@ -241,9 +263,9 @@ root       250  0.0  0.0      0     0 ?        S    Mar18   0:00 [scsi_eh_5]
 root       251  0.0  0.0      0     0 ?        S<   Mar18   0:00 [scsi_tmf_5]
 root       259  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/0:1H]
 root       285  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/10:1H]
-root       289  0.0  0.0      0     0 ?        S    Mar18   0:10 [jbd2/nvme0n1p1-]
+root       289  0.0  0.0      0     0 ?        S    Mar18   0:11 [jbd2/nvme0n1p1-]
 root       290  0.0  0.0      0     0 ?        S<   Mar18   0:00 [ext4-rsv-conver]
-root       324  0.0  0.0  43588 15136 ?        Ss   Mar18   0:46 /lib/systemd/systemd-journald
+root       324  0.0  0.0  43588 15400 ?        Ss   Mar18   0:46 /lib/systemd/systemd-journald
 root       325  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/2:1H]
 root       341  0.0  0.0  45816  3212 ?        Ss   Mar18   0:01 /lib/systemd/systemd-udevd
 root       342  0.0  0.0      0     0 ?        S<   Mar18   0:00 [cfg80211]
@@ -252,7 +274,7 @@ root       394  0.0  0.0      0     0 ?        S    Mar29   0:04 [kworker/6:1]
 systemd+   465  0.0  0.0 102384    36 ?        Ssl  Mar18   0:01 /lib/systemd/systemd-timesyncd
 root       564  0.0  0.0      0     0 ?        S    Mar18   0:00 [UVM global queu]
 root       565  0.0  0.0      0     0 ?        S    Mar18   0:00 [UVM Tools Event]
-root       583  0.3  0.0      0     0 ?        S    Mar18  62:23 [irq/151-nvidia]
+root       583  0.3  0.0      0     0 ?        S    Mar18  62:26 [irq/151-nvidia]
 root       584  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/u25:0]
 root       586  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/u25:2]
 root       593  0.0  0.0      0     0 ?        S    Mar18   0:00 [nvidia]
@@ -261,8 +283,8 @@ root       802  0.0  0.0  52312    16 ?        S    Mar19   0:00 /usr/sbin/CRON 
 wolfm2     804  0.0  0.0   4504     0 ?        Ss   Mar19   0:00 /bin/sh -c /home/wolfm2/job.sh
 wolfm2     806  0.0  0.0  12544     8 ?        S    Mar19   0:00 /bin/bash /home/wolfm2/job.sh
 root       821  0.0  0.0      0     0 ?        S<   Mar18   0:00 [led_workqueue]
-wolfm2     848  0.0  0.0 715336   948 ?        Sl   Mar19   6:26 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2     874  0.1  0.0 9553324 1768 ?        Ssl  Mar19  29:44 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
+wolfm2     848  0.0  0.0 715336   948 ?        Sl   Mar19   6:27 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2     874  0.1  0.0 9553324 1768 ?        Ssl  Mar19  29:46 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
 root       875  0.0  0.0  29008   560 ?        Ss   Mar18   0:12 /usr/sbin/cron -f
 root       882  0.0  0.0   4396     0 ?        Ss   Mar18   0:00 /usr/sbin/acpid
 avahi      887  0.0  0.0  45048   872 ?        Ss   Mar18   0:14 avahi-daemon: running [d12ml.local]
@@ -306,7 +328,7 @@ lightdm   1130  0.0  0.0 618940  3536 ?        Sl   Mar18   0:08 /usr/lib/unity-
 lightdm   1132  0.0  0.0 363364  2796 ?        Ssl  Mar18   0:00 /usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
 lightdm   1133  0.0  0.0 342332     0 ?        Ssl  Mar18   0:00 /usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
 lightdm   1134  0.0  0.0 426524     0 ?        Ssl  Mar18   0:00 /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
-lightdm   1135  0.0  0.0 457892  1072 ?        Ssl  Mar18   0:13 /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
+lightdm   1135  0.0  0.0 457892  1072 ?        Ssl  Mar18   0:14 /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
 lightdm   1136  0.0  0.0 563912  9520 ?        Ssl  Mar18   0:02 /usr/lib/x86_64-linux-gnu/indicator-keyboard/indicator-keyboard-service --use-gtk
 lightdm   1137  0.0  0.0 669160  3368 ?        Ssl  Mar18   0:00 /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service
 lightdm   1138  0.0  0.0 830756  3136 ?        Ssl  Mar18   0:00 /usr/lib/x86_64-linux-gnu/indicator-session/indicator-session-service
@@ -318,13 +340,11 @@ colord    1228  0.0  0.0 309136     4 ?        Ssl  Mar18   0:00 /usr/lib/colord
 root      1262  0.0  0.0  16124  2140 ?        S    Mar18   0:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /var/run/dhclient-enp0s31f6.pid -lf /var/lib/NetworkManager/dhclient-45d90ee1-f2f7-475d-94b8-7fa88540ba33-enp0s31f6.lease -cf /var/lib/NetworkManager/dhclient-enp0s31f6.conf enp0s31f6
 root      1272  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/9:1H]
 nobody    1273  0.0  0.0  52864   328 ?        S    Mar18   0:06 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/var/run/NetworkManager/dnsmasq.pid --listen-address=127.0.1.1 --cache-size=0 --conf-file=/dev/null --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d
-wolfm2    1300  101 28.4 10994736 9361052 ?    Rl   21:24  16:02 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoi2r6z58.json
-wolfm2    1301  100 28.4 10994728 9361068 ?    Rl   21:24  15:56 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoi2r6z58.json
 lightdm   1318  0.0  0.0 481996  1876 ?        Sl   Mar18   0:00 /usr/lib/x86_64-linux-gnu/notify-osd
 root      1386  0.0  0.0      0     0 ?        S    10:31   0:00 [kworker/8:1]
 root      1432  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/11:1H]
 whoopsie  1459  0.0  0.0 374012  1444 ?        Ssl  Mar18   0:00 /usr/bin/whoopsie -f
-wolfm2    1460 26.7  0.0 9472448   72 ?        Sl   Mar19 4223:40 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
+wolfm2    1460 26.6  0.0 9472448   72 ?        Sl   Mar19 4223:40 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
 root      1464  0.0  0.0  15936     0 tty1     Ss+  Mar18   0:00 /sbin/agetty --noclear tty1 linux
 root      1734  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/7:1H]
 root      2127  0.0  0.0  94924  6936 ?        Ss   21:31   0:00 sshd: mlclass [priv]
@@ -332,29 +352,28 @@ mlclass   2129  0.0  0.0  45276  4612 ?        Ss   21:31   0:00 /lib/systemd/sy
 mlclass   2130  0.0  0.0 210804  1724 ?        S    21:31   0:00 (sd-pam)
 mlclass   2179  0.0  0.0  94924  3524 ?        S    21:31   0:00 sshd: mlclass@pts/9
 mlclass   2180  0.0  0.0  22664  5148 pts/9    Ss   21:31   0:00 -bash
-mlclass   2215  0.1  0.2 223096 68268 pts/9    S+   21:31   0:00 /home/mlclass/anaconda3/bin/python /home/mlclass/anaconda3/bin/jupyter-notebook --ip=149.31.182.149 --port 8085
-root      2667  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/4:2]
+mlclass   2215  0.1  0.2 382824 80924 pts/9    Sl+  21:31   0:03 /home/mlclass/anaconda3/bin/python /home/mlclass/anaconda3/bin/jupyter-notebook --ip=149.31.182.149 --port 8085
 root      2673  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/3:0]
 root      2887  0.0  0.0      0     0 ?        S    16:16   0:00 [kworker/7:0]
 root      3227  0.0  0.0      0     0 ?        S    21:38   0:00 [kworker/4:1]
 root      3228  0.0  0.0      0     0 ?        S    21:38   0:00 [kworker/5:2]
 root      3309  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/1:1]
-root      3344  0.0  0.0  94924  7124 ?        Ss   21:39   0:00 sshd: mlclass [priv]
-mlclass   3370  5.4  0.0  95092  4224 ?        S    21:39   0:03 sshd: mlclass@notty
-mlclass   3371  2.4  0.0  12868  1916 ?        Ss   21:39   0:01 scp -r -t /home/mlclass/echu/data
-root      3377  0.0  0.0  52312  2912 ?        S    21:40   0:00 /usr/sbin/CRON -f
-wolfm2    3378  0.0  0.0   4504   784 ?        Ss   21:40   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2    3380  0.0  0.0  12544  2892 ?        S    21:40   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2    3545  0.0  0.0  20312  3464 ?        S    21:40   0:00 /usr/bin/git push
-wolfm2    3546  0.0  0.0  49044  5412 ?        S    21:40   0:00 ssh git@github.com git-receive-pack '/wolfm2/jobout.git'
-wolfm2    3548  0.0  0.0  37364  3292 ?        R    21:40   0:00 ps aux
 root      3783  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/11:0]
+root      4052  0.0  0.0      0     0 ?        S    21:43   0:00 [kworker/u24:1]
 root      4074  0.0  0.0      0     0 ?        S    10:58   0:00 [kworker/8:2]
-root      4450  0.0  0.0      0     0 ?        S    11:01   0:00 [kworker/10:0]
+root      4275  0.0  0.0      0     0 ?        S    21:45   0:00 [kworker/10:1]
+root      4276  0.0  0.0      0     0 ?        S    21:45   0:00 [kworker/11:1]
+root      4953  0.0  0.0      0     0 ?        S    21:52   0:00 [kworker/u24:0]
+mlclass   5160  9.3  0.6 1669136 199972 ?      Ssl  21:53   1:09 /home/mlclass/anaconda3/bin/python -m ipykernel_launcher -f /run/user/1001/jupyter/kernel-5accc7dc-50e2-4de1-a50c-6d76b9972112.json
 wolfm2    5947  0.0  0.0 9553324 1856 ?        S    Mar22   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
+root      6281  0.0  0.0      0     0 ?        S    22:03   0:00 [kworker/u24:2]
 root      6466  0.0  0.0      0     0 ?        S    11:22   0:00 [kworker/0:1]
 root      6467  0.0  0.0      0     0 ?        S    11:22   0:00 [kworker/5:1]
-root      8694  0.0  0.0      0     0 ?        S    Mar29   0:04 [kworker/0:2]
+root      6505  0.0  0.0  52312  2940 ?        S    22:06   0:00 /usr/sbin/CRON -f
+wolfm2    6507  0.0  0.0   4504   708 ?        Ss   22:06   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2    6509  0.0  0.0  12544  3116 ?        S    22:06   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2    6594  0.0  0.0  37364  3248 ?        R    22:06   0:00 ps aux
+root      8694  0.0  0.0      0     0 ?        S    Mar29   0:05 [kworker/0:2]
 root     14756  0.0  0.0      0     0 ?        S    12:50   0:00 [kworker/1:0]
 root     14762  0.0  0.0      0     0 ?        S    12:50   0:00 [kworker/2:2]
 root     14772  0.0  0.0      0     0 ?        S    12:50   0:00 [kworker/10:2]
@@ -362,21 +381,16 @@ root     15079  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/6:2]
 pschmitt 15347  0.0  0.0  45276  4644 ?        Ss   12:56   0:00 /lib/systemd/systemd --user
 pschmitt 15348  0.0  0.0 210804  1724 ?        S    12:56   0:00 (sd-pam)
 pschmitt 15437  0.0  0.2 391216 83352 ?        Sl   12:56   0:23 /home/pschmitt/anaconda3/bin/python /home/pschmitt/anaconda3/bin/jupyter-notebook --ip=149.31.182.149 --port=8005
-pschmitt 15443 24.2  4.7 3523732 1546916 ?     Ssl  12:56 126:39 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /run/user/1002/jupyter/kernel-cec2032f-b943-4ddf-8205-5a115a9ab507.json
-root     15918  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/5:0]
+pschmitt 15443 23.0  4.7 3523732 1546916 ?     Ssl  12:56 126:40 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /run/user/1002/jupyter/kernel-cec2032f-b943-4ddf-8205-5a115a9ab507.json
 root     16894  0.0  0.0  93276  7552 ?        Ss   07:35   0:00 /usr/sbin/cupsd -l
 root     16895  0.0  0.0 274816  9468 ?        Ssl  07:35   0:00 /usr/sbin/cups-browsed
 root     16922  0.0  0.0      0     0 ?        S    07:35   0:00 [kworker/2:0]
-root     17471  0.0  0.0      0     0 ?        S    07:40   0:00 [kworker/11:2]
 root     19686  0.0  0.0      0     0 ?        S    19:13   0:00 [kworker/7:2]
-root     23267  0.0  0.0      0     0 ?        S    19:51   0:00 [kworker/u24:0]
 root     23323  0.0  0.0      0     0 ?        S    04:15   0:00 [kworker/4:0]
 root     24828  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/9:1]
 root     24923  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/9:2]
-root     26544  0.0  0.0      0     0 ?        S    20:22   0:00 [kworker/u24:2]
-wolfm2   27351  0.0  0.0  12560  3128 ?        S    20:30   0:00 /bin/bash /home/wolfm2/job.sh
 root     31457  0.0  0.0      0     0 ?        S    10:08   0:00 [kworker/3:1]
-Fri Mar 30 21:40:07 EDT 2018
+Fri Mar 30 22:06:06 EDT 2018
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon.1/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
@@ -389,7 +403,3 @@ Use -f if you really want to add them.
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
-Pushing...
-To ssh://git@github.com/wolfm2/jobout.git
- ! [remote rejected] master -> master (cannot lock ref 'refs/heads/master': is at 4ab170caa86442237dcc4c9909e908b97907f54b but expected 4a1289beb5422dd347efd324ca4945b2c21abffe)
-error: failed to push some refs to 'ssh://git@github.com/wolfm2/jobout.git'
