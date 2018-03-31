@@ -1,10 +1,10 @@
 
-Sat Mar 31 08:36:03 EDT 2018
+Sat Mar 31 08:39:02 EDT 2018
 Doing...
-Updating 1cf603a..047dca5
+Updating 047dca5..458e2d4
 Fast-forward
- minibook/amazon.1/_02_test.ipynb | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ minibook/amazon.1/_02_test.ipynb | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
 sending incremental file list
 deleting __pycache__/my_measures.cpython-36.pyc
 deleting __pycache__/
@@ -13,9 +13,9 @@ deleting job.log
 ./
 _02_test.ipynb
 
-sent 27,207 bytes  received 123 bytes  54,660.00 bytes/sec
-total size is 105,858  speedup is 3.87
-  0%|          | 0/27 [00:00<?, ?it/s]  7%|▋         | 2/27 [00:00<00:03,  7.15it/s] 15%|█▍        | 4/27 [00:00<00:03,  5.80it/s]
+sent 27,234 bytes  received 123 bytes  54,714.00 bytes/sec
+total size is 105,883  speedup is 3.87
+  0%|          | 0/27 [00:00<?, ?it/s]  7%|▋         | 2/27 [00:00<00:03,  7.16it/s] 15%|█▍        | 4/27 [00:00<00:03,  5.87it/s]
 Input Notebook:  _02_test.ipynb
 Output Notebook: output.ipynb
 Traceback (most recent call last):
@@ -32,10 +32,10 @@ papermill.exceptions.PapermillExecutionError:
 Exception encountered at "In [5]":
 ---------------------------------------------------------------------------
 FileNotFoundError                         Traceback (most recent call last)
-<ipython-input-5-818d5fa532f5> in <module>()
+<ipython-input-5-17ef42bcac6b> in <module>()
      10 
      11 # look at the text tokenizer=LemmaTokenizer(), strip_accents=ascii,  stop_words={'english'},
----> 12 hv0 = joblib.load('hv1.pkl')
+---> 12 hv0 = joblib.load('hv0.pkl')
      13 
      14 X_hv0 = hv0.fit_transform(amazon.Text) # mw adds uid as token
 
@@ -46,17 +46,17 @@ FileNotFoundError                         Traceback (most recent call last)
     571             with _read_fileobject(f, filename, mmap_mode) as fobj:
     572                 if isinstance(fobj, _basestring):
 
-FileNotFoundError: [Errno 2] No such file or directory: 'hv1.pkl'
+FileNotFoundError: [Errno 2] No such file or directory: 'hv0.pkl'
 
 .:
 total 4
-drwxrwxr-x 8 wolfm2 wolfm2 4096 Mar 31 08:36 minibook
+drwxrwxr-x 8 wolfm2 wolfm2 4096 Mar 31 08:39 minibook
 
 ./minibook:
 total 24
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 19 22:07 amazon
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 26 05:41 amazon.0
-drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 31 08:36 amazon.1
+drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 31 08:39 amazon.1
 drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  7 11:47 amazonFirstIter
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 14 22:15 amazonIter
 drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar 30 22:07 system
@@ -118,17 +118,17 @@ total 4
 total 140
 -rw-rw-r-- 1 wolfm2 wolfm2  2978 Mar 30 20:08 _00_split.ipynb
 -rw-rw-r-- 1 wolfm2 wolfm2 48793 Mar 31 08:22 _01_train.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 26940 Mar 31 08:36 _02_test.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2 26965 Mar 31 08:39 _02_test.ipynb
 -rw-rw-r-- 1 wolfm2 wolfm2 20981 Mar 30 20:08 _03_submission.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2  2096 Mar 31 08:36 job.log
+-rw-rw-r-- 1 wolfm2 wolfm2  2109 Mar 31 08:39 job.log
 -rw-rw-r-- 1 wolfm2 wolfm2  2632 Mar 30 20:08 my_measures.py
--rw-rw-r-- 1 wolfm2 wolfm2 20117 Mar 31 08:36 output.ipynb
-drwxrwxr-x 2 wolfm2 wolfm2  4096 Mar 31 08:36 __pycache__
+-rw-rw-r-- 1 wolfm2 wolfm2 20142 Mar 31 08:39 output.ipynb
+drwxrwxr-x 2 wolfm2 wolfm2  4096 Mar 31 08:39 __pycache__
 -rw-rw-r-- 1 wolfm2 wolfm2  3534 Mar 30 20:08 README.md
 
 ./minibook/amazon.1/__pycache__:
 total 4
--rw-rw-r-- 1 wolfm2 wolfm2 2045 Mar 31 08:36 my_measures.cpython-36.pyc
+-rw-rw-r-- 1 wolfm2 wolfm2 2045 Mar 31 08:39 my_measures.cpython-36.pyc
 
 ./minibook/amazonFirstIter:
 total 61448
@@ -361,15 +361,14 @@ root      7042  0.0  0.0  93276  7464 ?        Ss   07:35   0:00 /usr/sbin/cupsd
 root      7043  0.0  0.0 274816  9624 ?        Ssl  07:35   0:00 /usr/sbin/cups-browsed
 root      7068  0.0  0.0      0     0 ?        S    07:35   0:00 [kworker/4:1]
 root      7074  0.0  0.0      0     0 ?        S    07:35   0:00 [kworker/5:1]
-root      8348  0.0  0.0      0     0 ?        S    07:45   0:00 [kworker/u24:0]
 root      8694  0.0  0.0      0     0 ?        S    Mar29   0:06 [kworker/0:2]
 root      8915  0.0  0.0      0     0 ?        S    07:50   0:00 [kworker/6:1]
 root     11855  0.0  0.0      0     0 ?        S    08:16   0:00 [kworker/u24:1]
 root     13632  0.0  0.0      0     0 ?        S    08:32   0:00 [kworker/u24:2]
-root     13944  0.0  0.0  52312  2940 ?        S    08:36   0:00 /usr/sbin/CRON -f
-wolfm2   13946  0.0  0.0   4504   692 ?        Ss   08:36   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2   13948  0.0  0.0  12544  3092 ?        S    08:36   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2   14038  0.0  0.0  37364  3316 ?        R    08:36   0:00 ps aux
+root     14328  0.0  0.0  52312  2940 ?        S    08:39   0:00 /usr/sbin/CRON -f
+wolfm2   14330  0.0  0.0   4504   780 ?        Ss   08:39   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2   14332  0.0  0.0  12544  2988 ?        S    08:39   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2   14422  0.0  0.0  37364  3356 ?        R    08:39   0:00 ps aux
 root     14762  0.0  0.0      0     0 ?        S    Mar30   0:00 [kworker/2:2]
 root     14772  0.0  0.0      0     0 ?        S    Mar30   0:00 [kworker/10:2]
 root     15079  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/6:2]
@@ -386,7 +385,7 @@ root     24828  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/9:1]
 root     24923  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/9:2]
 root     29270  0.0  0.0      0     0 ?        S    06:07   0:00 [kworker/7:0]
 root     31457  0.0  0.0      0     0 ?        S    Mar30   0:00 [kworker/3:1]
-Sat Mar 31 08:36:07 EDT 2018
+Sat Mar 31 08:39:06 EDT 2018
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon.1/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
@@ -399,6 +398,3 @@ Use -f if you really want to add them.
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
-Pushing...
-To ssh://git@github.com/wolfm2/jobout.git
-   1be90cb..12a931b  master -> master
