@@ -1,34 +1,21 @@
 
-Sat Mar 31 08:22:02 EDT 2018
+Sat Mar 31 08:36:03 EDT 2018
 Doing...
-Updating 49117ca..1cf603a
+Updating 1cf603a..047dca5
 Fast-forward
- main.py                           |  3 ++-
- minibook/amazon.1/_01_train.ipynb |  2 +-
- minibook/amazon.1/_02_test.ipynb  | 30 ++++++++++++++++++++++++------
- 3 files changed, 27 insertions(+), 8 deletions(-)
+ minibook/amazon.1/_02_test.ipynb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 sending incremental file list
 deleting __pycache__/my_measures.cpython-36.pyc
 deleting __pycache__/
-deleting transformer.pkl
-deleting sc.pkl
 deleting output.ipynb
 deleting job.log
-deleting hv2.pkl
-deleting hv0.pkl
-deleting best.svm.pkl
-deleting best.rdg.pkl
-deleting best.prc.pkl
-deleting best.nbs.pkl
-deleting best.lgs.pkl
-deleting GridSearch.txt
 ./
-_01_train.ipynb
 _02_test.ipynb
 
-sent 76,039 bytes  received 291 bytes  152,660.00 bytes/sec
-total size is 105,848  speedup is 1.39
-  0%|          | 0/27 [00:00<?, ?it/s]  7%|▋         | 2/27 [00:00<00:03,  7.04it/s]
+sent 27,207 bytes  received 123 bytes  54,660.00 bytes/sec
+total size is 105,858  speedup is 3.87
+  0%|          | 0/27 [00:00<?, ?it/s]  7%|▋         | 2/27 [00:00<00:03,  7.15it/s] 15%|█▍        | 4/27 [00:00<00:03,  5.80it/s]
 Input Notebook:  _02_test.ipynb
 Output Notebook: output.ipynb
 Traceback (most recent call last):
@@ -42,63 +29,34 @@ Traceback (most recent call last):
     raise error
 papermill.exceptions.PapermillExecutionError: 
 ---------------------------------------------------------------------------
-Exception encountered at "In [2]":
+Exception encountered at "In [5]":
 ---------------------------------------------------------------------------
 FileNotFoundError                         Traceback (most recent call last)
-<ipython-input-2-c163ab2412ef> in <module>()
-----> 1 amazon = pd.read_csv('../amazon_data/raw_data_test.csv')
-      2 print(amazon.shape)
+<ipython-input-5-818d5fa532f5> in <module>()
+     10 
+     11 # look at the text tokenizer=LemmaTokenizer(), strip_accents=ascii,  stop_words={'english'},
+---> 12 hv0 = joblib.load('hv1.pkl')
+     13 
+     14 X_hv0 = hv0.fit_transform(amazon.Text) # mw adds uid as token
 
-~/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py in parser_f(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, escapechar, comment, encoding, dialect, tupleize_cols, error_bad_lines, warn_bad_lines, skipfooter, skip_footer, doublequote, delim_whitespace, as_recarray, compact_ints, use_unsigned, low_memory, buffer_lines, memory_map, float_precision)
-    653                     skip_blank_lines=skip_blank_lines)
-    654 
---> 655         return _read(filepath_or_buffer, kwds)
-    656 
-    657     parser_f.__name__ = name
+~/anaconda3/lib/python3.6/site-packages/sklearn/externals/joblib/numpy_pickle.py in load(filename, mmap_mode)
+    568             obj = _unpickle(fobj)
+    569     else:
+--> 570         with open(filename, 'rb') as f:
+    571             with _read_fileobject(f, filename, mmap_mode) as fobj:
+    572                 if isinstance(fobj, _basestring):
 
-~/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py in _read(filepath_or_buffer, kwds)
-    403 
-    404     # Create the parser.
---> 405     parser = TextFileReader(filepath_or_buffer, **kwds)
-    406 
-    407     if chunksize or iterator:
-
-~/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py in __init__(self, f, engine, **kwds)
-    762             self.options['has_index_names'] = kwds['has_index_names']
-    763 
---> 764         self._make_engine(self.engine)
-    765 
-    766     def close(self):
-
-~/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py in _make_engine(self, engine)
-    983     def _make_engine(self, engine='c'):
-    984         if engine == 'c':
---> 985             self._engine = CParserWrapper(self.f, **self.options)
-    986         else:
-    987             if engine == 'python':
-
-~/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py in __init__(self, src, **kwds)
-   1603         kwds['allow_leading_cols'] = self.index_col is not False
-   1604 
--> 1605         self._reader = parsers.TextReader(src, **kwds)
-   1606 
-   1607         # XXX
-
-pandas/_libs/parsers.pyx in pandas._libs.parsers.TextReader.__cinit__ (pandas/_libs/parsers.c:4209)()
-
-pandas/_libs/parsers.pyx in pandas._libs.parsers.TextReader._setup_parser_source (pandas/_libs/parsers.c:8873)()
-
-FileNotFoundError: File b'../amazon_data/raw_data_test.csv' does not exist
+FileNotFoundError: [Errno 2] No such file or directory: 'hv1.pkl'
 
 .:
 total 4
-drwxrwxr-x 8 wolfm2 wolfm2 4096 Mar 31 08:22 minibook
+drwxrwxr-x 8 wolfm2 wolfm2 4096 Mar 31 08:36 minibook
 
 ./minibook:
 total 24
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 19 22:07 amazon
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 26 05:41 amazon.0
-drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 31 08:22 amazon.1
+drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 31 08:36 amazon.1
 drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  7 11:47 amazonFirstIter
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 14 22:15 amazonIter
 drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar 30 22:07 system
@@ -157,20 +115,20 @@ total 4
 -rw-rw-r-- 1 wolfm2 wolfm2 2045 Mar 24 19:11 my_measures.cpython-36.pyc
 
 ./minibook/amazon.1:
-total 148
+total 140
 -rw-rw-r-- 1 wolfm2 wolfm2  2978 Mar 30 20:08 _00_split.ipynb
 -rw-rw-r-- 1 wolfm2 wolfm2 48793 Mar 31 08:22 _01_train.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 26930 Mar 31 08:22 _02_test.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2 26940 Mar 31 08:36 _02_test.ipynb
 -rw-rw-r-- 1 wolfm2 wolfm2 20981 Mar 30 20:08 _03_submission.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2  4148 Mar 31 08:22 job.log
+-rw-rw-r-- 1 wolfm2 wolfm2  2096 Mar 31 08:36 job.log
 -rw-rw-r-- 1 wolfm2 wolfm2  2632 Mar 30 20:08 my_measures.py
--rw-rw-r-- 1 wolfm2 wolfm2 22162 Mar 31 08:22 output.ipynb
-drwxrwxr-x 2 wolfm2 wolfm2  4096 Mar 31 08:22 __pycache__
+-rw-rw-r-- 1 wolfm2 wolfm2 20117 Mar 31 08:36 output.ipynb
+drwxrwxr-x 2 wolfm2 wolfm2  4096 Mar 31 08:36 __pycache__
 -rw-rw-r-- 1 wolfm2 wolfm2  3534 Mar 30 20:08 README.md
 
 ./minibook/amazon.1/__pycache__:
 total 4
--rw-rw-r-- 1 wolfm2 wolfm2 2045 Mar 31 08:22 my_measures.cpython-36.pyc
+-rw-rw-r-- 1 wolfm2 wolfm2 2045 Mar 31 08:36 my_measures.cpython-36.pyc
 
 ./minibook/amazonFirstIter:
 total 61448
@@ -319,7 +277,7 @@ root       392  0.0  0.0      0     0 ?        S    06:38   0:00 [kworker/11:2]
 systemd+   465  0.0  0.0 102384    36 ?        Ssl  Mar18   0:01 /lib/systemd/systemd-timesyncd
 root       564  0.0  0.0      0     0 ?        S    Mar18   0:00 [UVM global queu]
 root       565  0.0  0.0      0     0 ?        S    Mar18   0:00 [UVM Tools Event]
-root       583  0.3  0.0      0     0 ?        S    Mar18  63:08 [irq/151-nvidia]
+root       583  0.3  0.0      0     0 ?        S    Mar18  63:10 [irq/151-nvidia]
 root       584  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/u25:0]
 root       586  0.0  0.0      0     0 ?        S<   Mar18   0:00 [kworker/u25:2]
 root       593  0.0  0.0      0     0 ?        S    Mar18   0:00 [nvidia]
@@ -328,8 +286,8 @@ root       802  0.0  0.0  52312    16 ?        S    Mar19   0:00 /usr/sbin/CRON 
 wolfm2     804  0.0  0.0   4504     0 ?        Ss   Mar19   0:00 /bin/sh -c /home/wolfm2/job.sh
 wolfm2     806  0.0  0.0  12544     8 ?        S    Mar19   0:00 /bin/bash /home/wolfm2/job.sh
 root       821  0.0  0.0      0     0 ?        S<   Mar18   0:00 [led_workqueue]
-wolfm2     848  0.0  0.0 715336   948 ?        Sl   Mar19   6:39 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2     874  0.1  0.0 9553324 1768 ?        Ssl  Mar19  30:17 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
+wolfm2     848  0.0  0.0 715336   948 ?        Sl   Mar19   6:40 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2     874  0.1  0.0 9553324 1768 ?        Ssl  Mar19  30:18 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
 root       875  0.0  0.0  29008   560 ?        Ss   Mar18   0:13 /usr/sbin/cron -f
 root       882  0.0  0.0   4396     0 ?        Ss   Mar18   0:00 /usr/sbin/acpid
 avahi      887  0.0  0.0  45048   872 ?        Ss   Mar18   0:14 avahi-daemon: running [d12ml.local]
@@ -340,7 +298,7 @@ root       899  0.0  0.0  28628  1920 ?        Ss   Mar18   0:01 /lib/systemd/sy
 root       901  0.0  0.0 166432   196 ?        Ssl  Mar18   1:56 /usr/sbin/thermald --no-daemon --dbus-enable
 root       902  0.0  0.0 287200  2640 ?        Ssl  Mar18   0:28 /usr/lib/accountsservice/accounts-daemon
 root       907  0.0  0.0 767648  5404 ?        Ssl  Mar18   1:39 /usr/lib/snapd/snapd
-syslog     914  0.0  0.0 256396   940 ?        Ssl  Mar18   0:15 /usr/sbin/rsyslogd -n
+syslog     914  0.0  0.0 256396   940 ?        Ssl  Mar18   0:16 /usr/sbin/rsyslogd -n
 message+   916  0.0  0.0  44192  2848 ?        Ss   Mar18   0:02 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
 avahi      921  0.0  0.0  44784     4 ?        S    Mar18   0:00 avahi-daemon: chroot helper
 root       939  0.0  0.0 451300  5340 ?        Ssl  Mar18   0:01 /usr/sbin/NetworkManager --no-daemon
@@ -406,19 +364,19 @@ root      7074  0.0  0.0      0     0 ?        S    07:35   0:00 [kworker/5:1]
 root      8348  0.0  0.0      0     0 ?        S    07:45   0:00 [kworker/u24:0]
 root      8694  0.0  0.0      0     0 ?        S    Mar29   0:06 [kworker/0:2]
 root      8915  0.0  0.0      0     0 ?        S    07:50   0:00 [kworker/6:1]
-root      9029  0.0  0.0      0     0 ?        S    07:51   0:00 [kworker/u24:2]
 root     11855  0.0  0.0      0     0 ?        S    08:16   0:00 [kworker/u24:1]
-root     12425  0.0  0.0  52312  2940 ?        S    08:22   0:00 /usr/sbin/CRON -f
-wolfm2   12427  0.0  0.0   4504   704 ?        Ss   08:22   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2   12429  0.0  0.0  12544  2924 ?        S    08:22   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2   12519  0.0  0.0  37364  3312 ?        R    08:22   0:00 ps aux
+root     13632  0.0  0.0      0     0 ?        S    08:32   0:00 [kworker/u24:2]
+root     13944  0.0  0.0  52312  2940 ?        S    08:36   0:00 /usr/sbin/CRON -f
+wolfm2   13946  0.0  0.0   4504   692 ?        Ss   08:36   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2   13948  0.0  0.0  12544  3092 ?        S    08:36   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2   14038  0.0  0.0  37364  3316 ?        R    08:36   0:00 ps aux
 root     14762  0.0  0.0      0     0 ?        S    Mar30   0:00 [kworker/2:2]
 root     14772  0.0  0.0      0     0 ?        S    Mar30   0:00 [kworker/10:2]
 root     15079  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/6:2]
 pschmitt 15347  0.0  0.0  45276  4644 ?        Ss   Mar30   0:00 /lib/systemd/systemd --user
 pschmitt 15348  0.0  0.0 210804  1724 ?        S    Mar30   0:00 (sd-pam)
 pschmitt 15437  0.0  0.2 391216 83352 ?        Sl   Mar30   0:27 /home/pschmitt/anaconda3/bin/python /home/pschmitt/anaconda3/bin/jupyter-notebook --ip=149.31.182.149 --port=8005
-pschmitt 15443 10.8  4.7 3523732 1546916 ?     Ssl  Mar30 126:41 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /run/user/1002/jupyter/kernel-cec2032f-b943-4ddf-8205-5a115a9ab507.json
+pschmitt 15443 10.7  4.7 3523732 1546916 ?     Ssl  Mar30 126:41 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /run/user/1002/jupyter/kernel-cec2032f-b943-4ddf-8205-5a115a9ab507.json
 root     16922  0.0  0.0      0     0 ?        S    Mar30   0:00 [kworker/2:0]
 root     17124  0.0  0.0      0     0 ?        S    Mar30   0:00 [kworker/4:2]
 root     19144  0.0  0.0      0     0 ?        S    04:38   0:00 [kworker/10:1]
@@ -428,7 +386,7 @@ root     24828  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/9:1]
 root     24923  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/9:2]
 root     29270  0.0  0.0      0     0 ?        S    06:07   0:00 [kworker/7:0]
 root     31457  0.0  0.0      0     0 ?        S    Mar30   0:00 [kworker/3:1]
-Sat Mar 31 08:22:06 EDT 2018
+Sat Mar 31 08:36:07 EDT 2018
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon.1/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
@@ -441,6 +399,3 @@ Use -f if you really want to add them.
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
-Pushing...
-To ssh://git@github.com/wolfm2/jobout.git
-   e054230..4b43fb6  master -> master
