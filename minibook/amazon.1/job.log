@@ -1,7 +1,7 @@
 
-Fri Mar 30 20:15:03 EDT 2018
+Fri Mar 30 20:19:03 EDT 2018
 Doing...
-Updating ecc4db9..8e5f024
+Updating 8e5f024..6f8ea15
 Fast-forward
  minibook/amazon.1/_01_train.ipynb | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
@@ -11,22 +11,22 @@ deleting job.log
 ./
 _01_train.ipynb
 
-sent 48,969 bytes  received 65 bytes  98,068.00 bytes/sec
-total size is 105,067  speedup is 2.14
-  0%|          | 0/34 [00:00<?, ?it/s]  6%|▌         | 2/34 [00:00<00:04,  7.10it/s]wolfm2     804  0.0  0.0   4504     0 ?        Ss   Mar19   0:00 /bin/sh -c /home/wolfm2/job.sh
+sent 48,978 bytes  received 65 bytes  98,086.00 bytes/sec
+total size is 105,076  speedup is 2.14
+  0%|          | 0/34 [00:00<?, ?it/s]  6%|▌         | 2/34 [00:00<00:04,  6.96it/s]wolfm2     804  0.0  0.0   4504     0 ?        Ss   Mar19   0:00 /bin/sh -c /home/wolfm2/job.sh
 wolfm2     806  0.0  0.0  12544     8 ?        S    Mar19   0:00 /bin/bash /home/wolfm2/job.sh
 wolfm2     848  0.0  0.0 715336   948 ?        Sl   Mar19   6:25 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
 wolfm2     874  0.1  0.0 9553324 1768 ?        Ssl  Mar19  29:41 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
 wolfm2    1460 26.8  0.0 9472448   72 ?        Sl   Mar19 4223:40 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
 wolfm2    5947  0.0  0.0 9553324 1856 ?        S    Mar22   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
-wolfm2   25571  0.0  0.0   4504   736 ?        Ss   20:15   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2   25573  0.0  0.0  12544  2988 ?        S    20:15   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2   25614 39.0  0.3 715092 107708 ?       Sl   20:15   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2   25635 74.0  0.3 980968 116420 ?       Ssl  20:15   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpymokolqs.json
-wolfm2   25662  0.0  0.0   4504   744 ?        S    20:15   0:00 sh -c ps aux | grep wolfm2
-wolfm2   25663  0.0  0.0  37364  3304 ?        R    20:15   0:00 ps aux
-wolfm2   25664  0.0  0.0  14224  1016 ?        S    20:15   0:00 grep wolfm2
- 15%|█▍        | 5/34 [00:01<00:10,  2.65it/s] 26%|██▋       | 9/34 [00:02<00:05,  4.25it/s]Input Notebook:  _01_train.ipynb
+wolfm2   26061  0.0  0.0   4504   700 ?        Ss   20:19   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2   26063  0.0  0.0  12544  3036 ?        S    20:19   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2   26088 80.0  0.3 715124 107440 ?       Sl   20:19   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2   26125 73.0  0.3 980968 116352 ?       Ssl  20:19   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp_5bsxq2k.json
+wolfm2   26152  0.0  0.0   4504   784 ?        S    20:19   0:00 sh -c ps aux | grep wolfm2
+wolfm2   26153  0.0  0.0  37364  3380 ?        R    20:19   0:00 ps aux
+wolfm2   26154  0.0  0.0  14224   972 ?        R    20:19   0:00 grep wolfm2
+ 15%|█▍        | 5/34 [00:01<00:11,  2.59it/s] 26%|██▋       | 9/34 [00:02<00:06,  4.16it/s]Input Notebook:  _01_train.ipynb
 Output Notebook: output.ipynb
 Traceback (most recent call last):
   File "/home/wolfm2/jobin/main.py", line 79, in <module>
@@ -42,10 +42,10 @@ papermill.exceptions.PapermillExecutionError:
 Exception encountered at "In [7]":
 ---------------------------------------------------------------------------
 ValueError                                Traceback (most recent call last)
-<ipython-input-7-a054f59b72a1> in <module>()
+<ipython-input-7-398a96095b37> in <module>()
      22 hv2 = HashingVectorizer(n_features=2 ** 17, non_negative=True, strip_accents=ascii, 
      23                            ngram_range=(1,1)) 
----> 24 X_hv2 = hv2.fit_transform(str(amazon.Score)) # mw adds uid as token
+---> 24 X_hv2 = hv2.fit_transform(str(amazon.Score) + " 0") # mw adds uid as token
      25 
      26 
 
@@ -67,13 +67,13 @@ ValueError: Iterable over raw text documents expected, string object received.
 
 .:
 total 4
-drwxrwxr-x 8 wolfm2 wolfm2 4096 Mar 30 20:15 minibook
+drwxrwxr-x 8 wolfm2 wolfm2 4096 Mar 30 20:19 minibook
 
 ./minibook:
 total 24
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 19 22:07 amazon
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 26 05:41 amazon.0
-drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar 30 20:15 amazon.1
+drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar 30 20:19 amazon.1
 drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  7 11:47 amazonFirstIter
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 14 22:15 amazonIter
 drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar 29 09:16 system
@@ -134,12 +134,12 @@ total 4
 ./minibook/amazon.1:
 total 148
 -rw-rw-r-- 1 wolfm2 wolfm2  2978 Mar 30 20:08 _00_split.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 48692 Mar 30 20:15 _01_train.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2 48701 Mar 30 20:19 _01_train.ipynb
 -rw-rw-r-- 1 wolfm2 wolfm2 26250 Mar 30 20:08 _02_test.ipynb
 -rw-rw-r-- 1 wolfm2 wolfm2 20981 Mar 30 20:08 _03_submission.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2  3896 Mar 30 20:15 job.log
+-rw-rw-r-- 1 wolfm2 wolfm2  3903 Mar 30 20:19 job.log
 -rw-rw-r-- 1 wolfm2 wolfm2  2632 Mar 30 20:08 my_measures.py
--rw-rw-r-- 1 wolfm2 wolfm2 30918 Mar 30 20:15 output.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2 30979 Mar 30 20:19 output.ipynb
 -rw-rw-r-- 1 wolfm2 wolfm2  3534 Mar 30 20:08 README.md
 
 ./minibook/amazonFirstIter:
@@ -380,7 +380,7 @@ root     15079  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/6:2]
 pschmitt 15347  0.0  0.0  45276  4644 ?        Ss   12:56   0:00 /lib/systemd/systemd --user
 pschmitt 15348  0.0  0.0 210804  1724 ?        S    12:56   0:00 (sd-pam)
 pschmitt 15437  0.0  0.2 391216 83352 ?        Sl   12:56   0:23 /home/pschmitt/anaconda3/bin/python /home/pschmitt/anaconda3/bin/jupyter-notebook --ip=149.31.182.149 --port=8005
-pschmitt 15443 28.8  4.7 3523732 1546916 ?     Ssl  12:56 126:39 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /run/user/1002/jupyter/kernel-cec2032f-b943-4ddf-8205-5a115a9ab507.json
+pschmitt 15443 28.5  4.7 3523732 1546916 ?     Ssl  12:56 126:39 /home/pschmitt/anaconda3/bin/python -m ipykernel_launcher -f /run/user/1002/jupyter/kernel-cec2032f-b943-4ddf-8205-5a115a9ab507.json
 root     15918  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/5:0]
 root     16894  0.0  0.0  93276  7552 ?        Ss   07:35   0:00 /usr/sbin/cupsd -l
 root     16895  0.0  0.0 274816  9468 ?        Ssl  07:35   0:00 /usr/sbin/cups-browsed
@@ -392,12 +392,12 @@ root     23323  0.0  0.0      0     0 ?        S    04:15   0:00 [kworker/4:0]
 root     24585  0.0  0.0      0     0 ?        S    20:05   0:00 [kworker/u24:1]
 root     24828  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/9:1]
 root     24923  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/9:2]
-root     25569  0.0  0.0  52312  2940 ?        S    20:15   0:00 /usr/sbin/CRON -f
-wolfm2   25571  0.0  0.0   4504   736 ?        Ss   20:15   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2   25573  0.0  0.0  12544  2988 ?        S    20:15   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2   25666  0.0  0.0  37364  3320 ?        R    20:15   0:00 ps aux
+root     26059  0.0  0.0  52312  2940 ?        S    20:19   0:00 /usr/sbin/CRON -f
+wolfm2   26061  0.0  0.0   4504   700 ?        Ss   20:19   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2   26063  0.0  0.0  12544  3036 ?        S    20:19   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2   26156  0.0  0.0  37364  3276 ?        R    20:19   0:00 ps aux
 root     31457  0.0  0.0      0     0 ?        S    10:08   0:00 [kworker/3:1]
-Fri Mar 30 20:15:49 EDT 2018
+Fri Mar 30 20:19:48 EDT 2018
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon.0/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
@@ -407,6 +407,3 @@ Use -f if you really want to add them.
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
-Pushing...
-To ssh://git@github.com/wolfm2/jobout.git
-   90dbfc6..cc1567b  master -> master
