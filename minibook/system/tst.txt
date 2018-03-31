@@ -1,152 +1,3 @@
-
-Fri Mar 30 20:30:04 EDT 2018
-Doing...
-Updating 7171257..e941d82
-Fast-forward
- minibook/amazon.1/_01_train.ipynb | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
-sending incremental file list
-deleting output.ipynb
-deleting job.log
-./
-_01_train.ipynb
-
-sent 48,978 bytes  received 65 bytes  98,086.00 bytes/sec
-total size is 105,076  speedup is 2.14
-  0%|          | 0/34 [00:00<?, ?it/s]  6%|▌         | 2/34 [00:00<00:04,  6.76it/s]wolfm2     804  0.0  0.0   4504     0 ?        Ss   Mar19   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2     806  0.0  0.0  12544     8 ?        S    Mar19   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2     848  0.0  0.0 715336   948 ?        Sl   Mar19   6:25 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2     874  0.1  0.0 9553324 1768 ?        Ssl  Mar19  29:42 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
-wolfm2    1460 26.8  0.0 9472448   72 ?        Sl   Mar19 4223:40 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
-wolfm2    5947  0.0  0.0 9553324 1856 ?        S    Mar22   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp3r5sq0q0.json
-wolfm2   27349  0.0  0.0   4504   776 ?        Ss   20:30   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2   27351  0.0  0.0  12544  3112 ?        S    20:30   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2   27376 39.5  0.3 715072 107268 ?       Sl   20:30   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2   27413 76.0  0.3 980968 116324 ?       Ssl  20:30   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoi2r6z58.json
-wolfm2   27440  0.0  0.0   4504   844 ?        S    20:30   0:00 sh -c ps aux | grep wolfm2
-wolfm2   27441  0.0  0.0  37364  3324 ?        R    20:30   0:00 ps aux
-wolfm2   27442  0.0  0.0  14224   932 ?        S    20:30   0:00 grep wolfm2
- 15%|█▍        | 5/34 [00:01<00:11,  2.63it/s] 26%|██▋       | 9/34 [00:02<00:05,  4.23it/s] 29%|██▉       | 10/34 [00:42<01:41,  4.24s/it] 38%|███▊      | 13/34 [00:54<01:28,  4.20s/it] 53%|█████▎    | 18/34 [01:17<01:08,  4.29s/it] 59%|█████▉    | 20/34 [01:20<00:56,  4.00s/it] 85%|████████▌ | 29/34 [01:20<00:13,  2.76s/it] 85%|████████▌ | 29/34 [01:40<00:17,  3.45s/it]/home/wolfm2/job.sh: line 21: 27376 Killed                  $PYT ~/jobin/main.py
-.:
-total 4
-drwxrwxr-x 8 wolfm2 wolfm2 4096 Mar 30 21:40 minibook
-
-./minibook:
-total 24
-drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 19 22:07 amazon
-drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 26 05:41 amazon.0
-drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 30 21:24 amazon.1
-drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  7 11:47 amazonFirstIter
-drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 14 22:15 amazonIter
-drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar 30 21:40 system
-
-./minibook/amazon:
-total 273496
--rw-rw-r-- 1 wolfm2 wolfm2      2978 Mar  9 13:31 _00_split.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2     31638 Mar  9 16:12 _01_train.0.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2     61559 Mar 19 22:01 _01_train.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2     26250 Mar  7 11:47 _02_test.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2     20981 Mar  7 11:47 _03_submission.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 248373493 Mar  6 20:06 Amazon.csv
--rw-rw-r-- 1 wolfm2 wolfm2         0 Mar 19 22:07 GridSearch.txt
--rw-rw-r-- 1 wolfm2 wolfm2       642 Mar 19 22:06 hv0.pkl
--rw-rw-r-- 1 wolfm2 wolfm2       648 Mar 19 22:06 hv1.pkl
--rw-rw-r-- 1 wolfm2 wolfm2      1956 Mar 19 22:07 job.log
--rw-rw-r-- 1 wolfm2 wolfm2      2632 Mar  7 11:47 my_measures.py
--rw-rw-r-- 1 wolfm2 wolfm2     29218 Mar 19 22:07 output.ipynb
-drwxrwxr-x 2 wolfm2 wolfm2      4096 Mar 19 22:07 __pycache__
--rw-rw-r-- 1 wolfm2 wolfm2      3534 Mar  7 11:47 README.md
--rw-rw-r-- 1 wolfm2 wolfm2  18874951 Mar 19 22:07 sc.pkl
--rw-rw-r-- 1 wolfm2 wolfm2  12583580 Mar 19 22:07 transformer.pkl
-
-./minibook/amazon/__pycache__:
-total 4
--rw-rw-r-- 1 wolfm2 wolfm2 2043 Mar 19 22:07 my_measures.cpython-36.pyc
-
-./minibook/amazon.0:
-total 334020
--rw-rw-r-- 1 wolfm2 wolfm2      2978 Mar 24 17:50 _00_split.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2     31638 Mar 24 17:50 _01_train.0.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2     48362 Mar 24 18:51 _01_train.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2     26250 Mar 24 17:50 _02_test.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2     20981 Mar 24 17:50 _03_submission.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 248373493 Mar  6 20:06 Amazon.csv
--rw-rw-r-- 1 wolfm2 wolfm2   7341220 Mar 25 12:59 best.lgs.pkl
--rw-rw-r-- 1 wolfm2 wolfm2  29361037 Mar 25 20:55 best.nbs.pkl
--rw-rw-r-- 1 wolfm2 wolfm2   7341240 Mar 25 20:50 best.prc.pkl
--rw-rw-r-- 1 wolfm2 wolfm2   7341076 Mar 26 05:41 best.rdg.pkl
--rw-rw-r-- 1 wolfm2 wolfm2   7341235 Mar 25 03:31 best.svm.pkl
--rw-rw-r-- 1 wolfm2 wolfm2     11818 Mar 26 05:19 GridSearch.txt
--rw-rw-r-- 1 wolfm2 wolfm2       642 Mar 24 19:06 hv0.pkl
--rw-rw-r-- 1 wolfm2 wolfm2       648 Mar 24 19:06 hv1.pkl
--rw-rw-r-- 1 wolfm2 wolfm2       515 Mar 24 19:06 hv2.pkl
--rw-rw-r-- 1 wolfm2 wolfm2     29074 Mar 26 05:42 job.log
--rw-rw-r-- 1 wolfm2 wolfm2      2632 Mar 24 17:50 my_measures.py
--rw-rw-r-- 1 wolfm2 wolfm2     70931 Mar 26 05:42 output.ipynb
-drwxrwxr-x 2 wolfm2 wolfm2      4096 Mar 24 19:11 __pycache__
--rw-rw-r-- 1 wolfm2 wolfm2      3534 Mar 24 17:50 README.md
--rw-rw-r-- 1 wolfm2 wolfm2  22020727 Mar 24 19:11 sc.pkl
--rw-rw-r-- 1 wolfm2 wolfm2  12583580 Mar 24 19:08 transformer.pkl
--rw-rw-r-- 1 wolfm2 wolfm2     21412 Mar 24 17:50 x_review_week05.ipynb
-
-./minibook/amazon.0/__pycache__:
-total 4
--rw-rw-r-- 1 wolfm2 wolfm2 2045 Mar 24 19:11 my_measures.cpython-36.pyc
-
-./minibook/amazon.1:
-total 33976
--rw-rw-r-- 1 wolfm2 wolfm2     2978 Mar 30 20:08 _00_split.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2    48701 Mar 30 20:30 _01_train.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2    26250 Mar 30 20:08 _02_test.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2    20981 Mar 30 20:08 _03_submission.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2  5244028 Mar 30 21:24 best.lgs.pkl
--rw-rw-r-- 1 wolfm2 wolfm2  5244043 Mar 30 20:52 best.svm.pkl
--rw-rw-r-- 1 wolfm2 wolfm2     4868 Mar 30 21:20 GridSearch.txt
--rw-rw-r-- 1 wolfm2 wolfm2      498 Mar 30 20:30 hv0.pkl
--rw-rw-r-- 1 wolfm2 wolfm2      515 Mar 30 20:30 hv2.pkl
--rw-rw-r-- 1 wolfm2 wolfm2     2448 Mar 30 21:40 job.log
--rw-rw-r-- 1 wolfm2 wolfm2     2632 Mar 30 20:08 my_measures.py
--rw-rw-r-- 1 wolfm2 wolfm2    29953 Mar 30 20:31 output.ipynb
-drwxrwxr-x 2 wolfm2 wolfm2     4096 Mar 30 20:31 __pycache__
--rw-rw-r-- 1 wolfm2 wolfm2     3534 Mar 30 20:08 README.md
--rw-rw-r-- 1 wolfm2 wolfm2 15729151 Mar 30 20:31 sc.pkl
--rw-rw-r-- 1 wolfm2 wolfm2  8389276 Mar 30 20:31 transformer.pkl
-
-./minibook/amazon.1/__pycache__:
-total 4
--rw-rw-r-- 1 wolfm2 wolfm2 2045 Mar 30 20:31 my_measures.cpython-36.pyc
-
-./minibook/amazonFirstIter:
-total 61448
--rw-rw-r-- 1 wolfm2 wolfm2    20808 Mar  7 11:47 _03_submission.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2      557 Mar  7 11:47 hv.pkl
--rw-rw-r-- 1 wolfm2 wolfm2  2098273 Mar  7 11:47 lgs.pkl
--rw-rw-r-- 1 wolfm2 wolfm2     2632 Mar  7 11:47 my_measures.py
--rw-rw-r-- 1 wolfm2 wolfm2 50282018 Mar  7 11:47 raw_data_test.csv
--rw-rw-r-- 1 wolfm2 wolfm2  6292015 Mar  7 11:47 sc.pkl
--rw-rw-r-- 1 wolfm2 wolfm2  4194972 Mar  7 11:47 transformer.pkl
--rw-rw-r-- 1 wolfm2 wolfm2     8988 Mar  7 11:47 ver.py
-
-./minibook/amazonIter:
-total 49204
--rw-rw-r-- 1 wolfm2 wolfm2    22513 Mar 12 08:18 _03_submission.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2    24197 Mar 14 22:16 job.log
--rw-rw-r-- 1 wolfm2 wolfm2     2632 Mar 10 19:49 my_measures.py
--rw-rw-r-- 1 wolfm2 wolfm2    28710 Mar 14 22:16 output.ipynb
-drwxrwxr-x 2 wolfm2 wolfm2     4096 Mar 14 22:15 __pycache__
--rw-rw-r-- 1 wolfm2 wolfm2 50282018 Mar 10 19:49 raw_data_test.csv
--rw-rw-r-- 1 wolfm2 wolfm2     8988 Mar 10 19:49 ver.py
-
-./minibook/amazonIter/__pycache__:
-total 4
--rw-rw-r-- 1 wolfm2 wolfm2 2047 Mar 14 22:15 my_measures.cpython-36.pyc
-
-./minibook/system:
-total 20
--rw-rw-r-- 1 wolfm2 wolfm2  381 Mar 30 21:40 job.log
--rw-rw-r-- 1 wolfm2 wolfm2 1166 Mar 30 21:40 output.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 1030 Mar 30 21:40 runner.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 8192 Mar 30 21:40 tst.txt
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root         1  0.0  0.0 185260  4320 ?        Ss   Mar18   0:07 /sbin/init splash
 root         2  0.0  0.0      0     0 ?        S    Mar18   0:00 [kthreadd]
@@ -357,8 +208,9 @@ root      3377  0.0  0.0  52312  2912 ?        S    21:40   0:00 /usr/sbin/CRON 
 wolfm2    3378  0.0  0.0   4504   784 ?        Ss   21:40   0:00 /bin/sh -c /home/wolfm2/job.sh
 wolfm2    3380  0.0  0.0  12544  2892 ?        S    21:40   0:00 /bin/bash /home/wolfm2/job.sh
 wolfm2    3422 46.5  0.3 714828 106976 ?       Sl   21:40   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2    3443 59.0  0.1 660428 55636 ?        Rsl  21:40   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp8k4gn1n4.json
-wolfm2    3465  0.0  0.0  37364  3284 ?        R    21:40   0:00 ps aux
+wolfm2    3443 59.0  0.1 660428 55616 ?        Ssl  21:40   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp8k4gn1n4.json
+wolfm2    3462  0.0  0.0   4504   708 ?        S    21:40   0:00 sh -c ps aux > tst.txt
+wolfm2    3463  0.0  0.0  37364  3252 ?        R    21:40   0:00 ps aux
 root      3783  0.0  0.0      0     0 ?        S    Mar29   0:00 [kworker/11:0]
 root      4074  0.0  0.0      0     0 ?        S    10:58   0:00 [kworker/8:2]
 root      4450  0.0  0.0      0     0 ?        S    11:01   0:00 [kworker/10:0]
@@ -388,16 +240,3 @@ root     26544  0.0  0.0      0     0 ?        S    20:22   0:00 [kworker/u24:2]
 wolfm2   27351  0.0  0.0  12560  3128 ?        S    20:30   0:00 /bin/bash /home/wolfm2/job.sh
 wolfm2   27413 21.6 21.4 8794328 7056808 ?     Ssl  20:30  15:10 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpoi2r6z58.json
 root     31457  0.0  0.0      0     0 ?        S    10:08   0:00 [kworker/3:1]
-Fri Mar 30 21:40:07 EDT 2018
-The following paths are ignored by one of your .gitignore files:
-minibook/amazon.1/__pycache__/my_measures.cpython-36.pyc
-Use -f if you really want to add them.
-The following paths are ignored by one of your .gitignore files:
-minibook/amazon.0/__pycache__/my_measures.cpython-36.pyc
-Use -f if you really want to add them.
-The following paths are ignored by one of your .gitignore files:
-minibook/amazonIter/__pycache__/my_measures.cpython-36.pyc
-Use -f if you really want to add them.
-The following paths are ignored by one of your .gitignore files:
-minibook/amazon/__pycache__/my_measures.cpython-36.pyc
-Use -f if you really want to add them.
