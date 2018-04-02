@@ -62,3 +62,35 @@ RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
          5.06186877e-05,   5.06186877e-05])}
 0.931802197802
 1e-06
+
+########
+2018-04-02 19:12:28.883396
+########
+RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+        max_iter=None, normalize=False, random_state=None, solver='lsqr',
+        tol=0.001)
+{'mean_fit_time': array([ 1253.44426696,  1273.30661472,  1288.6751136 ,  1337.79856531,
+        1238.85068425]),
+'std_fit_time': array([  86.39324693,   71.61991796,  139.86438907,  141.62816267,
+         54.67330293]),
+'mean_score_time': array([ 0.09468842,  0.09118263,  0.09775837,  0.098967  ,  0.09514538]),
+'std_score_time': array([ 0.00492623,  0.00491961,  0.01081114,  0.00527755,  0.00768917]),
+'param_alpha': masked_array(data = [1.0 0.01 0.0001 9.9999999999999995e-07 1e-08],
+             mask = [False False False False False],
+       fill_value = ?)
+,
+'params': [{'alpha': 1.0}, {'alpha': 0.01}, {'alpha': 0.0001}, {'alpha': 9.9999999999999995e-07}, {'alpha': 1e-08}],
+'split0_test_score': array([ 0.93144543,  0.93144543,  0.93146192,  0.93146192,  0.93144543]),
+'split1_test_score': array([ 0.9323597 ,  0.93237619,  0.9323597 ,  0.93235146,  0.93235146]),
+'split2_test_score': array([ 0.93156849,  0.93157674,  0.93157674,  0.93156025,  0.93156849]),
+'mean_test_score': array([ 0.93179121,  0.93179945,  0.93179945,  0.93179121,  0.93178846]),
+'std_test_score': array([ 0.00040511,  0.00041132,  0.00039892,  0.00039819,  0.00040126]),
+'rank_test_score': array([3, 1, 1, 3, 5], dtype=int32),
+'split0_train_score': array([ 0.99948901,  0.99948901,  0.99948901,  0.99948901,  0.99948901]),
+'split1_train_score': array([ 0.99943544,  0.99943544,  0.99943544,  0.99943544,  0.99943544]),
+'split2_train_score': array([ 0.99936539,  0.99936539,  0.99936539,  0.99936539,  0.99936539]),
+'mean_train_score': array([ 0.99942995,  0.99942995,  0.99942995,  0.99942995,  0.99942995]),
+'std_train_score': array([  5.06186877e-05,   5.06186877e-05,   5.06186877e-05,
+         5.06186877e-05,   5.06186877e-05])}
+0.931799450549
+0.01
