@@ -1,15 +1,11 @@
 
-Thu Apr  5 21:37:03 EDT 2018
+Thu Apr  5 23:08:04 EDT 2018
 Doing...
-Updating 9ccf7f0..33e778c
+Updating 33e778c..f760573
 Fast-forward
- minibook/plane_gen/plane_gen.ipynb         | 4451 ++++++++++++++++++++++++++++
- minibook/plane_test/my_measures.py         |   37 +
- minibook/plane_test/starter_code_ML2.ipynb |  759 +++++
- 3 files changed, 5247 insertions(+)
- create mode 100644 minibook/plane_gen/plane_gen.ipynb
- create mode 100644 minibook/plane_test/my_measures.py
- create mode 100644 minibook/plane_test/starter_code_ML2.ipynb
+ minibook/plane_gen/plane_gen.ipynb         |    13 +-
+ minibook/plane_test/starter_code_ML2.ipynb | 13187 ++++++++++++++++++++++++++-
+ 2 files changed, 12871 insertions(+), 329 deletions(-)
 sending incremental file list
 deleting tst.txt
 deleting output.ipynb
@@ -38,12 +34,12 @@ drwxrwxr-x  6 wolfm2 wolfm2      4096 Mar 28 11:43 plane_data
 drwxr-xr-x  2 wolfm2 wolfm2      4096 Mar  2 14:21 Public
 drwxr-xr-x  2 wolfm2 wolfm2      4096 Mar  2 14:21 Templates
 drwxr-xr-x  2 wolfm2 wolfm2      4096 Mar  2 14:21 Videos
-100%|██████████| 1/1 [00:00<00:00, 19.26it/s]
+100%|██████████| 1/1 [00:00<00:00, 19.69it/s]
 Input Notebook:  runner.ipynb
 Output Notebook: output.ipynb
 .:
 total 4
-drwxrwxr-x 9 wolfm2 wolfm2 4096 Apr  5 21:37 minibook
+drwxrwxr-x 9 wolfm2 wolfm2 4096 Apr  5 23:08 minibook
 
 ./minibook:
 total 28
@@ -53,7 +49,7 @@ drwxrwxr-x 3 wolfm2 wolfm2 4096 Apr  3 06:03 amazon.1
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Apr  1 16:44 amazon.2
 drwxrwxr-x 2 wolfm2 wolfm2 4096 Mar  7 11:47 amazonFirstIter
 drwxrwxr-x 3 wolfm2 wolfm2 4096 Mar 14 22:15 amazonIter
-drwxrwxr-x 2 wolfm2 wolfm2 4096 Apr  5 21:37 system
+drwxrwxr-x 2 wolfm2 wolfm2 4096 Apr  5 23:08 system
 
 ./minibook/amazon:
 total 273496
@@ -190,10 +186,10 @@ total 4
 
 ./minibook/system:
 total 36
--rw-rw-r-- 1 wolfm2 wolfm2  6099 Apr  5 21:37 job.log
--rw-rw-r-- 1 wolfm2 wolfm2  1575 Apr  5 21:37 output.ipynb
+-rw-rw-r-- 1 wolfm2 wolfm2  5890 Apr  5 23:08 job.log
+-rw-rw-r-- 1 wolfm2 wolfm2  1576 Apr  5 23:08 output.ipynb
 -rw-rw-r-- 1 wolfm2 wolfm2  1083 Apr  4 19:35 runner.ipynb
--rw-rw-r-- 1 wolfm2 wolfm2 19289 Apr  5 21:37 tst.txt
+-rw-rw-r-- 1 wolfm2 wolfm2 19370 Apr  5 23:08 tst.txt
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root         1  0.0  0.0 185580  6068 ?        Ss   18:40   0:01 /sbin/init splash
 root         2  0.0  0.0      0     0 ?        S    18:40   0:00 [kthreadd]
@@ -312,7 +308,7 @@ root       260  0.0  0.0      0     0 ?        S<   18:40   0:00 [kworker/0:1H]
 root       281  0.0  0.0      0     0 ?        S<   18:40   0:00 [kworker/2:1H]
 root       283  0.0  0.0      0     0 ?        S    18:40   0:00 [jbd2/nvme0n1p1-]
 root       284  0.0  0.0      0     0 ?        S<   18:40   0:00 [ext4-rsv-conver]
-root       319  0.0  0.0  35392  5852 ?        Ss   18:40   0:00 /lib/systemd/systemd-journald
+root       319  0.0  0.0  35392  6380 ?        Ss   18:40   0:00 /lib/systemd/systemd-journald
 root       320  0.0  0.0      0     0 ?        S<   18:40   0:00 [kworker/10:1H]
 root       336  0.0  0.0      0     0 ?        S<   18:40   0:00 [cfg80211]
 root       338  0.0  0.0  45292  4164 ?        Ss   18:40   0:00 /lib/systemd/systemd-udevd
@@ -329,9 +325,10 @@ root       569  0.0  0.0      0     0 ?        S<   18:40   0:00 [kworker/u25:0]
 root       570  0.0  0.0      0     0 ?        S<   18:40   0:00 [kworker/u25:1]
 root       575  0.0  0.0      0     0 ?        S    18:40   0:00 [UVM Tools Event]
 root       591  0.0  0.0      0     0 ?        S    18:40   0:00 [kworker/7:2]
-root       662  0.1  0.0      0     0 ?        S    18:41   0:19 [irq/152-nvidia]
+root       662  0.1  0.0      0     0 ?        S    18:41   0:29 [irq/152-nvidia]
 root       663  0.0  0.0      0     0 ?        S    18:41   0:00 [nvidia]
 root       765  0.0  0.0      0     0 ?        S<   18:41   0:00 [led_workqueue]
+root       792  0.0  0.0      0     0 ?        S    22:37   0:00 [kworker/u24:2]
 root       802  0.0  0.0      0     0 ?        S    18:41   0:00 [kworker/6:2]
 root       859  0.0  0.0      0     0 ?        S    18:41   0:00 [kworker/1:2]
 avahi      871  0.0  0.0  44916  3072 ?        Ss   18:41   0:00 avahi-daemon: running [d12ml.local]
@@ -344,16 +341,16 @@ avahi      885  0.0  0.0  44784   336 ?        S    18:41   0:00 avahi-daemon: c
 syslog     887  0.0  0.0 256396  3368 ?        Ssl  18:41   0:00 /usr/sbin/rsyslogd -n
 root       892  0.0  0.0  28628  2988 ?        Ss   18:41   0:00 /lib/systemd/systemd-logind
 root       894  0.0  0.0 286948  8076 ?        Ssl  18:41   0:00 /usr/lib/accountsservice/accounts-daemon
-root       897  0.0  0.0 166432  8752 ?        Ssl  18:41   0:00 /usr/sbin/thermald --no-daemon --dbus-enable
+root       897  0.0  0.0 166432  8752 ?        Ssl  18:41   0:01 /usr/sbin/thermald --no-daemon --dbus-enable
 message+   898  0.0  0.0  43708  4560 ?        Ss   18:41   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
 root       912  0.0  0.0 274816  9364 ?        Ssl  18:41   0:00 /usr/sbin/cups-browsed
 root       917  0.0  0.0 451300 16788 ?        Ssl  18:41   0:00 /usr/sbin/NetworkManager --no-daemon
-root       921  0.0  0.0 230364 23668 ?        Ssl  18:41   0:00 /usr/lib/snapd/snapd
+root       921  0.0  0.0 230364 24196 ?        Ssl  18:41   0:00 /usr/lib/snapd/snapd
 nvidia-+   932  0.0  0.0  17140  1700 ?        Ss   18:41   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
 root       951  0.0  0.0      0     0 ?        S<   18:41   0:00 [kworker/11:1H]
 root       968  0.0  0.0      0     0 ?        S<   18:41   0:00 [kworker/3:1H]
 root       983  0.0  0.0 289680  9536 ?        Ssl  18:41   0:00 /usr/lib/policykit-1/polkitd --no-debug
-root       990  0.0  0.0  19584  2100 ?        Ss   18:41   0:01 /usr/sbin/irqbalance --pid=/var/run/irqbalance.pid
+root       990  0.0  0.0  19584  2100 ?        Ss   18:41   0:02 /usr/sbin/irqbalance --pid=/var/run/irqbalance.pid
 root      1002  0.0  0.0 287712  7840 ?        Ssl  18:41   0:00 /usr/sbin/lightdm
 root      1006  0.0  0.0  65508  5376 ?        Ss   18:41   0:00 /usr/sbin/sshd -D
 root      1020  0.0  0.1 226580 44164 tty7     Ssl+ 18:41   0:00 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
@@ -382,7 +379,7 @@ lightdm   1123  0.0  0.1 585692 33920 ?        Sl   18:41   0:00 nm-applet
 lightdm   1125  0.0  0.0 363368  8612 ?        Ssl  18:41   0:00 /usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
 lightdm   1126  0.0  0.0 342336  7188 ?        Ssl  18:41   0:00 /usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
 lightdm   1127  0.0  0.0 573988  9192 ?        Ssl  18:41   0:00 /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
-lightdm   1128  0.0  0.0 457892 13320 ?        Ssl  18:41   0:00 /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
+lightdm   1128  0.0  0.0 457892 13324 ?        Ssl  18:41   0:00 /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
 lightdm   1129  0.0  0.0 563916 29476 ?        Ssl  18:41   0:00 /usr/lib/x86_64-linux-gnu/indicator-keyboard/indicator-keyboard-service --use-gtk
 lightdm   1130  0.0  0.0 669024 11240 ?        Ssl  18:41   0:00 /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service
 lightdm   1131  0.0  0.0 568476  8068 ?        Ssl  18:41   0:00 /usr/lib/x86_64-linux-gnu/indicator-session/indicator-session-service
@@ -398,16 +395,16 @@ lightdm   1313  0.0  0.0 481984 29848 ?        Sl   18:41   0:00 /usr/lib/x86_64
 root      1422  0.0  0.0      0     0 ?        S    18:41   0:00 [kworker/10:2]
 whoopsie  1426  0.0  0.0 374012 12524 ?        Ssl  18:41   0:00 /usr/bin/whoopsie -f
 root      1430  0.0  0.0  15936  1804 tty1     Ss+  18:41   0:00 /sbin/agetty --noclear tty1 linux
+root      1618  0.0  0.0      0     0 ?        S    22:42   0:00 [kworker/u24:0]
 root      3332  0.0  0.0      0     0 ?        S    18:56   0:00 [kworker/0:0]
 root      3333  0.0  0.0      0     0 ?        S    18:56   0:00 [kworker/4:0]
+root      4703  0.0  0.0      0     0 ?        S    23:05   0:00 [kworker/u24:1]
 root      4869  0.0  0.0      0     0 ?        S    19:06   0:00 [kworker/4:2]
-root     15735  0.0  0.0      0     0 ?        S    20:27   0:00 [kworker/u24:1]
-root     23113  0.0  0.0      0     0 ?        S    21:22   0:00 [kworker/u24:2]
-root     24991  0.0  0.0  52312  2988 ?        S    21:37   0:00 /usr/sbin/CRON -f
-wolfm2   24993  0.0  0.0   4504   836 ?        Ss   21:37   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2   24995  0.0  0.0  12544  3088 ?        S    21:37   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2   25080  0.0  0.0  37364  3332 ?        R    21:37   0:00 ps aux
-Thu Apr  5 21:37:07 EDT 2018
+root      4974  0.0  0.0  52312  2988 ?        S    23:08   0:00 /usr/sbin/CRON -f
+wolfm2    4976  0.0  0.0   4504   844 ?        Ss   23:08   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2    4978  0.0  0.0  12544  3080 ?        S    23:08   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2    5063  0.0  0.0  37364  3328 ?        R    23:08   0:00 ps aux
+Thu Apr  5 23:08:07 EDT 2018
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon.1/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
@@ -423,6 +420,3 @@ Use -f if you really want to add them.
 The following paths are ignored by one of your .gitignore files:
 minibook/amazon/__pycache__/my_measures.cpython-36.pyc
 Use -f if you really want to add them.
-Pushing...
-To ssh://git@github.com/wolfm2/jobout.git
-   bb27332..e976210  master -> master

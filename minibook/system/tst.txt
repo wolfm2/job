@@ -116,7 +116,7 @@ root       260  0.0  0.0      0     0 ?        S<   18:40   0:00 [kworker/0:1H]
 root       281  0.0  0.0      0     0 ?        S<   18:40   0:00 [kworker/2:1H]
 root       283  0.0  0.0      0     0 ?        S    18:40   0:00 [jbd2/nvme0n1p1-]
 root       284  0.0  0.0      0     0 ?        S<   18:40   0:00 [ext4-rsv-conver]
-root       319  0.0  0.0  35392  5852 ?        Ss   18:40   0:00 /lib/systemd/systemd-journald
+root       319  0.0  0.0  35392  6380 ?        Ss   18:40   0:00 /lib/systemd/systemd-journald
 root       320  0.0  0.0      0     0 ?        S<   18:40   0:00 [kworker/10:1H]
 root       336  0.0  0.0      0     0 ?        S<   18:40   0:00 [cfg80211]
 root       338  0.0  0.0  45292  4164 ?        Ss   18:40   0:00 /lib/systemd/systemd-udevd
@@ -133,9 +133,10 @@ root       569  0.0  0.0      0     0 ?        S<   18:40   0:00 [kworker/u25:0]
 root       570  0.0  0.0      0     0 ?        S<   18:40   0:00 [kworker/u25:1]
 root       575  0.0  0.0      0     0 ?        S    18:40   0:00 [UVM Tools Event]
 root       591  0.0  0.0      0     0 ?        S    18:40   0:00 [kworker/7:2]
-root       662  0.1  0.0      0     0 ?        S    18:41   0:19 [irq/152-nvidia]
+root       662  0.1  0.0      0     0 ?        S    18:41   0:29 [irq/152-nvidia]
 root       663  0.0  0.0      0     0 ?        S    18:41   0:00 [nvidia]
 root       765  0.0  0.0      0     0 ?        S<   18:41   0:00 [led_workqueue]
+root       792  0.0  0.0      0     0 ?        S    22:37   0:00 [kworker/u24:2]
 root       802  0.0  0.0      0     0 ?        S    18:41   0:00 [kworker/6:2]
 root       859  0.0  0.0      0     0 ?        S    18:41   0:00 [kworker/1:2]
 avahi      871  0.0  0.0  44916  3072 ?        Ss   18:41   0:00 avahi-daemon: running [d12ml.local]
@@ -148,16 +149,16 @@ avahi      885  0.0  0.0  44784   336 ?        S    18:41   0:00 avahi-daemon: c
 syslog     887  0.0  0.0 256396  3368 ?        Ssl  18:41   0:00 /usr/sbin/rsyslogd -n
 root       892  0.0  0.0  28628  2988 ?        Ss   18:41   0:00 /lib/systemd/systemd-logind
 root       894  0.0  0.0 286948  8076 ?        Ssl  18:41   0:00 /usr/lib/accountsservice/accounts-daemon
-root       897  0.0  0.0 166432  8752 ?        Ssl  18:41   0:00 /usr/sbin/thermald --no-daemon --dbus-enable
+root       897  0.0  0.0 166432  8752 ?        Ssl  18:41   0:01 /usr/sbin/thermald --no-daemon --dbus-enable
 message+   898  0.0  0.0  43708  4560 ?        Ss   18:41   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
 root       912  0.0  0.0 274816  9364 ?        Ssl  18:41   0:00 /usr/sbin/cups-browsed
 root       917  0.0  0.0 451300 16788 ?        Ssl  18:41   0:00 /usr/sbin/NetworkManager --no-daemon
-root       921  0.0  0.0 230364 23668 ?        Ssl  18:41   0:00 /usr/lib/snapd/snapd
+root       921  0.0  0.0 230364 24196 ?        Ssl  18:41   0:00 /usr/lib/snapd/snapd
 nvidia-+   932  0.0  0.0  17140  1700 ?        Ss   18:41   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
 root       951  0.0  0.0      0     0 ?        S<   18:41   0:00 [kworker/11:1H]
 root       968  0.0  0.0      0     0 ?        S<   18:41   0:00 [kworker/3:1H]
 root       983  0.0  0.0 289680  9536 ?        Ssl  18:41   0:00 /usr/lib/policykit-1/polkitd --no-debug
-root       990  0.0  0.0  19584  2100 ?        Ss   18:41   0:01 /usr/sbin/irqbalance --pid=/var/run/irqbalance.pid
+root       990  0.0  0.0  19584  2100 ?        Ss   18:41   0:02 /usr/sbin/irqbalance --pid=/var/run/irqbalance.pid
 root      1002  0.0  0.0 287712  7840 ?        Ssl  18:41   0:00 /usr/sbin/lightdm
 root      1006  0.0  0.0  65508  5376 ?        Ss   18:41   0:00 /usr/sbin/sshd -D
 root      1020  0.0  0.1 226580 44164 tty7     Ssl+ 18:41   0:00 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
@@ -186,7 +187,7 @@ lightdm   1123  0.0  0.1 585692 33920 ?        Sl   18:41   0:00 nm-applet
 lightdm   1125  0.0  0.0 363368  8612 ?        Ssl  18:41   0:00 /usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
 lightdm   1126  0.0  0.0 342336  7188 ?        Ssl  18:41   0:00 /usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
 lightdm   1127  0.0  0.0 573988  9192 ?        Ssl  18:41   0:00 /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
-lightdm   1128  0.0  0.0 457892 13320 ?        Ssl  18:41   0:00 /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
+lightdm   1128  0.0  0.0 457892 13324 ?        Ssl  18:41   0:00 /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
 lightdm   1129  0.0  0.0 563916 29476 ?        Ssl  18:41   0:00 /usr/lib/x86_64-linux-gnu/indicator-keyboard/indicator-keyboard-service --use-gtk
 lightdm   1130  0.0  0.0 669024 11240 ?        Ssl  18:41   0:00 /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service
 lightdm   1131  0.0  0.0 568476  8068 ?        Ssl  18:41   0:00 /usr/lib/x86_64-linux-gnu/indicator-session/indicator-session-service
@@ -202,15 +203,15 @@ lightdm   1313  0.0  0.0 481984 29848 ?        Sl   18:41   0:00 /usr/lib/x86_64
 root      1422  0.0  0.0      0     0 ?        S    18:41   0:00 [kworker/10:2]
 whoopsie  1426  0.0  0.0 374012 12524 ?        Ssl  18:41   0:00 /usr/bin/whoopsie -f
 root      1430  0.0  0.0  15936  1804 tty1     Ss+  18:41   0:00 /sbin/agetty --noclear tty1 linux
+root      1618  0.0  0.0      0     0 ?        S    22:42   0:00 [kworker/u24:0]
 root      3332  0.0  0.0      0     0 ?        S    18:56   0:00 [kworker/0:0]
 root      3333  0.0  0.0      0     0 ?        S    18:56   0:00 [kworker/4:0]
+root      4703  0.0  0.0      0     0 ?        S    23:05   0:00 [kworker/u24:1]
 root      4869  0.0  0.0      0     0 ?        S    19:06   0:00 [kworker/4:2]
-root     15735  0.0  0.0      0     0 ?        S    20:27   0:00 [kworker/u24:1]
-root     23113  0.0  0.0      0     0 ?        S    21:22   0:00 [kworker/u24:2]
-root     24991  0.0  0.0  52312  2988 ?        S    21:37   0:00 /usr/sbin/CRON -f
-wolfm2   24993  0.0  0.0   4504   836 ?        Ss   21:37   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2   24995  0.0  0.0  12544  3088 ?        S    21:37   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2   25020 48.0  0.3 714828 106988 ?       Sl   21:37   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2   25057 49.0  0.1 660428 55952 ?        Ssl  21:37   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp286h255m.json
-wolfm2   25077  0.0  0.0   4504   772 ?        S    21:37   0:00 sh -c ps aux > tst.txt
-wolfm2   25078  0.0  0.0  37364  3292 ?        R    21:37   0:00 ps aux
+root      4974  0.0  0.0  52312  2988 ?        S    23:08   0:00 /usr/sbin/CRON -f
+wolfm2    4976  0.0  0.0   4504   844 ?        Ss   23:08   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2    4978  0.0  0.0  12544  3080 ?        S    23:08   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2    5019 75.0  0.3 714812 107116 ?       Sl   23:08   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2    5040 50.0  0.1 660432 55744 ?        Ssl  23:08   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp_rp2l6im.json
+wolfm2    5060  0.0  0.0   4504   788 ?        S    23:08   0:00 sh -c ps aux > tst.txt
+wolfm2    5061  0.0  0.0  37364  3356 ?        R    23:08   0:00 ps aux
