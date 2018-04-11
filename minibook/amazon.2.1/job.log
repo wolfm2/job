@@ -1,0 +1,78 @@
+
+Wed Apr 11 08:20:11 EDT 2018
+Doing...
+Updating 7be655c..33ed4ef
+Fast-forward
+ main.py                                  |    3 +-
+ minibook/amazon.2.1/GridSearch.txt       |  219 ++++
+ minibook/amazon.2.1/README.md            |   36 +
+ minibook/amazon.2.1/_00_split.ipynb      |  146 +++
+ minibook/amazon.2.1/_01_train.ipynb      |  872 ++++++++++++++
+ minibook/amazon.2.1/_02_test.ipynb       |  527 +++++++++
+ minibook/amazon.2.1/_03_submission.ipynb |  405 +++++++
+ minibook/amazon.2.1/best.lgs.pkl         |  Bin 0 -> 9438388 bytes
+ minibook/amazon.2.1/best.nbs.pkl         |  Bin 0 -> 37749709 bytes
+ minibook/amazon.2.1/best.prc.pkl         |  Bin 0 -> 9438408 bytes
+ minibook/amazon.2.1/best.rdg.pkl         |  Bin 0 -> 9438244 bytes
+ minibook/amazon.2.1/best.svm.pkl         |  Bin 0 -> 9438403 bytes
+ minibook/amazon.2.1/hv0.pkl              |  Bin 0 -> 586 bytes
+ minibook/amazon.2.1/hv1.pkl              |  Bin 0 -> 586 bytes
+ minibook/amazon.2.1/hv2.pkl              |  Bin 0 -> 498 bytes
+ minibook/amazon.2.1/job.log              |  427 +++++++
+ minibook/amazon.2.1/my_measures.py       |   37 +
+ minibook/amazon.2.1/output.ipynb         | 1809 ++++++++++++++++++++++++++++++
+ minibook/amazon.2.1/sc.pkl               |  Bin 0 -> 28312231 bytes
+ minibook/amazon.2.1/transformer.pkl      |  Bin 0 -> 16777884 bytes
+ 20 files changed, 4480 insertions(+), 1 deletion(-)
+ create mode 100644 minibook/amazon.2.1/GridSearch.txt
+ create mode 100644 minibook/amazon.2.1/README.md
+ create mode 100644 minibook/amazon.2.1/_00_split.ipynb
+ create mode 100644 minibook/amazon.2.1/_01_train.ipynb
+ create mode 100644 minibook/amazon.2.1/_02_test.ipynb
+ create mode 100644 minibook/amazon.2.1/_03_submission.ipynb
+ create mode 100644 minibook/amazon.2.1/best.lgs.pkl
+ create mode 100644 minibook/amazon.2.1/best.nbs.pkl
+ create mode 100644 minibook/amazon.2.1/best.prc.pkl
+ create mode 100644 minibook/amazon.2.1/best.rdg.pkl
+ create mode 100644 minibook/amazon.2.1/best.svm.pkl
+ create mode 100644 minibook/amazon.2.1/hv0.pkl
+ create mode 100644 minibook/amazon.2.1/hv1.pkl
+ create mode 100644 minibook/amazon.2.1/hv2.pkl
+ create mode 100644 minibook/amazon.2.1/job.log
+ create mode 100644 minibook/amazon.2.1/my_measures.py
+ create mode 100644 minibook/amazon.2.1/output.ipynb
+ create mode 100644 minibook/amazon.2.1/sc.pkl
+ create mode 100644 minibook/amazon.2.1/transformer.pkl
+sending incremental file list
+created directory /home/wolfm2/jobout/minibook/amazon.2.1
+./
+GridSearch.txt
+README.md
+_00_split.ipynb
+_01_train.ipynb
+_02_test.ipynb
+_03_submission.ipynb
+best.lgs.pkl
+best.nbs.pkl
+best.prc.pkl
+best.rdg.pkl
+best.svm.pkl
+hv0.pkl
+hv1.pkl
+hv2.pkl
+job.log
+my_measures.py
+output.ipynb
+sc.pkl
+transformer.pkl
+
+sent 120,855,025 bytes  received 442 bytes  241,710,934.00 bytes/sec
+total size is 120,824,235  speedup is 1.00
+  0%|          | 0/34 [00:00<?, ?it/s]  6%|▌         | 2/34 [00:00<00:05,  5.38it/s]wolfm2   15124  0.0  0.0   4504   752 ?        Ss   08:20   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2   15126  0.0  0.0  12544  2992 ?        S    08:20   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2   15166 28.3  0.3 715084 107272 ?       Sl   08:20   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2   15187 38.0  0.3 980964 116260 ?       Ssl  08:20   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpbtliix2q.json
+wolfm2   15214  0.0  0.0   4504   696 ?        S    08:20   0:00 sh -c ps aux | grep wolfm2
+wolfm2   15215  0.0  0.0  37364  3232 ?        R    08:20   0:00 ps aux
+wolfm2   15216  0.0  0.0  14224   968 ?        S    08:20   0:00 grep wolfm2
+ 15%|█▍        | 5/34 [00:01<00:06,  4.82it/s] 26%|██▋       | 9/34 [00:01<00:03,  6.78it/s]
