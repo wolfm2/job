@@ -1,5 +1,5 @@
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root         1  0.0  0.0 185372  4400 ?        Ss   Apr05   0:05 /sbin/init splash
+root         1  0.0  0.0 185372  4416 ?        Ss   Apr05   0:05 /sbin/init splash
 root         2  0.0  0.0      0     0 ?        S    Apr05   0:00 [kthreadd]
 root         4  0.0  0.0      0     0 ?        S<   Apr05   0:00 [kworker/0:0H]
 root         6  0.0  0.0      0     0 ?        S<   Apr05   0:00 [mm_percpu_wq]
@@ -105,7 +105,7 @@ root       260  0.0  0.0      0     0 ?        S<   Apr05   0:00 [kworker/0:1H]
 root       281  0.0  0.0      0     0 ?        S<   Apr05   0:00 [kworker/2:1H]
 root       283  0.0  0.0      0     0 ?        D    Apr05   0:05 [jbd2/nvme0n1p1-]
 root       284  0.0  0.0      0     0 ?        S<   Apr05   0:00 [ext4-rsv-conver]
-root       319  0.0  0.0  35392  6788 ?        Ss   Apr05   0:34 /lib/systemd/systemd-journald
+root       319  0.0  0.0  35392  7316 ?        Ss   Apr05   0:34 /lib/systemd/systemd-journald
 root       320  0.0  0.0      0     0 ?        S<   Apr05   0:00 [kworker/10:1H]
 root       336  0.0  0.0      0     0 ?        S<   Apr05   0:00 [cfg80211]
 root       338  0.0  0.0  45292     8 ?        Ss   Apr05   0:00 /lib/systemd/systemd-udevd
@@ -115,7 +115,7 @@ root       568  0.0  0.0      0     0 ?        S    Apr05   0:00 [UVM global que
 root       569  0.0  0.0      0     0 ?        S<   Apr05   0:00 [kworker/u25:0]
 root       570  0.0  0.0      0     0 ?        S<   Apr05   0:00 [kworker/u25:1]
 root       575  0.0  0.0      0     0 ?        S    Apr05   0:00 [UVM Tools Event]
-root       662  0.1  0.0      0     0 ?        S    Apr05  24:31 [irq/152-nvidia]
+root       662  0.1  0.0      0     0 ?        S    Apr05  24:37 [irq/152-nvidia]
 root       663  0.0  0.0      0     0 ?        S    Apr05   0:00 [nvidia]
 root       765  0.0  0.0      0     0 ?        S<   Apr05   0:00 [led_workqueue]
 root       827  0.0  0.0      0     0 ?        S    Apr14   0:00 [kworker/6:2]
@@ -127,9 +127,9 @@ root       875  0.0  0.0 413532  2016 ?        Ssl  Apr05   0:00 /usr/sbin/Modem
 root       883  0.0  0.0   4396     0 ?        Ss   Apr05   0:00 /usr/sbin/acpid
 avahi      885  0.0  0.0  44784     4 ?        S    Apr05   0:00 avahi-daemon: chroot helper
 syslog     887  0.0  0.0 256396  2104 ?        Ssl  Apr05   0:13 /usr/sbin/rsyslogd -n
-root       892  0.0  0.0  28628  2040 ?        Ss   Apr05   0:00 /lib/systemd/systemd-logind
+root       892  0.0  0.0  28628  2064 ?        Ss   Apr05   0:00 /lib/systemd/systemd-logind
 root       894  0.0  0.0 286948  2612 ?        Ssl  Apr05   0:16 /usr/lib/accountsservice/accounts-daemon
-root       897  0.0  0.0 166432  2508 ?        Ssl  Apr05   1:26 /usr/sbin/thermald --no-daemon --dbus-enable
+root       897  0.0  0.0 166432  2508 ?        Ssl  Apr05   1:27 /usr/sbin/thermald --no-daemon --dbus-enable
 message+   898  0.0  0.0  43708  2776 ?        Ss   Apr05   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
 root       917  0.0  0.0 451300  6232 ?        Ssl  Apr05   0:01 /usr/sbin/NetworkManager --no-daemon
 root       921  0.0  0.0 636576  9768 ?        Ssl  Apr05   1:14 /usr/lib/snapd/snapd
@@ -147,7 +147,7 @@ lightdm   1065  0.0  0.0  63660     4 ?        S    Apr05   0:00 (sd-pam)
 root      1072  0.0  0.0      0     0 ?        S<   Apr05   0:00 [kworker/6:1H]
 lightdm   1073  0.0  0.0   4504     0 ?        Ss   Apr05   0:00 /bin/sh /usr/lib/lightdm/lightdm-greeter-session /usr/sbin/unity-greeter
 lightdm   1078  0.0  0.0  43032  1404 ?        Ss   Apr05   0:02 /usr/bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
-lightdm   1079  0.0  0.0 845504 15256 ?        Sl   Apr05   0:28 /usr/sbin/unity-greeter
+lightdm   1079  0.0  0.0 845504 15252 ?        Sl   Apr05   0:28 /usr/sbin/unity-greeter
 lightdm   1081  0.0  0.0 346956     0 ?        Sl   Apr05   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately
 lightdm   1086  0.0  0.0  42764     0 ?        S    Apr05   0:00 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
 lightdm   1088  0.0  0.0 206864   600 ?        Sl   Apr05   0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
@@ -186,37 +186,37 @@ root      3094  0.0  0.0      0     0 ?        S    Apr13   0:04 [kworker/0:1]
 root      4168  0.0  0.0      0     0 ?        S    Apr12   0:00 [kworker/8:0]
 root      5187  0.0  0.0      0     0 ?        S    Apr11   0:00 [kworker/4:0]
 root      5734  0.0  0.0      0     0 ?        S    13:08   0:00 [kworker/9:0]
-root      6192  0.0  0.0  52312  2936 ?        S    13:12   0:00 /usr/sbin/CRON -f
-wolfm2    6194  0.0  0.0   4504   748 ?        Ss   13:12   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2    6196  0.0  0.0  12544  3000 ?        S    13:12   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2    6221  0.0  0.3 715336 107532 ?       Sl   13:12   0:01 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2    6257  109 15.7 6703980 5188872 ?     Rsl  13:12  71:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpda87qoqy.json
 root      6522  0.0  0.0      0     0 ?        S    Apr13   0:00 [kworker/6:0]
 root      7294  0.0  0.0      0     0 ?        S    02:45   0:00 [kworker/7:2]
 root      7295  0.0  0.0      0     0 ?        S    02:45   0:00 [kworker/3:2]
 root      7672  0.0  0.0      0     0 ?        S    09:50   0:00 [kworker/9:1]
 root      8259  0.0  0.0      0     0 ?        S    06:23   0:00 [kworker/4:1]
-root     10450  0.0  0.0      0     0 ?        S    13:39   0:00 [kworker/u24:1]
 root     11833  0.0  0.0      0     0 ?        S    Apr11   0:00 [kworker/10:0]
-root     12594  0.0  0.0      0     0 ?        S    13:53   0:00 [kworker/u24:2]
-root     15502  0.0  0.0      0     0 ?        S    14:12   0:00 [kworker/u24:0]
-root     16117  0.0  0.0  52312  2932 ?        S    14:17   0:00 /usr/sbin/CRON -f
-wolfm2   16120  0.0  0.0   4504   748 ?        Ss   14:17   0:00 /bin/sh -c /home/wolfm2/job.sh
-wolfm2   16121  0.0  0.0  12544  2952 ?        S    14:17   0:00 /bin/bash /home/wolfm2/job.sh
-wolfm2   16148 77.0  0.3 714812 107340 ?       Sl   14:17   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
-wolfm2   16184 49.0  0.1 660424 55480 ?        Ssl  14:17   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmpbj6_mur5.json
-wolfm2   16202  0.0  0.0   4504   796 ?        S    14:17   0:00 sh -c ps aux > tst.txt
-wolfm2   16203  0.0  0.0  37364  3244 ?        R    14:17   0:00 ps aux
 root     18964  0.0  0.0      0     0 ?        S    Apr14   0:00 [kworker/2:1]
 root     19302  0.0  0.0  93276  7536 ?        Ss   07:35   0:00 /usr/sbin/cupsd -l
 root     19303  0.0  0.0 274816  9708 ?        Ssl  07:35   0:00 /usr/sbin/cups-browsed
-root     19423  0.0  0.0      0     0 ?        S    07:35   0:00 [kworker/0:0]
+root     19423  0.0  0.0      0     0 ?        S    07:35   0:01 [kworker/0:0]
+root     20044  0.0  0.0  95004  7136 ?        Ss   14:41   0:00 sshd: akkaa949 [priv]
+akkaa949 20046  0.0  0.0  45276  4584 ?        Ss   14:41   0:00 /lib/systemd/systemd --user
+akkaa949 20047  0.0  0.0 210916  1664 ?        S    14:41   0:00 (sd-pam)
+akkaa949 20096  0.0  0.0  95004  3404 ?        S    14:41   0:00 sshd: akkaa949@pts/8
+akkaa949 20097  0.0  0.0  22664  5212 pts/8    Ss   14:41   0:00 -bash
 root     20928  0.0  0.0      0     0 ?        S    Apr13   0:00 [kworker/11:1]
 root     21117  0.0  0.0      0     0 ?        S    Apr14   0:00 [kworker/2:0]
 root     21134  0.0  0.0      0     0 ?        S    00:46   0:00 [kworker/1:0]
+root     22437  0.0  0.0      0     0 ?        S    14:55   0:00 [kworker/u24:2]
+akkaa949 23370  0.0  0.1 207792 56048 pts/8    S+   15:01   0:00 /home/akkaa949/miniconda3/bin/python /home/akkaa949/miniconda3/bin/ipython notebook --no-browser --port=8889
 root     24728  0.0  0.0      0     0 ?        S    Apr13   0:00 [kworker/3:0]
 root     24827  0.0  0.0      0     0 ?        S    Apr14   0:00 [kworker/5:1]
 root     24854  0.0  0.0      0     0 ?        S    Apr14   0:00 [kworker/1:1]
 root     24857  0.0  0.0      0     0 ?        S    Apr14   0:00 [kworker/10:2]
+root     26796  0.0  0.0      0     0 ?        S    15:23   0:00 [kworker/u24:0]
 root     26831  0.0  0.0      0     0 ?        S    Apr12   0:00 [kworker/5:2]
+root     27574  0.0  0.0  52312  2936 ?        S    15:29   0:00 /usr/sbin/CRON -f
+wolfm2   27576  0.0  0.0   4504   692 ?        Ss   15:29   0:00 /bin/sh -c /home/wolfm2/job.sh
+wolfm2   27578  0.0  0.0  12544  2980 ?        S    15:29   0:00 /bin/bash /home/wolfm2/job.sh
+wolfm2   27618 37.0  0.3 714824 107312 ?       Sl   15:29   0:00 /home/wolfm2/anaconda3/bin/python /home/wolfm2/jobin/main.py
+wolfm2   27639 49.0  0.1 660432 55724 ?        Ssl  15:29   0:00 /home/wolfm2/anaconda3/bin/python -m ipykernel_launcher -f /tmp/tmp123ccw6c.json
+wolfm2   27657  0.0  0.0   4504   756 ?        S    15:29   0:00 sh -c ps aux > tst.txt
+wolfm2   27658  0.0  0.0  37364  3284 ?        R    15:29   0:00 ps aux
 root     31616  0.0  0.0      0     0 ?        S    Apr13   0:00 [kworker/8:1]
